@@ -1,0 +1,26 @@
+# Use for reserachers home-lab deployment.
+services:
+  msc-thesis:
+    build:
+      context: .
+      network: host
+    image: msc-thesis:latest
+    container_name: msc-thesis
+    restart: unless-stopped
+    environment:
+      - DATA_DIR=/data
+      - PORT=8501
+      - ANTHROPIC_API_KEY=${ANTHROPIC_API_KEY:-}
+      - OPENAI_API_KEY=${OPENAI_API_KEY:-}
+    volumes:
+      - /home/eli/apps/msc-thesis/data:/data
+    networks:
+      - private
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.msc-thesis.rule=Host(`msc-thesis.home`)"
+      - "traefik.http.services.msc-thesis.loadbalancer.server.port=8501"
+
+networks:
+  private:
+    external: true

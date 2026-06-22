@@ -1,0 +1,1755 @@
+The International
+Coaching Federation
+
+Artificial Intelligence
+Coaching Framework
+and Standards
+V1.01— rev. 2024.10.08
+
+coachingfederation.org
+
+Table of Contents
+1 Overview
+
+4
+
+1.1 Foreword
+
+4
+
+1.2 Working Group Members
+
+5
+
+1.3 Introduction
+
+5
+
+1.4 Glossary of Terms
+
+6
+
+1.5 Abbreviations
+
+9
+
+1.6 Conformance and Certification
+
+9
+
+2 The ICF AI Coaching Standard Framework
+
+10
+
+2.1 Understanding the ICF AI Coaching Standard Framework
+
+10
+
+2.1.1 Standards (Requirement) Types
+
+10
+
+2.1.2 Application types
+
+11
+
+2.1.3 Using the AI Coaching Standard Framework
+
+13
+
+2.2 The AI Coaching Standard Framework
+
+13
+
+2.2.1 A. Foundation: Introduction & Overview
+
+13
+
+2.2.2 B. Co-Creating the Relationship: Introduction & Overview
+
+14
+
+2.2.3 C. Communicating Effectively: Introduction & Overview
+
+15
+
+2.2.4 D Cultivating Learning and Growth: Introduction & Overview
+
+15
+
+2.2.5 E Assurance and Testing: Introduction & Overview
+
+16
+
+2.2.6 F. Technical Factors: Introduction & Overview
+
+17
+
+2.3 Notices & Disclaimers
+
+17
+
+2.4 Overview of the Standard
+
+18
+
+2.5 Guidance on using the standard
+
+19
+
+2.5.1 Buyers & Users
+
+19
+
+2.5.2 Provider
+
+19
+
+3 The ICF Artificial Intelligence Coaching Standards
+3.1 A.1: Foundation: AI Ethics
+
+©2024 International Coaching Federation
+
+20
+20
+
+2
+
+3.2 A.2: Foundation: Embodies a Coaching Mindset
+
+22
+
+3.3 B.3: Co-Creating the Relationship: Establishes and Maintains Agreements
+
+23
+
+3.4 B.4: Co-creating the Relationship: Cultivates Trust and Safety
+
+23
+
+3.5 B.5: Co-Creating the Relationship: Maintains Presence
+
+25
+
+3.6 C.6 Communicating Effectively: Listens Actively
+
+26
+
+3.7 C.7: Communicating Effectively: Evokes Awareness
+
+27
+
+3.8 D.8: Cultivating Learning and Growth: Facilitates Client Growth
+
+28
+
+3.9 D.9: Cultivating Learning and Growth: Reinforces Client Growth
+
+30
+
+3.10 E.10: Assurance and Testing: Coaching Reliability Measures
+
+31
+
+3.11 E.11: Assurance and Testing: System Usability
+
+33
+
+3.12 F.12: Technical Factors: Security and Privacy
+
+34
+
+3.13 F.13: Technical Factors: Resilience and Accessibility Overview
+
+35
+
+4 References
+
+37
+
+©2024 International Coaching Federation
+
+3
+
+1. Overview
+1.1 Foreword
+Coaching helps individuals improve their performance and achieve their potential, as well as improving
+their workplaces (Athanasopoulou & Dopson, 2018). As with many other domains, the advent of
+Artificial Intelligence (AI) offers new opportunities (Jarrahi, 2018; Mikalef & Gupta, 2021). In 2024, AI
+has been used in conjunction with, or as an adjunct to human-to-human coaching for several years
+(Graßmann & Schermuly, 2020; Malafronte & Loufrani-Fedida, 2023; Terblanche et al., 2022).
+This blended approach can provide the best of both worlds where coaches can offload tedious
+coaching activities such as delivering assessments, scheduling appointments or sending reminders
+to journal. As a result, AI used well allows coaches to invest more in the high value work of complex,
+transformational coaching in the human-to-human domain. AI also offers the opportunity for fully
+automated Coaching Services, provided entirely by AI, with the potential to greatly expand the
+number of people who can benefit from a Coaching Service.
+AI technologies allows coaches to find ways to move deeper into organizations such as working
+with managers and leaders to enhance their coaching skills, provide additional learning
+opportunities for students and trainees, or assist organizations in building a coaching culture.
+Because AI makes coaching vastly more affordable, it can make coaching accessible to more
+people across the globe, enhancing the societal impact of coaching especially in the developing
+world. As coaching becomes accessible to more people, awareness grows and potentially increases
+the size of the market dramatically.
+But, as with other deployments of AI, there are also risks such as bias that can threaten coaching
+(Akter et al., 2021). Coaching requires disclosure of personal information about individuals, which
+can be sensitive. Clients invest emotionally in coaching relationships and those relationships
+become a significant element of their professional life. While in some ways the potential risks
+that might arise are comparable to other areas of AI, the best risk mitigation methods will be
+determined by the specifics of the coaching context to be effective.
+AI coaching standards can benefit coaching system providers to help them know what is required
+to produce a high quality system. These AI standards can also sensitize AI system developers about
+the need for safeguards in a wide range of important areas. These include conscientious treatment
+of client and coach data, engineering coaching science into AI systems, minimizing bias, and
+making clear distinctions between coaching and therapy.
+We also hope that development of these AI coaching standards helps consumers make better
+buying decisions with the peace of mind that comes with knowing that the particular AI coaching
+technology has passed one or more levels of proficiency and ethical evaluation.
+The ICF AI Coaching Standards have been developed for a broad audience:
+• Coaches who want to use technology responsibly
+• Coaching clients
+• Organizations purchasing coaching
+• Coaching supervisors
+
+©2024 International Coaching Federation
+
+4
+
+• Software developers (Providers)
+• Coach training organizations
+• Broader public
+In the next section 2, we introduce the overarching framework that provides guidance to those
+wishing to develop AI Coaching Systems. The details of the ICF AI Coaching Standard appears in
+section 3. The standard gathers the core requirements for a basic AI Coaching System, and a more
+advanced system. The ICF believes that a common standard will help to encourage the use of
+scientific and engineering practices while also providing clarity for potential clients, coaches, and
+organizations looking to procure an AI Coaching System, enabling them to make their selection
+with confidence. Two additional documents enhance this standards work:
+• The International Coaching Federation (ICF) Artificial Intelligence (AI) Coaching Framework and
+Standards: Examples, and
+• The International Coaching Federation (ICF) Artificial Intelligence (AI) Coaching Framework and
+Standards: Questions Stakeholders Should Ask.
+These additional documents provide valuable information that will enhance understanding of this
+framework and standards document.
+
+1.2 Working Group Members
+In April 2021, the International Coaching Federation (ICF) convened a small working group, the
+Artificial Intelligence Coaching Standards Working Group, with expertise in technology, coaching,
+and standards development. The working group consisted of:
+• Matt Barney (XLNC and TruMind.ai)
+• Joel DiGirolamo (International Coaching Federation)
+• David Drake (The Moment Institute)
+• Olivier Malafronte (Université Côte d’Azur and Rypple.ai)
+• Harry Novic (Rocky.ai)
+• Jonathan Reitz (FLUXIFY)
+• Nicky Terblanche (University of Stellenbosch Business School and coachvici.com)
+The working group, and an external expert on professional standard setting finalized these
+standards in 2024.
+
+1.3 Introduction
+We initially developed a set of AI Coaching Capabilities Assessment Guidelines according to our
+vision of AI coaching, which involves automating part of the interactive coaching process. We
+are also aware that AI can be used to support the analytics involved in tracking and measuring
+coaching activities (e.g., number of coaching sessions, length of coaching sessions, participants’
+speaking time, revenue generated, number of goals created, etc.).
+
+©2024 International Coaching Federation
+
+5
+
+In harmony with the ICF Updated Core Competencies, AI coaching interactions are designed
+for reflection, learning, and making choices that best align with client needs, goals, experiences,
+and values. AI coaching may also include input from the AI Coaching System or other support
+facilitating client decision-making and action. In this way, AI coaching can be seen as a resource
+in support of learning, development, and performance that can be used by individuals, teams, and
+organizations independently or in conjunction with human-to-human coaching activities.
+We believe that information and insights about the potential of emerging AI coaching technologies
+are important for practitioners, professional bodies, researchers, and organizations. Of particular
+interest to the Working Group is how these technologies can best augment human coaches to
+reduce risks and create positive outcomes for clients, organizations, and society. We see our role as
+supporting and guiding the coaching profession and practitioners as they make decisions about
+the uses of AI coaching technologies as well as doing the same for providers who are developing AI
+Coaching Systems for the coaching profession.
+
+1.4 Glossary of Terms
+The following terms, when used in the standard and capitalized, are defined as stated below. Figure
+1 shows the relationship of some of these elements relative to other elements in the framework.
+
+Figure 1
+Relationship of AI
+Coaching Framework
+and Standards Elements
+
+via
+Interactions
+
+CHING
+OA
+AP
+C
+I
+• Scheduling
+
+• Data Processing
+• Interactive
+• Conversational
+
+Client
+
+TI O N
+ICA
+PL
+
+Function
+
+A
+
+AI Coaching System (Capabilities)
+
+ADVA
+
+ED
+
+C
+
+BASI
+
+NC
+
+1
+
+https://coachingfederation.org/core-competencies
+
+©2024 International Coaching Federation
+
+6
+
+Table 1
+Glossary of Terms
+
+Term
+
+Definition
+
+Advanced
+Requirement
+
+Advanced is a higher level Standard provided by the ICF, for an AI
+Coaching System. It builds upon, and includes all of the requirements
+within, the ICF Basic Standard.
+
+AI Coaching
+Application
+
+The AI Coaching Application is the software package of the AI Coaching
+System that interacts with the User to provide specific Function in a
+specific Context. An example of an AI Coaching Application is a coaching
+chatbot. A Requirement may or may not be applicable to the AI Coaching
+Application since it may be applicable only at the System level.
+
+AI Coaching
+Application Type
+
+An AI Coaching Application may assist a coach in Scheduling or Data
+Processing, or may provide a Coaching Service in an Interactive or
+Conversational manner. See section 2.1.2 below for more detail about
+each type.
+
+AI Coaching System
+
+The AI Coaching System is the entity which provides the Function to the
+Client. The AI Coaching System includes the AI Coaching Application and
+any supporting documentation, functionality, and/or processes which
+exist outside of the Application but are utilized in the delivery of the
+Coaching Services, its management, and security. Since it is defined that
+the AI Coaching Application resides within the System, all Requirements
+apply to the System and they may or may not be applicable to the AI
+Coaching Application.
+
+Basic Requirement
+
+Basic is a Standard constituting a set of minimal, normative requirements,
+provided by the ICF, for an effective AI Coaching System.
+
+Capabilities
+
+The Capabilities of the AI Coaching System are features such as the ability
+to converse, or the ability to notify, that enable the Interactions and
+through which Content is delivered. An AI Coaching System generally
+provides some Function by utilizing a set of Capabilities.
+
+Client
+
+The Client is the User who interacts with the AI Coaching System for a
+specific Function.
+
+Coach
+
+The Coach is a human (User) or group of humans who provide Coaching
+Services to the Client, potentially through, or in partnership with the AI
+Coaching System.
+
+Coaching
+
+ICF defines coaching as “partnering with clients in a thought-provoking
+and creative process that inspires them to maximize their personal and
+professional potential” 1.
+
+©2024 International Coaching Federation
+
+7
+
+Term
+
+Definition
+
+Coaching Expert
+
+A Coaching Expert is a suitably knowledgeable, qualified and experienced
+person or group of persons, who are able to provide professional advice
+on coaching science and technology. A Coaching Expert may also be
+considered a Subject Matter Expert (SME).
+
+Coaching Service
+
+Individuals or organizations may offer human or blended Coaching
+Services to individual Clients or organizations. These services may include
+one-to-one coaching, team or group coaching, professional development
+resources, and assessments that may be combined with one or more
+forms of AI.
+
+Content
+
+The Content is the text, images, or other forms of media which the Client
+receives through Interactions with the AI Coaching System as part of the
+Coaching Services.
+
+Context
+
+The conditions or circumstances in which the AI Coaching System is used.
+
+Formal Studies
+
+Formal Studies are peer-reviewed or unpublished scientific research that
+is designed and executed using well-established scientific methods to
+ensure that coaching (human or AI) are effective. They include formal
+measurement and methods to gain confidence in causal inference about
+the AI causing improvements in coaching clients (e.g. experiments, quasiexperiments, instrumental regression).
+
+Function
+
+The Function is to be delivered by the AI Coaching System and offers
+content, information, stimuli, guidance, and other interactions that the
+Client receives or experiences through interaction with the AI Coaching
+System. An example of a Function is interactive coaching through
+reflective dialog. A Function frequently utilizes a set of Capabilities.
+
+ICF AI Coaching
+Standards
+
+The standards section of this document, Section 3.
+
+ICF AI Coaching
+Standards Element
+
+The individual Standards, or Requirements are part of a standards
+Elements within the Framework. Each Element may have just a Basic
+Requirement or both a Basic and Advanced Requirement. Each element
+will also list which Application Types it is applicable to and what type of
+Requirement it is. Each Element has a designation of a letter followed by
+two numbers, indicating which Set the Element is in and which Domain
+that Set is located in. For example, the first Element in the Ethics Set is A.1.1.
+
+ICF AI Coaching
+Standards Element
+Domain
+
+Each ICF AI Coaching Standards Element Set is located within a Domain,
+labeled A through F. Domains A-D follow the ICF Core Competency
+Domain labeling.
+
+ICF AI Coaching
+Standards
+Element Sets
+
+Each Element is located within a Set. Sets one through eight (1-8) follow
+the ICF Core Competency numbering.
+
+©2024 International Coaching Federation
+
+8
+
+Term
+
+Definition
+
+ICF AI Coaching
+Standards
+Framework
+
+The structure or outline within which AI Coaching Standards are placed,
+consisting of Elements that are in groupings (Sets) and the Sets are
+grouped into Domains.
+
+Interactions
+
+Interactions are the set methods by which the AI Coach and the Client
+communicate, such as notifications, prompts, or conversations.
+
+Language Expert
+
+A Language Expert is a suitably qualified and experienced person or
+group of persons who is able to provide expert advice on use of language
+in one or more human languages with regards to its intelligibility for a
+given region or group of language users (e.g. linguist, translator).
+
+Provider
+
+The Provider develops or procures software and offers the AI Coaching
+System to the market.
+
+Requirement
+
+An ICF AI Coaching Standard, or Requirement for a System describes
+behavior or functionality necessary for a Provider to deliver in order to say
+they meet that standard. The words Standard and Requirement are used
+interchangeably in this document.
+
+Requirement Type
+
+A Requirement may be about the AI Coaching Application or System
+content, functionality, actions, or validation.
+
+Standard
+
+See Requirement.
+
+Use Case
+
+A Use Case is a potential scenario in which, through Interactions with the
+System, the Client moves towards a desired outcome.
+
+User
+
+A User is any individual or organization who acquires or accesses the AI
+Coaching System for use in a specific AI Coaching Application. The User
+may be a Client, Coach, or organization.
+
+1.5 Abbreviations
+AI
+
+Artificial Intelligence
+
+ICF
+
+International Coaching Federation
+
+1.6 Conformance and Certification
+Providers are expected to either self-certify their AI Coaching System or work with a third-party
+organization to do so. The ICF AI Coaching Standard does not take an ‘all-or-nothing’ approach and
+Providers are free to specify which elements of the Standard they meet.
+
+©2024 International Coaching Federation
+
+9
+
+2. The ICF AI Coaching Standard Framework
+2.1 Understanding the ICF AI Coaching Standard Framework
+The first eight Standard Sets fit within the ICF Core Competencies structure. Those that follow,
+Standard Sets 9-13 are extended from the core ICF framework with additional details relevant for
+the field of software applications and AI in the use of coaching.
+
+Domain
+
+Standard Sets
+
+(A) Foundation
+
+1. AI Ethics*
+2. Embodies a Coaching Mindset
+
+(B) Co-Creating the
+Relationship
+
+3. Establishes and Maintains Agreements
+4. Cultivates Trust and Safety
+5. Maintains Presence
+
+(C) Communicating
+Effectively
+
+6. Listens Actively
+7. Evokes Awareness
+
+(D) Cultivating
+Learning and Growth
+
+8. Facilitates Client Growth
+9. Reinforces Client Growth*
+
+(E) Assurance and
+Testing*
+
+10. Coaching Reliability Measures*
+11. System Useability*
+
+(F) Technical Factors*
+
+12. Security and Privacy*
+13. Resilience and Accessibility*
+
+* Indicates areas that have been added beyond the ICF Core Competencies.
+
+2.1.1 Standards (Requirement) Types
+Within each Set there are different types of standards. For standards associated with Domains A-D,
+most of the requirements relate to either content, functionality, or actions. For capability domains
+E and F, there are validation requirements as well as content and functionality requirements.
+The ICF AI Coaching Standard (Section 3) places requirements into the following types:
+1. Content. Content means material that the organization developing the AI Coaching System
+must create and make accessible to the client. Content can be any form of media, including text,
+images, audio, video, and graphics. Some content is about the system itself, for example, how the
+AI Coaching System works or how user data will be managed and protected. This content could be
+accessible within the application, on a website, or through other means. Other content is part of
+the Coaching Service and will generally be accessible within the application, such as questions that
+the AI Coaching Application may ask of the Client.
+
+©2024 International Coaching Federation
+
+10
+
+Content may be order dependent. For example, important notices relating to privacy policies or
+the limitations of the coaching system should be shared with the client before the provision of any
+Coaching Services, so they can make an informed decision whether to continue, and will be less
+likely to be surprised or disappointed by the System. Where content order is important, it will be
+indicated within the Standard.
+Evidence of meeting content requirements can be a display of the content being accessed in
+the System.
+2. Functionality. Functionality means specific abilities that the system must have, such as being
+able to store client goals or analyze specific types of inputs in order to make a determination that
+can affect some action that may be taken at a later date.
+Evidence of meeting functionality requirements can be a video recording of a tour of the
+functionality requirement being used. This may not always be possible, for example where the
+functionality is not visible. In these instances validation evidence may be used.
+3. Actions. Actions are specific tasks that the system must do, such as notifying the user or
+recording specific types of information. Some actions are time- or order-specific. For example, an
+action such as ’notify’ may need to occur before the client begins a certain activity. This would be
+an order-dependent action. An example of a time-dependent action would be a ‘check-in’ that the
+system may make periodically with the client, perhaps weekly.
+4. Validation. Validation involves demonstrating that a system achieves its objectives. It
+can include evidence that an AI system meets a certain quality standard, or helps the client
+systematically achieve one or more goals. When these properties or the relevant quality threshold
+is measurable, then the best course may be a test, where the system is tested to see if the object
+does in fact have the stated property or meet the given threshold. For example, ensuring a system
+is available most of the time can be tested by looking at the collective downtime for the system.
+Other types of validation include expert review, where a relevant expert will assess an object within
+the system to determine if it is of sufficient quality. This could be a Coaching Expert validating
+that the content being used in the system is appropriate or a Language Expert validating that the
+language used in the content is appropriate and suitable for the target audience.
+Some validation is required prior to or while the system is being developed, such as a review of the
+content. Other validation needs to happen after the system is in operation, such as validating client
+satisfaction and the efficacy of the system intervention with clients.
+The Standard in Section 3 provides a summary of which Requirements are of which type.
+
+2.1.2 Application types
+As coaches have used new digital technologies, a plethora of different types of new coaching
+tools have emerged. Roughly these can be placed in four key groups. Note that these are not clear
+distinctions, with some tools straddling the line between different groups. However, in general,
+the first two: scheduling and data processing, are coach assisting tools. They primarily support a
+coach in their provision of a human or blended Coaching Service. The latter two, interactive and
+conversational are different in that they are providing Coaching Services to the client directly. This
+may still be in support of a human coach, or it may be as a standalone service.
+
+©2024 International Coaching Federation
+
+11
+
+This Framework, and the associated Standard, focus primarily on the latter two categories of
+application—interactive and conversational. This is because, as well as being coaching-specific,
+unlike some of the assistive technologies, they have two distinct qualities that make them
+potentially higher risk, and potentially more impactful. The first is that by providing a Coaching
+Service, rather than, say, a scheduling service, they are likely to be processing more sensitive data
+and engaging with the client on more sensitive topics. As such, their ability to impact the client,
+positively or negatively, increases. This means that greater consideration must be taken to ensure a
+minimum level of quality. The second difference is that they may be providing a Coaching Service
+independently of a human coach. This means there is the potential for them to reach vastly more
+clients, unrestrained by the natural limit on the availability of human coaches. This potential
+for large scale means a lot more people may be affected, and, again, necessitates the need for
+minimum standards.
+Coach Assisting Applications
+1. Scheduling: Applications which assist with time-related activities such as meeting planning,
+following up with clients, and other reminders. Examples are a weekly activity report sent by
+email or weekly reminders sent through a mobile application. While these applications are not
+necessarily specific to coaching, they may utilize AI.
+2. Data Processing: Analysis tools which process data that is accessible in a given environment
+(e.g. emails, calendars, feedback) or that is provided (e.g. post-review feedback, ratings, evaluations,
+attendees’ speaking time) and generate relevant outputs or measurements that can provide
+information for the coaching process. These outputs then require a coach or other entity to use
+them in order to be impactful. Examples are sentiment measurement, FAQ (Frequently Asked
+Questions) generation, scoring systems based on individual assessments, and coaching or training
+commitment based on individual logins.
+Coaching Service Applications
+3. Interactive: Interactive applications are those in which the AI interacts directly with
+clients who provide input such as feedback, ratings, planning elements (dates or hours), and
+conversational elements. These interactions can nudge clients and shape their behavior. As such
+they can be considered to be providing Coaching Services. An interactive application can also
+be a conversational application. Examples are habit-building quizzes made through a mobile
+application and email prompts relating to a specific goal or topic.
+4. Conversational: These AI applications can identify, interpret, make inferences, or learn from
+provided data to help users achieve their objectives through written text, spoken language, or
+video as part of a Coaching Service. Examples are coaching chatbots, voicebots or avatars providing
+coaching conversations with individuals or groups.
+The interactive and conversational application types overlap significantly in that they both involve
+provision of Coaching Services. They have comparable risk, and as such many of the required best
+practices stated in the Standard apply equally to both.
+
+©2024 International Coaching Federation
+
+12
+
+2.1.3 Using the AI Coaching Standard Framework
+The ICF AI Coaching Framework and Standard aims to support organizations developing
+AI Coaching Systems by providing guidance on best practices and highlighting important
+considerations. The primary goal for the ICF AI Coaching Framework and Standard is to inform
+and help organizations navigate potential challenges in developing AI coaching tools.
+The standard covers each of the six domains and within those each of the thirteen capabilities
+(Standard Sets) introduced in 2.1 above. For each capability it provides a brief introduction, an
+overview of the key properties and why they matter, advice and FAQs targeted at relevant potential
+practitioner groups, and information on potential artifacts that may be generally helpful, and/or
+necessary to evidence conformance with the associated requirements. It also includes a high level
+summary of the maturity stages for each capability. Maturity levels aim to help organizations both
+understand where they are currently, and then to break down the steps they need to follow in
+order to ensure the quality of the AI coaching system.
+The Standard was designed to be useful to many parties, including:
+• Developers of AI Coaching Systems so that they know what is important to all interested
+parties, including the Users, Coaches, and Purchasers of Coaching Services,
+• Purchasers and Coaches, so that they understand parameters upon which to compare and
+evaluate different AI Coaching Systems, including capabilities, ethics, and data privacy, and
+• Clients so that they may develop an understanding of an AI Coaching System and will provide
+an expectation of the parameters involved so that they may express any concerns to the
+Provider or precautions they may feel they need to take.
+
+2.2 The AI Coaching Standard Framework
+2.2.1 A. Foundation: Introduction & Overview
+The foundation elements relate to ethics and the coaching mindset. These two aspects are
+crucial to ensuring that the right values are embedded in all design decisions and core
+functionality of the system.
+
+2.2.1.1 A.1 Foundation: AI Ethics
+AI driven services create new ethical considerations and risks. Especially at this point in time,
+when AI assisted services and AI services are still fairly novel, there is the need to introduce and
+explain key properties of these systems. It’s also important that decisions made by these systems
+are transparent and actions are taken to minimize the transfer of existing human biases into the
+AI systems and prevent new biases from emerging. Overall, AI coaching applications should be
+designed in alignment with codes of conduct that ensure an automated system is able to respond
+to situations in an ethical way that supports and complements the ICF Code of Ethics.
+
+©2024 International Coaching Federation
+
+13
+
+2.2.1.2 A.2: Foundation: Embodies a Coaching Mindset
+A coaching mindset is one that is open, curious, flexible, and client-centered. These are human
+attributes, and the AI coaching platform should mimic these characteristics.
+
+2.2.2 B. Co-Creating the Relationship: Introduction & Overview
+Research has established the importance of a coaching relationship. Many elements combine
+together to create the depth of relationship necessary for a client to feel safe in the coaching
+relationship. While the development of a coaching agreement may be relatively simple with AI, a
+depth of presence and creation of a trusting and safe relationship may be more difficult.
+2.2.2.1 B.3: Co-Creating the Relationship: Establishes & Maintains Agreements
+In AI coaching, as in human coaching, the software’s success depends on the client’s engagement
+and commitment to the coaching goals, and process. To foster this, the AI Coaching System
+collaborates with the client and stakeholders to establish clear agreements for the coaching
+engagement and each session. Key elements include ensuring the client understands the
+interaction’s purpose and outcomes, obtaining explicit consent for each intervention with an optout option for client control and ownership, and proceeding to the next stage only with the client’s
+readiness and explicit permission, maintaining their continued buy-in throughout the process.
+2.2.2.2 B.4 Co-Creating the Relationship: Cultivates Trust and Safety
+In AI coaching, establishing a safe and supportive environment is important. This involves several
+key strategies: firstly, fostering trust through transparency about the AI’s design and ownership;
+secondly, promoting inclusive dialogue and responsiveness to feedback; thirdly, differentiating
+between universal and domain-specific coaching aspects, ensuring clients understand the AI’s
+applicability to their areas of interest; fourthly, providing access to human experts when issues
+exceed the AI’s scope; and finally, prioritizing client safety, especially in mental health matters, by
+offering guidance and connections to other relevant services.
+2.2.2.3 B.5 Co-Creating the Relationship: Maintains Presence
+In AI coaching, the system should maintain a stance similar to a human that is open and flexible.
+Firstly, the AI should not be overly anthropomorphized or misleading in presentation to avoid
+unsettling the client. Its tone should be straightforward and clear. Secondly, enhancing user
+experience by allowing clients to review their previous inputs may improve their engagement
+and reflection. The more accessible this feature is, the better. Thirdly, akin to human coaches who
+assess and respond to a client’s emotional state, AI coaching applications, when capable, should
+use these insights to adjust their interactions accordingly wherever allowed by law. This can
+deepen the client-coach relationship, prevent conflict or disengagement, and support the client’s
+development in their “Goldilocks Zone” (not too hard or easy but just right). These principles help in
+making AI coaching more effective and client-centric.
+
+©2024 International Coaching Federation
+
+14
+
+2.2.3 C. Communicating Effectively: Introduction & Overview
+Effective communication in an AI coaching system involves emulating the app doing active
+listening to fully understand the client and then use that to evoke client awareness through diverse
+methods such as personalized assessments, reflective questioning, and scenario simulations,
+coupled with detailed feedback and progress tracking. These tools collectively aid in uncovering
+clients’ strengths, weaknesses, and behavioral patterns, facilitating deeper self-discovery and goaloriented growth for the client.
+2.2.3.1 C.6 Communicating Effectively: Listens Actively
+In AI coaching, active listening involves understanding both the spoken and unspoken aspects
+of client communication, contextualizing their words for meaningful interactions. The AI system
+should base interventions on this contextual awareness, considering past interactions and the
+client’s current state, while clearly explaining its actions and rationale. Additionally, it should
+offer timely, context-specific feedback to support client growth, enhancing understanding and
+facilitating actionable insights.
+2.2.3.2 C.7 Communicating Effectively: Evokes Awareness
+An AI coaching application can enhance client self-awareness and insight using various techniques
+like powerful questioning, metaphors, and analogies. It should offer a range of context-specific
+stimuli, such as open questions and moments of silence, to resonate with the client and foster
+self-realization. Additionally, the system should encourage big-picture thinking by presenting
+alternative perspectives and linking insights, aiding clients in understanding the interrelation of
+ideas and their broader implications.
+
+2.2.4 D Cultivating Learning and Growth: Introduction & Overview
+Cultivating learning and growth is the core of coaching and can be broken into two components;
+facilitating client growth, and reinforcing client growth.
+2.2.4.1 D.8 Cultivating Learning and Growth: Facilitates Client Growth
+An AI coaching application should effectively help clients convert insights into actionable goals
+while fostering client independence. Key functionalities include assisting in setting, tracking, and
+adjusting SMART goals, facilitating storytelling and meaning-making, and supporting clients in
+re-evaluating their goals as circumstances change. Additionally, the system should aid in clarifying
+problems, generating alternative solutions, and considering the consequences of different choices,
+ensuring a comprehensive and adaptive coaching experience.
+
+©2024 International Coaching Federation
+
+15
+
+2.2.4.2 D.9 Cultivating Learning and Growth: Reinforces Client Growth
+An AI coaching application should employ methods that reinforce and guide clients towards their
+desired outcomes and future behaviors. This includes tracking and validating progress to inform
+decision-making and motivate clients, as well as helping them stay on track toward their goals. The
+system should provide timely reminders and reinforce insights to maintain focus and momentum.
+Additionally, it’s important for the AI to help clients translate learning into actionable steps and
+celebrate their successes to sustain growth. The capability to track progress through milestones
+and assess overall advancement is also key, ensuring a structured and supportive coaching journey.
+
+2.2.5 E Assurance and Testing: Introduction & Overview
+Quality assurance and testing are crucial to ensure that the system is effective and achieves its
+intended objectives. The earlier sections A-D focuses on the kinds of content, capabilities, and
+behaviors of the systems. This section instead looks at what can be done to validate that the AI
+system performs effectively. This section is split into two, the first subsection (E.10) looks at validation
+and testing that can be applied to the coaching content, capabilities, and behaviors. The second
+section (E.11) looks at testing that ensures technical aspects of the system operate as intended.
+2.2.5.1 E.10 Assurance and Testing: Coaching Reliability Measures
+For an AI coaching application to be reliable and effective, it is crucial to quantitatively
+demonstrate system reliability. This includes collecting evidence of effectiveness, which can range
+from client feedback to formal experiments, and potentially comparing it to the efficacy of human
+coaches. The responsible organization should verify that the system’s capabilities and operations
+are as claimed, ensuring accuracy, transparency and reliability. Before launch, testing with a sizable
+group is necessary to identify bugs and gather insights for improvement. The quality of the data
+driving the AI models is critical, requiring thorough quality assurance tests to avoid biases and
+ensure utility. Incorporating expert guidance, such as a coaching committee, can enhance the
+product’s quality and trustworthiness. Finally, ensuring that the system’s responses are contextually
+appropriate is vital for maintaining client engagement and meeting their needs effectively.
+2.2.5.2 E.11 Assurance and Testing: System Usability
+An effective AI Coaching System should be user-friendly and not overly complex, with content that
+is easily understandable. Integration with relevant platforms and robust accessibility are also key
+for user convenience. To ensure usability, developers should gather and publish evidence on user
+satisfaction. Systems should be intuitive, minimizing the need for extensive training or onboarding,
+and should explain their core functionalities in plain language, avoiding technical jargon. Content
+should be tailored to various audiences, considering cultural sensitivities and language differences,
+and ensuring it is free from controversial or discriminatory elements. Accessibility can be enhanced
+by offering multiple access points, like websites or apps, and building integrations with key channels
+or developing APIs. Finally, system performance, including response times, is crucial for user
+satisfaction, and should be optimized through architectural decisions and regular assessments.
+
+©2024 International Coaching Federation
+
+16
+
+2.2.6 F. Technical Factors: Introduction & Overview
+While not specific to coaching per se, certain requirements are necessary for any consumer
+product storing personal and potentially sensitive information. AI Coaching Systems should meet
+minimum security and privacy requirements.
+2.2.6.1 F.12 F. Technical Factors: Security and Privacy
+In AI coaching applications, data security hinges on the CIA triad: confidentiality (preventing
+unauthorized data access), integrity (protecting data from unauthorized alteration), and availability
+(ensuring system access for authorized users). Key security measures include encrypting data at
+rest and in transit, following industry standards like NIST guidelines, validating user credentials
+with strong authentication processes, and safeguarding backend systems. Additionally, ensuring
+system availability with minimal service interruptions and conducting thorough reliability and bug
+testing prior to launch are crucial for maintaining user trust and satisfaction.
+Data privacy is crucial for AI coaching applications, requiring adherence to varying data protection
+laws across jurisdictions. These applications should minimize personal data, using methods like
+pseudonymization and data binning, and ensure users are informed about how their data is used,
+including sharing with third parties and data protection measures. Consent for data processing
+is essential, and system providers must be aware of the storage and management of data, legal
+requirements in target markets, and the integration with key user channels and backend systems
+for optimal performance. For buyers and users, awareness of legal frameworks like GDPR and
+understanding security and privacy aspects of the AI coaching application are vital. Organizations
+should develop clear security and data minimization policies, and consider creating user-friendly
+content about security and privacy practices.
+2.2.6.2 F.13 Technical Factors: Resilience and Accessibility
+In AI coaching systems, ensuring resilience and accessibility, in line with the Americans with
+Disabilities Act of 1991, is crucial. These systems must incorporate adaptive technologies and design
+principles that cater to a wide range of disabilities, including visual, auditory, motor, and cognitive
+impairments, ensuring equal access and usability for all users. This involves implementing
+features like screen readers, voice recognition, and user-friendly interfaces with sufficient contrast
+and navigability, alongside regular testing and updates to maintain system robustness and
+accommodate evolving accessibility needs.
+
+2.3 Notices & Disclaimers
+All systems should encourage users to seek expert human guidance for complex personal or
+professional issues, even if non-medical. Despite efforts to ensure the accuracy and reliability
+of its algorithms, AI system recommendations and insights may not fully be able to address
+each individual’s unique context. Additionally, while each system should be designed with a
+commitment to inclusivity and non-discrimination, AI system designers should clarify to users that
+most AI has inherent limitations in completely eliminating biases. Engineers are encouraged to
+continuously work towards minimizing these biases in the system functionality.
+
+©2024 International Coaching Federation
+
+17
+
+2.4 Overview of the Standard
+The ICF has established these standards to guide developers in creating responsible AI coaching
+applications and help clients identify systems that adhere to these best practices, ensuring both
+expanded access and the mitigation of systemic risks.
+The requirements in the ICF Standard are divided into thirteen Standard Sets which are grouped
+into six Domains:
+(A) Foundation
+(B)	Co-creating the
+Relationship
+
+(C)	Communicating
+Effectively
+
+(E) Assurance and testing*
+(F) Security and Privacy*
+
+(D)	Cultivating Learning
+& Growth
+
+The first four Domains reflect the ICF Core Competency Framework as used for human coaches.
+The same principles have been applied here, although resulting in different criteria. Domains E and
+F are novel and respond to AI and application specific considerations.
+Within each Domain requirements
+are grouped based on the type of
+requirement. The types vary between
+some of the Domains. For example,
+many of the requirements found in
+A-D relate to content, functionality,
+or an action that is required in the AI
+Coaching System. Whereas in Domain
+E many of the requirements relate
+to validation and testing measures.
+Different properties are required for
+different types of requirement, and
+different types of evidence would
+be sought to prove the requirement
+has been met. For example, content
+requirements can be evidenced by
+producing a copy of the content, while
+testing and validation requirements
+can be evidenced through test results.
+The table shown here is intended to
+help those developing AI coaching
+applications to find requirements
+more easily by type in order to inform
+product development planning.
+Table of
+requirements
+by type
+
+©2024 International Coaching Federation
+
+Type
+
+Requirements
+
+Content
+
+A.1.2, A.1.3, A.1.5
+B.4.1, B.4.3, B.4.5
+C.6.2
+C.7.1, C7.2
+E.11.2
+F.13.2
+
+Functionality
+
+B.3.3
+B.4.4, B.4.5
+B.5.2, B.5.3
+C.6.1, C.6.2, C.6.3
+C.7.3, C.7.4
+D.8.1, D.8.2, D.8.3, D.8.6
+D.9.1, D.9.5, D.9.6
+E.10.1, E.10.3, E.10.5
+E.11.2, E.11.6
+F.12.1, F.12.2
+
+Action
+
+A.1.1, A.1.2, A.1.3, A.1.5
+B.3.1, B.3.2
+C.6.1, C.6.3
+C.7.2, C.7.3
+D.8.4, D.8.5, D8.7
+D.9.2, D.9.3, D.9.4, D.9.5
+F.13.2 , F.13.3
+
+Validation
+
+B.3.3
+E10.1, E.10.2, E.10.4, E.10.5, E.10.6, E.10.7
+E.11.1, E.11.2, E.11.3, E.11.4, E11.5
+F12.3
+
+18
+
+2.5 Guidance on using the standard
+This Standard relates to an AI Coaching System. It is the System that conforms or does not conform
+with the Standard.
+This Standard is best understood in the context of the framework to which it is appended. The
+framework provides useful additional information to help an organization develop a System.
+However, the framework does not include any separate normative requirements for the Standard.
+As such the Standard (Section 3) can be used as a standalone document.
+
+2.5.1 Buyers & Users
+For organizational buyers, you need to understand how coaching fits into your safeguarding policy,
+the goals you have from your coaching system, and how the AI coaching system aligns with these
+policies and objectives.
+
+2.5.2 Provider
+At a minimum, the organization developing the AI system should have:
+• A plain English explanation of the core functionality of the system
+• Details on the data privacy and compliance requirements
+• A store of relevant research and literature that forms the evidentiary basis for the methods and
+content used by the application
+ICF also recommends providers to have a coaching advisory committee or board to monitor and
+ensure the effectiveness of coaching investments.
+
+©2024 International Coaching Federation
+
+19
+
+3. The ICF Artificial Intelligence Coaching Standards
+Each requirement is part of a standard specification Element within the Framework. Each element
+may have just a Basic Requirement or both a Basic and Advanced Requirement. If a Provider
+wishes to claim meeting an Advanced Requirement, they must also meet the Basic Requirement
+for that Element. Each Element also lists the relevant use cases called “Application Types” and
+describes what type of Requirement it is. Elements are designated by a letter followed by two
+numbers, indicating which Set the Element is in and which Domain that Set is located in. For
+example, the first Element in the Ethics Set is A.1.1.
+The framework used to specify the four requirement types that are applicable to four types of
+AI include:
+• Requirement Types: Content, Functionality, Actions, and Validation
+• Applicable to: Scheduling, Data Processing, Interactive, Conversational
+
+3.1.A.1: Foundation: AI Ethics
+Coaching is a partnership that requires buy-in from the client to be effective. To ensure the
+client is engaged and committed to the partnership and their goals, they need to be a part of
+decision making, feel safe and have trust in the coach and the process, and feel that the coach
+is present and working to understand and support them. The AI Coaching System partners with
+the client and relevant stakeholders to create clear agreements about the coaching relationship,
+process, plans, and goals. They establish agreements for the overall coaching engagement as
+well as those for each coaching session. There are three key elements of establishing and
+maintaining agreements:
+Element A.1.1: AI Disclosure: The user should know when they’re interacting with an algorithm and
+not a person. People behave differently when they think they’re speaking to a human, and being
+deceived can damage trust and cause concern for the user. Providing a clear indication of when
+the user is interacting with an algorithm can help avoid this, for example, by use of an icon or a
+name that indicates the entity is not human.
+• Requirement Type: Action
+• Applicable to: Interactive, Conversational
+• Requirement (Basic): The System shall indicate to the Client that it is not human prior to the
+provision of Coaching Services to the Client.
+• Requirement (Advanced): The System shall indicate to the Client that it is not human at least
+once during each interactive or conversational session.
+Element A.1.2: System Limits: The User should understand the limits of the system. Setting
+expectations is important to ensure that the system is not used inappropriately, or that a User fails
+to seek alternative options believing their needs can be met with the system, if this is
+unrealistic. In order to set expectations a Provider must first assess what the relevant limitations
+are, and then think about how and when this information may be presented to the User.
+• Requirement Type: Content, Action
+
+©2024 International Coaching Federation
+
+20
+
+• Applicable to: Interactive, Conversational
+• Requirement (Basic): The System shall state relevant limits of its capabilities prior to the
+provision of Coaching Services to the Client.
+• Requirement (Advanced): The System shall state relevant limits of its capabilities throughout
+various use cases when relevant.
+Element A.1.3: Algorithm Transparency: The AI Coaching Application should be transparent about
+how the underlying algorithms work. Thought should be given to what level of description is most
+valuable. A full technical breakdown will be incomprehensible to most audiences, but highlighting
+the kinds of methods used, and the underlying logic being utilized can help boost trust.
+• Requirement Type: Content
+• Applicable to: Scheduling, Data Processing, Interactive, Conversational
+• Requirement (Basic): Provider shall make publicly available documentation on the types
+of algorithms used and their basic functionality. The Provider is not required to release
+confidential or proprietary information to meet this requirement.
+Element A.1.4: Action Explainability: Where the AI has made a meaningful decision, the AI
+coaching application should support a user who wants to understand why specifically that
+decision was made. AI explainability can be complex but there are tools that can be deployed that
+may help. For example, sometimes a useful way of helping explain a decision is to explain what
+other decisions could have been made, and what would need to have been different for another
+option to be selected by the AI.
+• Requirement Type: Content
+• Applicable to: Scheduling, Data Processing, Interactive, Conversational
+• R
+ equirement (Basic): Provider shall make publicly available documentation on the general
+ways in which decisions are made by the AI Coaching System. Provider is not required to
+release confidential or proprietary information to meet this requirement.
+• Requirement (Advanced): Provider shall make publicly available documentation on the
+categories and methods used for decisions in each category made by the AI Coaching
+System. Provider is not required to release confidential or proprietary information to meet
+this requirement.
+Element A.1.5: Bias: AI systems, being trained on real world data often use atheoretical methods
+that are hard to explain and can perpetuate existing biases and prejudices. They can also suffer
+from new kinds of bias such as sampling bias, where the training data isn’t representative of the
+real world. Biases can also arise from design decisions; optimizing for one outcome over another
+can result in bias. Whenever deploying AI systems it is important to think carefully about how the
+system might be biased and how the impacts of these biases can be mitigated. Organizations
+developing AI coaching applications should check their data and models for bias and take
+appropriate steps, such as correcting for bias where possible, or using quality assurance methods
+to eliminate bias from affecting users. As a last resort, systems should alerts users to potential or
+actual bias where appropriate.
+• Requirement Type: Content, Action
+• Applicable to: Scheduling, Data Processing, Interactive, Conversational
+
+©2024 International Coaching Federation
+
+21
+
+• Requirement (Basic): The System shall notify the Client of any potential biases in the
+Application and provide sources for any evidence used to ascertain that these biases may exist.
+• Requirement (Advanced): Quality assurance methods that guarantee biases to be rare or
+non-existent.
+Element A.1.6: Data Transparency: All parties involved in AI coaching are concerned about where
+and how their data is stored, as well as who will have access to it.
+• Requirement Type: Content, Action
+• Applicable to: Scheduling, Data Processing, Interactive, Conversational
+• Requirement (Basic): The Provider shall supply documentation identifying who within the
+Provider organization will have access to coach and client data as well as provisions for
+User access.
+• Requirement (Advanced): The Provider shall have publicly available documentation identifying
+all parties who may have access to coach and client data and where the data will be stored.
+Element A.1.7: Consent to AI Coaching: It is important to clients that they understand when the
+coaching process has started.
+• Requirement Type: Content, Action
+• Applicable to: Interactive, Conversational
+• Requirement (Basic): The System shall require the Client to agree to the AI coaching, stating
+that a human will not be involved.
+
+3.2.A.2: Foundation: Embodies a Coaching Mindset
+Coaching, whether delivered by an AI or human, is characterized by certain foundational principles
+and types of interaction that shape how a coaching session and relationship should operate. It is
+important that these coaching elements are embodied in the AI Coaching System.
+Element A.2.1: Coaching Approach: The AI Coaching System should follow an open, flexible
+approach that may share observations and insights, without following a rigid protocol or algorithm.
+This approach should have the potential to create new learning or performance support for the client.
+• Requirement Type: Content, Action
+• Applicable to: Interactive, Conversational
+• Requirement (Basic): The AI Coaching System is mostly non-directive and generally supports a
+coaching mindset and approach to partnering with the client. If clients compared AI Coaching
+System responses, they may find some similarities.
+• Requirement (Advanced): The AI Coaching System exhibits direction only when science
+suggests additional supports are most appropriate and AI responds in a fluid, graceful and
+dynamic manner, helping the client realize their goals. Clients comparing AI Coaching System
+responses will find little similarity in responses.
+
+©2024 International Coaching Federation
+
+22
+
+3.3.B.3: Co-Creating the Relationship: Establishes and
+Maintains Agreements
+It is important that the System acts in partnership with the client and relevant stakeholders to
+create clear agreements about the coaching relationship, process, plans, and goals. An effective
+coaching relationship requires buy-in from the client, both within each coaching session and for
+each agreed action, and to the wider relationship and longer term goals.
+Element B.3.1: Service Information and Benefits
+The System should provide clear and comprehensive information about the services offered and
+the potential benefits to ensure informed client decisions.
+• Requirement Type: Behavior
+• Applicable to: Interactive, Conversational
+• Requirement (Basic): The System shall inform the Client of the services it is able to offer and the
+potential benefits prior to the provision of Coaching Services to the Client.
+Element B.3.2: Client Opt-in for Services
+It is vital for the System to secure explicit consent from the Client before initiating Coaching
+Services, upholding the principle of informed choice.
+• Requirement Type: Action
+• Applicable to: Interactive, Conversational
+• Requirement (Basic): The System shall ask the Client to opt in to the service prior to the
+provision of Coaching Services to the Clients
+Element B.3.3: Assent for New Use Cases
+For maintaining a respectful and informed coaching environment, the Application must seek the
+Client’s assent before introducing new Use Cases during the coaching process.
+• Requirement Type: Validation
+• Applicable to: Interactive, Conversational
+• Requirement (Basic): The Application shall require assent from the Client before progressing to
+a new Use Case for the majority of new Use Cases.
+
+3.4.B.4: Co-creating the Relationship: Cultivates Trust and Safety
+Coaching should take place in a safe, supportive environment that allows the client to share freely.
+It is important for the System to maintain a relationship of mutual respect and trust.
+Element B.4.1: Information on AI Design and Intent
+The System should provide comprehensive information about its creators, scientific foundations,
+ownership, and research supporting its design to enhance transparency, trust and user understanding.
+• Requirement Type: Content
+
+©2024 International Coaching Federation
+
+23
+
+• Applicable to: Scheduling, Data Processing, Interactive, Conversational
+• Requirement (Basic): The System shall provide the Client with information on the creators,
+theoretical bases, ownership, and research supporting the design of the AI in the Application.
+Element B.4.2: Inclusive Dialogue and Responsiveness
+In the coaching process, fostering an inclusive dialogue between the client and specialists
+is crucial. The System must be designed to facilitate open, respectful, and understanding
+communication, enabling a space where the client feels heard and valued. Additionally, the
+System’s ability to react appropriately to support and feedback is essential for adapting to the
+client’s evolving needs and maintaining an effective coaching relationship.
+• Requirement Type: Communication, Responsiveness
+• Applicable to: Interactive, Conversational
+• Requirement (Basic): The System shall facilitate an inclusive dialogue between the Client and
+specialists, ensuring that all interactions are respectful, culturally sensitive, and client-centered.
+The System must also demonstrate the ability to respond effectively to the Client’s support
+needs and feedback.
+Element B.4.3: Domain Specificity Information
+The System should clearly inform the Client about its domain specificity and the utility within that
+domain to set accurate expectations and effective usage.
+• Requirement Type: Content
+• Applicable to: Scheduling, Data Processing, Interactive, Conversational
+• Requirement (Basic): The System shall inform the Client whether or not it is domain specific,
+with an explanation of its utility within that domain.
+Element B.4.4: Access to Human Coach
+Ensuring the Client has the option to engage with a human coach, the System should provide a
+mechanism for this interaction.
+• Requirement Type: Functionality
+• Applicable to: Interactive, Conversational
+• Requirement (Basic): Basic instructions on finding a human coach
+• Requirement (Advanced): The System shall provide a way for the Client to access a Coach via
+scheduling or on-demand.
+Element B.4.5: Mental Health Risk Indicators
+The System should actively search for potential indicators of mental health risks in clients, and
+communicate its limitations in handling such situations.
+• Requirement Type: Functionality and Content
+• Applicable to: Interactive, Conversational
+• Requirement (Basic): The System shall warn that it is not meant for mental health, and provide
+information about how they can access help if needed.
+
+©2024 International Coaching Federation
+
+24
+
+• Requirement (Advanced): The System shall search for potential indicators of mental health risk
+from the Client. If indicators are identified, then the Application shall communicate the limits of
+its capabilities and the Service.
+
+3.5.B.5: Co-Creating the Relationship: Maintains Presence
+To ensure effective client engagement, a coaching system needs to be work towards ensuring the
+client remains focused with a sense of presence. This can be achieved by employing a style that is
+open, flexible, grounded, and confident.
+Element B.5.1: Avoiding Deception Overview
+To avoid confusion and any “uncanny valley” effect (Ciechanowski, et al., 2018), the AI coaching
+application should not be overly anthropomorphised, or presented in a deceptive or misleading
+way. The application should maintain a balance in its tone and presentation to ensure clarity and
+comfort for the client.
+Element B.5.1.1: Clear Representation of AI Nature
+The System shall explicitly indicate its artificial nature to the Client, avoiding any ambiguity about
+its non-human status.
+• Requirement Type: Content & Action
+• Applicable to: Interactive, Conversational
+• Requirement (Basic): The System shall clearly state its AI-driven nature in its user interface
+and interactions.
+• Requirement (Advanced): The System shall include periodic reminders of its artificial nature in
+ongoing interactions, ensuring continuous clarity and preventing misconceptions.
+Element B.5.1.2: Tone and Presentation
+The System’s tone and presentation shall be designed to be professional, straightforward, and
+devoid of excessive human-like attributes that could mislead or unsettle the Client.
+• Requirement Type: Content, Actions
+• Applicable to: Interactive, Conversational
+• Requirement (Basic): The System shall employ a neutral and professional tone in its
+communications and interface design.
+• Requirement (Advanced): The System shall incorporate feedback mechanisms to continuously
+evaluate and adjust its tone and presentation based on client preferences and feedback,
+ensuring comfort and clarity.
+Element B.5.2: Client Input Review and Modification
+The System should empower clients by allowing them to review and modify their inputs. This
+functionality respects the client’s autonomy and supports a more personalized and accurate
+coaching experience.
+• Requirement Type: Functionality
+• Applicable to: Interactive, Conversational
+• Requirement (Basic): The System shall allow Clients to review and change their inputs.
+
+©2024 International Coaching Federation
+
+25
+
+Element B.5.3: Emotional State Assessments and Responses
+Where allowed by law, regular assessment of the Client’s emotional state is crucial for effective
+coaching. The System should have the capability to make these assessments and respond in a
+manner that is empathetic and appropriate to the Client’s emotional needs.
+• Requirement Type: Functionality
+• Applicable to: Interactive, Conversational
+• Requirement (Basic): The System shall make periodic assessments of the Client’s emotional
+state and respond appropriately most of the time.
+• Requirement (Advanced): The System shall use the emotion assessments to improve its ability
+to support client’s goals in their Vygotsky zone of proximal development.
+
+3.6.C.6 Communicating Effectively: Listens Actively
+Active listening is critical in coaching to fully understand and support the client’s self-expression.
+It involves not only hearing what the client is saying but also paying attention to what is not being
+said, to grasp the full context of the client’s communication.
+Element C.6.1: Responsive Interaction Based on Client Input
+The Application must adapt its responses during interactions, taking into account previous inputs
+from the Client. This demonstrates active listening and a personalized coaching approach.
+• Requirement Type: Functionality, Action
+• Applicable to: Interactive, Conversational
+• Requirement (Basic): During Interactions, the Application shall alter its responses based on
+prior Client inputs.
+• Requirement (Advanced): Prior interactions change the AI system’s coaching to adjust to the
+client’s Vygotsky zone as it changes.
+Element C.6.2: Explanatory Information for Questions
+To aid understanding and clarity, the System should provide explanatory information for most of
+the questions it asks. This helps in ensuring the Client fully understands the context and purpose of
+the questions.
+• Requirement Type: Content, Functionality
+• Applicable to: Interactive, Conversational
+• Requirement (Basic): The System shall provide explanatory information for most questions.
+• Requirement (Advanced): The System shall provide or reference advanced developmental
+resources (e.g. training, mentoring, books, videos, journal articles, performance support tools) to
+compliment the coaching it is providing.
+Element C.6.3: Regular Feedback to Client
+Regular feedback is a crucial aspect of effective coaching. The Application should provide the Client
+with frequent feedback, aiding in their development and understanding of the coaching process.
+• Requirement Type: Functionality & Action
+
+©2024 International Coaching Federation
+
+26
+
+• Applicable to: Interactive, Conversational
+• Requirement (Basic): The Application shall provide the Client with regular feedback at
+defined periods.
+• Requirement (Advanced): The Application shall provide proactive praise that is accurate,
+honest, and pleasantly surprising to the client to keep them motivated to practice, in addition
+to regular AI feedback when sensible given the client’s goals.
+
+3.7.C.7: Communicating Effectively: Evokes Awareness
+Facilitating self-awareness in clients is a common coaching goal. A coach, whether human or an
+AI system, can evoke this awareness and facilitate client insight and learning through various tools
+and techniques such as powerful questioning, feedback, metaphor, or analogy.
+Element C.7.1: Use of Diverse Questioning Techniques
+In its interactions, the Application should employ a mix of open and closed questions, along with
+the use of metaphors, analogies, and strategic pauses to stimulate thinking and self-reflection in
+the Client.
+• Requirement Type: Content & Action
+• Applicable to: Interactive, Conversational
+• Requirement (Basic): In Interactions with the Client, the Application shall use both open and
+closed questions, and metaphor, analogy, and/or pauses.
+• Requirement (Advanced): AI system dynamically adjusts questions to each client’s unique
+Vygotsky zone, as it changes, for optimal support.
+Element C.7.2: Strategic Use of Metaphor, Silence, and Analogy
+Using metaphor, silence, or analogy selectively can be powerful in coaching conversations. The
+Application should incorporate these elements appropriately to enhance client insight.
+• Requirement Type: Behavior & Content
+• Applicable to: Interactive, Conversational
+• Requirement (Basic): In Interactions with the Client, the Application shall use metaphor, silence,
+or analogy some of the time.
+• Requirement (Advanced): User can customize the AI’s ontology, persona and/or example types
+in scope.
+Element C.7.3: Directive and Nondirective Interaction Balance
+The AI Application should provide a balance of directive and nondirective interactions, allowing the
+Client to explore their thoughts and feelings while also receiving guidance when necessary.
+• Requirement Type: Functionality & Action
+• Applicable to: Interactive, Conversational
+• Requirement (Basic): The Application shall provide the Client with both directive and
+nondirective Interactions.
+
+©2024 International Coaching Federation
+
+27
+
+Element C.7.4: Offering Alternative Perspectives
+Offering alternative perspectives is another aspect of effective coaching. The Application should
+have the functionality to present different viewpoints to the Client, aiding in broadening their
+understanding and awareness.
+• Requirement Type: Functionality
+• Applicable to: Interactive, Conversational
+• Requirement (Basic): The Application shall offer the Client alternative perspectives.
+
+3.8.D.8: Cultivating Learning and Growth: Facilitates Client Growth
+Coaching is a collaborative process aimed at facilitating client growth by transforming insights and
+learning into actionable goals, while respecting and promoting client autonomy.
+Element D.8.1: Goal Setting and Progress Monitoring
+The Application shall empower the Client to set clear goals and track their progress, fostering a
+sense of achievement and direction.
+• Requirement Type: Functionality
+• Applicable to: Interactive, Conversational
+• Requirement (Basic): The Application shall provide functionalities for goal setting and
+progress tracking.
+• Requirement (Advanced): The Application shall integrate advanced goal tracking features,
+offering predictive insights and adaptive goal recommendations based on Client progress
+Element D.8.2: Contextual Understanding through Client Sharing
+For effective coaching, the Application must facilitate an environment where Clients can share
+personal insights, enabling the Application to better understand and respond to their unique context.
+• Requirement Type: Functionality
+• Applicable to: Interactive, Conversational
+• Requirement (Basic): The Application shall include conversational features to gather and
+comprehend Client information for contextual assessment.
+• Requirement (Advanced): The Application shall utilize language AI (e.g. Large Language
+Models (LLMs)) to derive deeper insights from Client conversations, enhancing contextual
+understanding.
+Element D.8.3: Exploration of Adjusted or Alternative Goals
+Clients often evolve in their thinking. The Application should accommodate this by allowing Clients
+to explore and redefine their goals.
+• Requirement Type: Functionality
+• Applicable to: Interactive, Conversational
+• Requirement (Basic): The Application shall enable Clients to explore and set alternative goals.
+• Requirement (Advanced): The Application shall employ intelligent algorithms to suggest
+personalized, alternative goals based on Client’s evolving preferences and known achievements.
+
+©2024 International Coaching Federation
+
+28
+
+Element D.8.4: Validation of Goals
+Ensuring goals are realistic and achievable is crucial. The Application should engage in validating
+the feasibility and challenge level of Client goals.
+• Requirement Type: Action
+• Applicable to: Interactive, Conversational
+• Requirement (Basic): The Application shall assess and validate goal difficulty and feasibility,
+guiding Clients in creating SMART goals.
+• Requirement (Advanced): The Application shall implement advanced analytics to provide
+a detailed assessment of goal difficulty and attainability, including potential obstacles and
+success probabilities.
+Element D.8.5: Problem Clarification
+Clarifying the Client’s challenges is a fundamental step in coaching. The Application should actively
+assist in defining and understanding the Client’s problems.
+• Requirement Type: Action
+• Applicable to: Interactive, Conversational
+• Requirement (Basic): The Application shall aid in clarifying the Client’s problem.
+• Requirement (Advanced): The Application shall use advanced diagnostic tools to clarify, and,
+when more than one exist, to also prioritize Client problems based on their impact and urgency.
+Element D.8.6: Generation of Alternative Solutions
+The Application should foster creative thinking by enabling Clients to generate and consider
+various solutions to their challenges.
+• Requirement Type: Functionality
+• Applicable to: Interactive, Conversational
+• Requirement (Basic): The Application shall facilitate the generation of alternative solutions by
+the Client.
+• Requirement (Advanced): The Application shall incorporate creative problem-solving
+frameworks to enhance the quality and diversity of solutions generated by Clients.
+Element D.8.7: Consideration of Solution Consequences
+It is important for Clients to understand the potential outcomes of their chosen solutions. The
+Application should prompt such considerations.
+• Requirement Type: Action
+• Applicable to: Interactive, Conversational
+• Requirement (Basic): The Application shall encourage Clients to contemplate the consequences
+of their solutions.
+• Requirement (Advanced): The Application shall provide a sophisticated analysis of potential
+outcomes, including probabilistic and long-term impacts of the chosen solutions.
+
+©2024 International Coaching Federation
+
+29
+
+3.9.D.9: Cultivating Learning and Growth: Reinforces Client Growth
+Effective AI coaching uses methods that reinforce and facilitate desired future behavior or
+outcomes, essential for sustained client growth.
+Element D.9.1: Self-Assessment and Growth Tracking
+The Application shall offer capabilities for the Client to conduct manual or automated selfassessments, enabling them to track their growth over time.
+• Requirement Type: Functionality
+• Applicable to: Data Processing, Interactive, Conversational
+• Requirement (Basic): The Application shall provide functionalities for self-assessment and
+growth tracking.
+• Requirement (Advanced): The Application shall include unobtrusive analytics for comprehensive
+growth tracking, offering insights and recommendations for further development.
+Element D.9.2: Goal Commitment Notification
+At the time of goal setting, the Application shall remind the Client of their prior commitments to
+work towards their goals, fostering a sense of accountability.
+• Requirement Type: Action
+• Applicable to: Interactive, Conversational
+• Requirement (Basic): The Application shall notify Clients of their accountability during goal setting.
+• Requirement (Advanced): The Application shall provide personalized motivational messages
+and strategies to maintain commitment to working toward goals.
+Element D.9.3: Regular Practice Reminders
+The Application shall regularly prompt the Client with reminders to encourage ongoing application
+and reflection, including providing reinforcement between coaching steps or sessions with a
+human coach.
+• Requirement Type: Behavior
+• Applicable to: Data Processing, Interactive, Conversational
+• Requirement (Basic): The Application shall regularly prompt Clients with growth reminders.
+• Requirement (Advanced): The Application shall customize these reminders based on Client
+progress and preferences, ensuring effective and timely reinforcement.
+Element D.9.4: Insight to Action Prompting
+The Application shall encourage Clients to identify actionable steps derived from their insights,
+aiding in the practical application of their learnings.
+• Requirement Type: Action
+• Applicable to: Data Processing, Interactive, Conversational
+• Requirement (Basic): The Application shall prompt Clients to convert insights into actions.
+• Requirement (Advanced): The Application shall use intelligent algorithms to suggest specific,
+actionable steps tailored to the Client’s unique proficiency level.
+
+©2024 International Coaching Federation
+
+30
+
+Element D.9.5: Recognition of Client Progress
+Celebrating progress is crucial in coaching. The Application should acknowledge and celebrate the
+Client’s successes and milestones.
+• Requirement Type: Functionality and Action
+• Applicable to: Interactive, Conversational
+• Requirement (Basic): The Application shall note and celebrate Client progress.
+• Requirement (Advanced): The Application shall include an advanced recognition system that
+celebrates milestones in a personalized and engaging manner.
+Element D.9.6: Evaluation of Client Achievements
+Assessing and validating Client achievements is important for sustained growth. The Application
+should have capabilities to evaluate these milestones.
+• Requirement Type: Functionality
+• Applicable to: Data Processing, Interactive, Conversational
+• Requirement (Basic): The Application shall evaluate some Client achievements.
+• Requirement (Advanced): The Application shall implement a comprehensive measurement
+system to provide in-depth analysis and feedback on Client achievements, facilitating deeper
+understanding and learning.
+
+3.10.E.10: Assurance and Testing: Coaching Reliability Measures
+The use of metrics is crucial for expressing the reliability and expected behavior of the system,
+ensuring its efficacy and reliability.
+Element E.10.1: Client Feedback Collection on System Efficacy
+The Organization shall systematically gather feedback from Clients regarding the efficacy of
+the System.
+• Requirement Type: Functionality & Validation
+• Applicable to: Feedback-oriented, Evaluative
+• Requirement (Basic): The Organization shall collect qualitative feedback on System efficacy.
+• Requirement (Advanced): The Organization shall implement a comprehensive measurement
+system, including regular surveys and interactive feedback mechanisms, to gather in-depth
+insights on efficacy.
+Element E.10.2: Validation of System Capabilities
+The System shall only claim functionalities it possesses. The Organization must conduct Formal
+Studies to validate the System’s claims about its capabilities and benefits.
+• Requirement Type: Validation
+• Applicable to: All 4: Scheduling, Data Processing, Interactive, Conversational
+• Requirement (Basic): The Organization shall carry out basic validation studies for claims made
+by the System.
+
+©2024 International Coaching Federation
+
+31
+
+• Requirement (Advanced): The Organization shall conduct extensive, rigorous studies involving
+diverse client groups to validate and support the System’s claims.
+Element E.10.3: Accuracy and Bias Monitoring
+The System shall continuously assess its accuracy, results, precision, and any biases in its application.
+• Requirement Type: Functionality
+• Applicable to: Data Processing, Interactive, Conversational
+• Requirement (Basic): The System shall monitor basic performance metrics including accuracy
+and bias.
+• Requirement (Advanced): The System shall employ advanced analytical tools to evaluate and
+minimize biases, ensuring precision and fairness in its operations.
+Element E.10.4: System Testing with Diverse Clients
+The Organization shall test the System with a diverse group of Clients, ensuring broad applicability
+and reliability.
+• Requirement Type: Validation
+• Applicable to: All 4: Scheduling, Data Processing, Interactive, Conversational
+• Requirement (Basic): The Organization shall test the System with a sufficiently large and
+diverse group of Clients to ensure reasonable reliability.
+• Requirement (Advanced): The Organization shall conduct extensive testing with a diverse and
+larger group of Clients to ensure reliability across different demographics and contexts.
+Element E.10.5: Training Data Monitoring and Quality Tests
+Regular monitoring and quality assessment of the training data used by the Application is essential
+for maintaining System integrity.
+• Requirement Type: Functionality & Validation
+• Applicable to: Data Processing, Interactive, Conversational
+• Requirement (Basic): The System shall monitor and occasionally test the quality of its training
+data and rules.
+• Requirement (Advanced): The System shall implement continuous and automated quality
+checks and updates to the training data, ensuring ongoing relevance and accuracy.
+Element E10.6: System Design Review by Coaching Experts
+The design of the System shall be supervised and periodically reviewed by qualified coaching experts.
+• Requirement Type: Validation
+• Applicable to: Interactive, Conversational
+• Requirement (Basic): The design shall be reviewed by at least one coaching expert.
+• Requirement (Advanced): The design shall undergo regular reviews by a diverse panel of
+coaching experts, ensuring adherence to the latest industry standards and best practices.
+
+©2024 International Coaching Federation
+
+32
+
+Element E10.7: Client Context Understanding and Appropriate Responses
+The Application shall demonstrate understanding of the Client’s context and needs in its
+responses, ensuring they are never inappropriate.
+• Requirement Type: Validation
+• Applicable to: Interactive Conversational
+• Requirement (Basic): The Application shall show basic understanding of Client context and
+avoid offensive replies.
+• Requirement (Advanced): The Application shall employ advanced contextual algorithms to
+tailor responses to individual Client needs, ensuring high relevance and sensitivity.
+
+3.11.E.11: Assurance and Testing: System Usability
+In developing AI systems for human interaction, particularly on sensitive topics, adherence to
+ethical principles and AI codes of conduct is paramount, aligning with the ICF Code of Ethics.
+Element E.11.1: User Experience and Technology Adoption Research
+The Organization shall conduct research to understand how users experience the usability and
+technology adoption aspects of the System.
+• Requirement Type: Validation
+• Applicable to: All 4: Scheduling, Data Processing, Interactive, Conversational
+• Requirement (Basic): The Organization shall perform basic usability studies.
+• Requirement (Advanced): The Organization shall provide evidence of comprehensive, ongoing
+research incorporating a wide range of global user demographics to continuously improve
+usability and technology adoption.
+Element E.11.2: Accessibility and Instructional Support
+The primary functionalities of the Application shall be intuitive for Clients without prior instruction,
+with additional help available for further guidance.
+• Requirement Type: Functionality, Content, & Validation
+• Applicable to: All 4: Scheduling, Data Processing, Interactive, Conversational
+• Requirement (Basic): The Application shall ensure basic functionality is easily accessible, and
+understandable (e.g. FAQ).
+• Requirement (Advanced): The Application shall include advanced, interactive tutorials and help
+options, catering to varying levels of user proficiency.
+Element E.11.3: Disclosure of Basic System Functionality
+The System shall clearly disclose its basic functionalities in user-friendly language, understandable
+to individuals with a reading level of nine years of education or less.
+• Requirement Type: Validation
+• Applicable to: Interactive, Conversational
+• Requirement (Basic): The System shall use clear, simple language for basic functionality disclosure.
+
+©2024 International Coaching Federation
+
+33
+
+• Requirement (Advanced): The System shall employ language optimization tools to ensure
+clarity and accessibility, including translations for non-native speakers.
+Element E.11.4: Content Management by Language Experts
+All content in the System shall be managed and curated by qualified Language Experts.
+• Requirement Type: Validation
+• Applicable to: Interactive, Conversational
+• Requirement (Basic): Language Experts shall oversee content creation.
+• Requirement (Advanced): The System shall involve a diverse panel of Language Experts for
+content management, ensuring linguistic accuracy, cultural sensitivity, and relevance across
+different regions.
+Element E.11.5: Non-Discriminatory Content
+All content within the System shall be non-discriminatory and inclusive.
+• Requirement Type: Validation
+• Applicable to: Data Processing, Interactive, Conversational
+• Requirement (Basic): The System shall ensure content is non-discriminatory.
+• Requirement (Advanced): The System shall implement advanced screening tools to detect and
+eliminate any biases or discriminatory language, ensuring inclusivity.
+Element E.11.6: Platform Availability
+The Application shall be accessible on at least one platform, ensuring basic user access.
+• Requirement Type: Functionality
+• Applicable to: All 4: Scheduling, Data Processing, Interactive, Conversational
+• Requirement (Basic): The Application shall be available on one platform.
+• Requirement (Advanced): The Application shall be optimized for multi-platform accessibility,
+including desktop, mobile, and other relevant platforms to maximize user reach.
+
+3.12.F.12: Technical Factors: Security and Privacy
+The protection of personal and sensitive client information is critical, necessitating robust privacy
+and security controls in the system.
+Element F.12.1: Data Encryption for Storage and Transmission
+The System shall implement encryption for all data during storage and transmission to ensure
+confidentiality and security.
+• Requirement Type: Functionality
+• Applicable to: All 4: Scheduling, Data Processing, Interactive, Conversational
+• Requirement (Basic): The System shall use standard encryption protocols for data storage
+and transmission.
+
+©2024 International Coaching Federation
+
+34
+
+• Requirement (Advanced): The System shall use advanced encryption technologies,
+including end-to-end encryption and regularly updated security protocols to protect
+against emerging threats.
+Element F.12.2: Secure Sign-On Process
+Users shall access the Application through a secure authentication process to safeguard against
+unauthorized access.
+• Requirement Type: Functionality
+• Applicable to: All 4: Scheduling, Data Processing, Interactive, Conversational
+• Requirement (Basic): The System shall require a standard secure sign-on process.
+• Requirement (Advanced): The System shall integrate advanced user authentication methods,
+such as two-factor authentication or biometric verification, for enhanced security.
+Element F.12.3: System Availability
+The System shall be available to Users for the majority of the time, ensuring reliable access.
+• Requirement Type: Validation
+• Applicable to: All 4: Scheduling, Data Processing, Interactive, Conversational
+• Requirement (Basic): The System shall ensure basic availability to Users most of the time.
+• Requirement (Advanced): The System shall aim for near-continuous availability, employing
+advanced server management and failover strategies to minimize downtime and maintain
+consistent user access.
+
+3.13.F.13: Technical Factors: Resilience and Accessibility Overview
+In order to be useful, a system has to be accessible. Availability is the property of a system being
+ready to carry out a task when needed, such as a client trying to log in and access a Coaching
+Service.
+Ensuring the system’s accessibility and readiness to perform tasks, such as facilitating client log-in
+and access to coaching services, is vital for its effectiveness.
+Element F.13.1: Data Management Disclosure to Clients
+The System shall inform Clients about data management practices, specifically regarding security
+and confidentiality, before providing Coaching Services.
+• Requirement Type: Content & Action
+• Applicable to: All 4: Scheduling, Data Processing, Interactive, Conversational
+• Requirement (Basic): The System shall provide basic information on data management
+practices to Clients.
+• Requirement (Advanced): The System shall offer a detailed, easily understandable guide on
+data management practices, including security and confidentiality protocols, with examples
+and FAQs to enhance Client understanding and trust.
+
+©2024 International Coaching Federation
+
+35
+
+Element F13.2: Consent for Data Processing
+The System shall obtain explicit consent from the Client for any data processing activities.
+• Requirement Type: Action
+• Applicable to: All 4: Scheduling, Data Processing, Interactive, Conversational
+• Requirement (Basic): The System shall collect basic consent for data processing from the Client.
+• Requirement (Advanced): The System shall implement an interactive consent process, clearly
+outlining the scope, purpose, and extent of data processing, and providing Clients with
+granular control over their data.
+
+©2024 International Coaching Federation
+
+36
+
+4. References
+Akter, S., McCarthy, G., Sajib, S., Michael, K., Dwivedi, Y. K., D’Ambra, J., & Shen, K. N. (2021).
+	Algorithmic bias in data-driven innovation in the age of AI. International Journal of Information
+Management, 60, 102387.
+Athanasopoulou, A., & Dopson, S. (2018). A systematic review of executive coaching outcomes: Is it
+the journey or the destination that matters the most? The Leadership Quarterly, 29, 70–88.
+Ciechanowski, L., Przegalinska, A., Magnuski, M., & Gloor, P. (2018). In the shades of the uncanny
+	valley: An experimental study of human—chatbot interaction. Future Generation Computer
+Systems, 92, 539-548.
+Graßmann, C., & Schermuly, C. C. (2020). Coaching With Artificial Intelligence: Concepts and
+Capabilities. Human Resource Development Review, 20, 106–126.
+Jarrahi, M. H. (2018). Artificial intelligence and the future of work: Human-AI symbiosis in
+organizational decision making. Business Horizons, 61, 577–586.
+Malafronte, O. O., & Loufrani-Fedida, S. (2023, October 25). Developing leader competence with
+	coaching questions and artificial intelligence-based tools: Change of schemas and multilevel
+impacts. Presented at the 34th congress of AGRH, Corte, Corsica. Corte, Corsica.
+Mikalef, P., & Gupta, M. (2021). Artificial intelligence capability: Conceptualization, measurement
+	calibration, and empirical study on its impact on organizational creativity and firm
+performance. Information & Management, 58, 103434.
+Terblanche, N., Molyn, J., Haan, E. de, & Nilsson, V. O. (2022). Comparing artificial intelligence and
+human coaching goal attainment efficacy. PLOS ONE, 17, e0270255.
+
+©2024 International Coaching Federation
+
+37
+
+EMPOWERING THE WORLD THROUGH
+
+COACHING.
+
+©2024 International Coaching Federation
+
+38
+

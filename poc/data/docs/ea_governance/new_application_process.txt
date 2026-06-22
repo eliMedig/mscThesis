@@ -1,0 +1,191 @@
+NEW APPLICATION PROCESS
+Application intake, triage, and demand routing for the application portfolio
+
+------------------------------------------------------------------------
+SCOPE OF THIS DOCUMENT
+------------------------------------------------------------------------
+This document defines HOW a new application or application change enters
+the portfolio: how it is requested, how it is triaged into a Demand or a
+Standard Request, what the architect reviews, and how it is approved and
+handed off to the lifecycle.
+
+It does NOT define the underlying rules the architect checks against. Those
+live in the companion documents and are referenced here:
+- portfolio_standards.txt   - lifecycle states, technical maturity, allowed
+                              field values, segmentation, capability model.
+- architecture_policy.txt   - ownership, criticality, integration patterns,
+                              authentication/authorisation, documentation.
+- compliance_rules.txt      - compliance status, data-quality rules, and the
+                              regulatory frameworks (NIS2/ENISA, Swiss ISA,
+                              GDPR/FADP, ISO/IEC 27001).
+
+The key words MUST, SHOULD, and MAY are used in their RFC 2119 sense.
+
+------------------------------------------------------------------------
+1. PRINCIPLE: EVERYTHING STARTS AS A REQUEST
+------------------------------------------------------------------------
+Every change to the application landscape - a brand-new application, a new
+integration, an extension of an existing service, or a new vendor - enters
+through a single front door as a Request. There is no other legitimate route
+into the portfolio. The Request is then triaged (Section 3) into exactly one
+of two paths:
+
+- a STANDARD REQUEST, fulfilled through a pre-approved, repeatable pattern; or
+- a DEMAND, which requires architecture review and explicit approval before
+  any build or procurement begins.
+
+Routing a change around this front door (shadow IT, direct procurement, or
+an undocumented integration) is non-conformant and is surfaced for governance
+attention at the next portfolio review.
+
+------------------------------------------------------------------------
+2. ROLES
+------------------------------------------------------------------------
+- Requester: the business or IT party asking for the application or change.
+  Provides the business need, expected users, and data involved.
+- Service Owner: owns a standard service (e.g. SSO, the integration platform,
+  the cloud landing zone) and fulfils Standard Requests against that service.
+- Domain Architect: reviews Demands, assesses portfolio and environmental
+  impact, and is the approval authority for Demands within their domain.
+- Architecture Review Board (ARB): the escalation and decision body for
+  Demands that cross domains, breach a standard, or carry elevated risk
+  (critical criticality, public-facing, AI/ML, confidential/restricted data).
+
+------------------------------------------------------------------------
+3. TRIAGE: DEMAND VS STANDARD REQUEST
+------------------------------------------------------------------------
+The triage question is: "Is this change already covered by an approved,
+repeatable pattern, or is it something new that changes the architecture?"
+
+A Request is a STANDARD REQUEST when it is a change to an existing standard
+service using an already-approved pattern, for example:
+- Single sign-on (SSO) onboarding of an application onto the existing identity
+  provider using the approved SAML 2.0 / OpenID Connect pattern.
+- A new integration realised through the central integration layer using an
+  already-approved integration pattern (see Section 5).
+- Additional user licences or a capacity increase for an existing application.
+- Minor configuration changes within an existing, supported application that
+  do not change its data classification, hosting model, or integrations.
+
+A Request is a DEMAND when it introduces something architecturally new or
+materially changes risk, for example:
+- A brand-new application (build or buy) that adds or duplicates a business
+  capability.
+- A new or complex integration: a new system-to-system topology, a new
+  protocol, direct database-to-database coupling, or any integration that
+  cannot be satisfied by an existing approved pattern on the integration layer.
+- A new vendor, a new hosting model, or a new cloud region/landing zone.
+- Any application that is public-facing (internet-exposed) or uses AI/ML.
+- Any application that will process Confidential or Restricted data
+  (classification levels are defined in portfolio_standards.txt; handling
+  obligations in compliance_rules.txt).
+
+Rule of thumb: if fulfilling the Request requires a NEW architectural decision,
+it is a Demand. If it only re-applies an EXISTING decision, it is a Standard
+Request. When in doubt, the Request is treated as a Demand and the Domain
+Architect makes the call.
+
+------------------------------------------------------------------------
+4. STANDARD REQUEST PATH (FAST PATH)
+------------------------------------------------------------------------
+- A Standard Request is fulfilled by the relevant Service Owner against the
+  approved pattern. It does not require a full architecture review.
+- The Service Owner MUST confirm the Request genuinely matches the approved
+  pattern. If any Demand trigger from Section 3 is present (new pattern,
+  confidential/restricted data, public-facing, AI/ML, new vendor/hosting), the
+  Standard Request is re-routed to the Demand path.
+- The portfolio record for the affected application MUST be updated to reflect
+  the change (e.g. a new integration recorded against integration_count, a new
+  data classification, an updated last_reviewed_date).
+
+------------------------------------------------------------------------
+5. THE INTEGRATION-DIRECTION TRIGGER
+------------------------------------------------------------------------
+Triage also determines HOW an integration is built and which way it flows.
+
+- If the integration can be served by the central integration layer using an
+  approved pattern, it is a Standard Request. The integration platform mediates
+  the connection; the direction (which system is the source of truth, which is
+  the consumer) and the protocol follow the approved pattern for that pattern
+  family. No new point-to-point coupling is created.
+- If the integration is net-new or complex - a new topology, a new protocol,
+  direct coupling between application databases, or a new external party - it
+  is a Demand. The Domain Architect MUST decide and record the integration
+  pattern (synchronous API, asynchronous event, or batch/file), the direction
+  of data flow and the system of record, and whether it routes through the
+  integration layer. Direct point-to-point and database-to-database coupling
+  are discouraged and require explicit justification.
+
+The catalogue of approved integration patterns, protocols, and the role of the
+integration layer is defined in architecture_policy.txt (Integration Standards).
+
+------------------------------------------------------------------------
+6. DEMAND PATH: ARCHITECTURE REVIEW AND APPROVAL GATE
+------------------------------------------------------------------------
+A Demand MUST pass architecture review and receive a recorded approval before
+any build, procurement, or contract signature. The Domain Architect reviews the
+Demand and its implications for the wider environment, then approves, approves
+with conditions, rejects, or escalates to the ARB.
+
+6.1 Architecture intake gate (minimum to be reviewable)
+A Demand is only reviewable once it provides:
+- a named accountable owner (a person or role);
+- the business capability the application supports (mapped per
+  portfolio_standards.txt), and whether that capability is already covered by
+  an existing application in the portfolio;
+- a data classification (Public / Internal / Confidential / Restricted);
+- the intended hosting model (On-Premise / Private Cloud / Public Cloud (AWS) /
+  Public Cloud (Azure) / SaaS);
+- the intended sourcing/type (COTS / SaaS / Open Source / Self-developed);
+- the target lifecycle entry state (normally Plan);
+- a first view of required integrations.
+
+A Demand that cannot supply these is not yet reviewable; it is returned to the
+Requester rather than approved.
+
+6.2 Impact assessment (what the architect reviews)
+The Domain Architect assesses the Demand against the companion documents:
+- Capability duplication and rationalisation: does the Demand duplicate a
+  capability already in the portfolio? If so, reuse, consolidation, or a TIME
+  decision (portfolio_standards.txt) is considered before approving a new app.
+- Governance fit: ownership, business-criticality rating and the resulting
+  resilience obligations, and lifecycle/investment alignment
+  (architecture_policy.txt).
+- Integration and technical standards: integration pattern and direction,
+  authentication/authorisation approach, and API security expectations
+  (architecture_policy.txt).
+- Data and compliance: data classification handling baseline, and which
+  regulatory frameworks apply - for example NIS2/ENISA and the Swiss ICT
+  minimum standard for energy/grid applications, or GDPR/FADP where personal
+  data is processed (compliance_rules.txt).
+- Elevated-risk review: public-facing and AI/ML applications, and any
+  application processing Confidential or Restricted data, trigger the
+  additional governance review described in architecture_policy.txt and are
+  normally escalated to the ARB.
+
+6.3 Approval
+- Approval (or approval with conditions) MUST be recorded against the
+  application record, including who approved it and any conditions attached.
+- Only after recorded approval does the Demand move into implementation and the
+  application enters the Plan lifecycle state.
+
+------------------------------------------------------------------------
+7. HAND-OFF AND NON-CONFORMANCE
+------------------------------------------------------------------------
+- On approval, the application is created in the portfolio in the Plan state
+  with its mandatory fields populated (see compliance_rules.txt for the
+  mandatory-field set) and progresses through the lifecycle per
+  portfolio_standards.txt.
+- No application MAY enter the Build or Production lifecycle state without a
+  recorded intake approval. Onboarding without intake approval is
+  non-conformant and is flagged for governance attention.
+- The intake approval is the point at which the portfolio commits to owning,
+  reviewing, and (eventually) retiring the application; an application with no
+  recorded intake is treated as a data-quality and governance defect.
+
+------------------------------------------------------------------------
+RELATED DOCUMENTS
+------------------------------------------------------------------------
+- portfolio_standards.txt
+- architecture_policy.txt
+- compliance_rules.txt

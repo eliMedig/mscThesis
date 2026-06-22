@@ -1,0 +1,21 @@
+# Default deployment: run `docker compose up` and open http://localhost:8501.
+services:
+  msc-thesis:
+    build:
+      context: .
+    image: msc-thesis:latest
+    container_name: msc-thesis
+    restart: unless-stopped
+    ports:
+      - "8501:8501"
+    environment:
+      - DATA_DIR=/data
+      - PORT=8501
+      # Optional: keys can also be entered at runtime in the settings menu. You can leave this as is.
+      - ANTHROPIC_API_KEY=${ANTHROPIC_API_KEY:-}
+      - OPENAI_API_KEY=${OPENAI_API_KEY:-}
+    volumes:
+      - msc-thesis-data:/data
+
+volumes:
+  msc-thesis-data:

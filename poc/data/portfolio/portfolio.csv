@@ -1,0 +1,553 @@
+app_id,app_name,vendor,category,owner,lifecycle_state,business_criticality,technical_maturity,last_reviewed_date,compliance_status,hosting,annual_cost_chf
+APP-0001,Field Portal,In-house,Compliance,Olivier Marti,run,critical,3,2026-04-30,compliant,hybrid,220902
+APP-0002,Balancing Manager,In-house,Energy Trading,Reto Kowalski,run,medium,3,2025-05-21,compliant,cloud,103827
+APP-0003,Emissions Analyzer,In-house,Reporting,Marco Conti,run,low,3,2026-01-26,compliant,on_prem,37819
+APP-0004,Meter Analyzer,In-house,Data Platform,Camille Kowalski,run,high,4,2026-02-09,non_compliant,cloud,301597
+APP-0005,Tariff Monitor,In-house,Compliance,Stefan Maurer,run,low,5,2026-02-03,non_compliant,hybrid,47363
+APP-0006,Dispatch Portal,In-house,Customer,Sara Roth,run,medium,2,2025-09-30,compliant,cloud,64283
+APP-0007,Trading Engine,In-house,Finance,Chiara Conti,retire,medium,5,2026-04-27,compliant,cloud,51249
+APP-0008,Emissions Register,In-house,Customer,Olivier Marti,plan,high,5,2024-05-22,compliant,cloud,354720
+APP-0009,Capacity Hub,In-house,Compliance,Corinne Baumann,run,critical,5,2026-02-21,compliant,cloud,886991
+APP-0010,Emissions Cockpit,In-house,Asset Management,Luca Bianchi,run,medium,2,2025-08-27,compliant,cloud,134042
+APP-0011,Risk Dashboard,In-house,Risk,Martina Egger,run,medium,2,2025-11-01,compliant,cloud,82220
+APP-0012,Confluence (Group),Atlassian,Collaboration,Camille Kowalski,run,medium,3,2025-12-05,compliant,on_prem,30841
+APP-0013,Energy Optimizer,In-house,Asset Management,Vera Schneider,run,low,2,2026-04-27,compliant,hybrid,14499
+APP-0014,Invoice Service,In-house,Risk,Marco Conti,retire,high,5,2026-01-13,compliant,cloud,265963
+APP-0015,Grid Optimizer,In-house,Risk,Tobias Suter,run,critical,2,2025-10-19,compliant,cloud,1310599
+APP-0016,Workday Financials,Workday,ERP / Finance,Tobias Suter,run,critical,3,2025-10-12,compliant,on_prem,286702
+APP-0017,Grid Platform,In-house,Finance,Piotr Fischer,run,high,2,2026-02-02,compliant,cloud,515050
+APP-0018,Hedging Workbench,In-house,Compliance,Olivier Marti,retire,medium,4,2026-06-03,compliant,on_prem,23894
+APP-0019,Customer Monitor,In-house,Asset Management,Stefan Maurer,run,high,5,2025-07-05,compliant,hybrid,304327
+APP-0020,Workday HCM,Workday,HR,David Bauer,retire,medium,4,2025-12-09,compliant,cloud,23502
+APP-0021,Snowflake,Snowflake,Data Platform,Pascal Lehmann,run,critical,2,2025-10-22,compliant,on_prem,1161102
+APP-0022,Forecast Engine,In-house,Customer,Martina Egger,run,low,2,2025-08-11,compliant,on_prem,16169
+APP-0023,Grafana,Grafana Labs,Observability,Olivier Marti,run,medium,5,2026-03-13,compliant,hybrid,216970
+APP-0024,Tariff Manager,In-house,Customer,Matteo Fischer,run,medium,2,2025-09-11,compliant,cloud,50075
+APP-0025,Outage Engine,In-house,Customer,Magda Meier,run,low,5,2025-11-18,compliant,cloud,16749
+APP-0026,TIBCO (Group),TIBCO,Integration,Lea Graf,run,medium,2,2026-02-12,compliant,cloud,103831
+APP-0027,Tariff Optimizer,In-house,Customer,Marc Weber,run,critical,5,2025-09-24,compliant,cloud,604410
+APP-0028,AutoCAD (Legacy),Autodesk,Engineering / CAD,Daniel Kowalski,run,medium,2,2025-08-15,non_compliant,cloud,67911
+APP-0029,Risk Optimizer,In-house,Grid Operations,Olivier Marti,run,medium,3,2026-05-22,compliant,cloud,62503
+APP-0030,Asset Workbench,In-house,Asset Management,David Bauer,retire,high,2,2025-09-14,compliant,cloud,345502
+APP-0031,Terraform,HashiCorp,Infrastructure as Code,Olivier Wagner,run,medium,3,2025-11-04,compliant,cloud,83739
+APP-0032,Capacity Register,In-house,Integration,Petra Egger,build,medium,5,2026-04-07,compliant,on_prem,86462
+APP-0033,SAP SuccessFactors (Legacy),SAP,HR,Claudia Koch,run,high,5,2026-01-30,compliant,cloud,402494
+APP-0034,Market Service,In-house,Reporting,Vera Schneider,run,medium,5,2025-10-01,compliant,on_prem,214379
+APP-0035,Market Portal,In-house,Data Platform,Matteo Meier,run,critical,3,2025-08-26,compliant,cloud,837848
+APP-0036,Grid Console,In-house,Data Platform,Olivier Marti,run,critical,5,2026-02-10,non_compliant,cloud,1131838
+APP-0037,Meter Manager,In-house,Energy Trading,Camille Kowalski,run,high,2,2025-11-17,compliant,cloud,472515
+APP-0038,Asset Service,In-house,Finance,Stefan Maurer,run,medium,2,2025-07-30,non_compliant,hybrid,127256
+APP-0039,Energy Workbench,In-house,Compliance,Olivier Marti,run,high,3,2026-03-13,compliant,cloud,439485
+APP-0040,Supply Register,In-house,Grid Operations,Chiara Conti,run,low,2,2026-04-29,compliant,hybrid,31164
+APP-0041,Field Optimizer,In-house,Asset Management,Nadia Lang,run,low,4,2026-04-29,non_compliant,on_prem,26946
+APP-0042,Asset Repository,In-house,Energy Trading,Lea Baumann,retire,medium,3,2026-04-28,compliant,hybrid,75117
+APP-0043,Qlik Sense,Qlik,Analytics / BI,Camille Kowalski,run,high,5,2025-11-08,compliant,cloud,429751
+APP-0044,DocuSign,DocuSign,Content / e-Signature,Andreas Keller,run,high,3,2025-11-02,compliant,on_prem,777646
+APP-0045,Market Manager,In-house,Asset Management,Pascal Arnold,run,medium,5,2025-11-07,compliant,on_prem,47378
+APP-0046,Market Cockpit,In-house,Reporting,Olivier Marti,run,low,2,2026-06-02,non_compliant,hybrid,19994
+APP-0047,Cisco Webex,Cisco,Collaboration,Magda Baumann,run,medium,5,2026-03-02,non_compliant,on_prem,61950
+APP-0048,Outage Repository,In-house,Data Platform,Patrick Nowak,run,high,2,2025-11-23,compliant,on_prem,175328
+APP-0049,Network Register,In-house,Data Platform,Camille Bianchi,run,high,5,2025-06-24,compliant,cloud,12374789
+APP-0050,Compliance Scheduler,In-house,Customer,Chiara Conti,run,high,2,2025-11-25,compliant,cloud,312116
+APP-0051,Market Register,In-house,Data Platform,Olivier Marti,run,high,4,2025-10-01,compliant,cloud,346774
+APP-0052,Outage Register,In-house,Finance,Martina Dubois,run,high,3,2025-10-11,compliant,hybrid,456155
+APP-0053,Schneider EcoStruxure (Group),Schneider Electric,Industrial / SCADA,Lea Baumann,run,medium,3,2025-11-26,non_compliant,cloud,88266
+APP-0054,Invoice Cockpit,In-house,Grid Operations,Sophie Bauer,run,medium,2,2025-09-12,compliant,on_prem,97693
+APP-0055,Microsoft 365 (CH),Microsoft,Collaboration,Martina Meier,run,critical,5,2025-07-05,compliant,cloud,183069
+APP-0056,Settlement Workbench,In-house,Reporting,Piotr Kaufmann,run,high,2,2025-09-18,compliant,cloud,655749
+APP-0057,Datadog (Group),Datadog,Observability,Giulia Huber,run,critical,4,2026-01-02,compliant,hybrid,1050433
+APP-0058,Forecast Optimizer,In-house,Energy Trading,Lukas Widmer,run,medium,2,2026-01-29,compliant,cloud,78709
+APP-0059,Compliance Gateway,In-house,Finance,Julia Conti,run,critical,3,2025-12-02,compliant,cloud,727513
+APP-0060,Contract Tracker,In-house,Compliance,Olivier Zimmermann,run,high,3,2025-08-03,compliant,cloud,495882
+APP-0061,Market Scheduler,In-house,Energy Trading,Olivier Marti,run,high,5,2025-07-11,compliant,cloud,317992
+APP-0062,Outage Dashboard,In-house,Asset Management,Tobias Suter,run,medium,3,2026-01-09,compliant,cloud,65914
+APP-0063,Field Console,In-house,Grid Operations,Claudia Koch,run,critical,5,2026-01-17,compliant,cloud,1203288
+APP-0064,Tariff Register,In-house,Energy Trading,Martina Egger,run,medium,4,2026-05-15,compliant,cloud,76974
+APP-0065,Compliance Register,In-house,Reporting,Marc Kaufmann,run,medium,3,2025-05-30,compliant,cloud,73193
+APP-0066,Dispatch Dashboard,In-house,Compliance,Pascal Arnold,run,medium,4,2025-10-05,compliant,cloud,90913
+APP-0067,Balancing Monitor,In-house,Grid Operations,Matteo Frei,run,low,4,2025-05-25,non_compliant,cloud,25610
+APP-0068,Network Optimizer,In-house,Grid Operations,Tobias Hofer,run,low,2,2025-07-29,compliant,cloud,65099
+APP-0069,Trading Dashboard,In-house,Data Platform,Lukas Widmer,run,critical,2,2026-02-15,non_compliant,cloud,915944
+APP-0070,Nutanix,Nutanix,Infrastructure,Olivier Vogel,plan,medium,3,2026-03-06,compliant,cloud,75619
+APP-0071,Forecast Cockpit,In-house,Data Platform,David Bauer,run,high,4,2025-10-15,compliant,on_prem,260838
+APP-0072,Emissions Dashboard,In-house,Compliance,Daniel Schneider,run,high,3,2025-07-26,compliant,cloud,310520
+APP-0073,Meter Platform,In-house,Integration,David Keller,run,medium,3,2026-02-07,compliant,hybrid,58958
+APP-0074,Dynatrace (Legacy),Dynatrace,Observability,Petra Martin,run,low,5,2025-09-30,non_compliant,on_prem,12335
+APP-0075,Field Register,In-house,Finance,Matteo Meier,run,high,5,2025-07-19,compliant,cloud,226500
+APP-0076,Dynatrace (DACH),Dynatrace,Observability,Carmen Brunner,run,medium,5,2026-01-01,non_compliant,cloud,43699
+APP-0077,Invoice Tracker,In-house,Compliance,Magda Baumann,run,high,4,2025-06-11,compliant,hybrid,543094
+APP-0078,Salesforce Service Cloud,Salesforce,CRM,Luca Schneider,run,low,3,2025-11-11,non_compliant,on_prem,447
+APP-0079,Balancing Gateway,In-house,Energy Trading,Andreas Bauer,run,low,4,2026-05-20,non_compliant,on_prem,24527
+APP-0080,Invoice Analyzer,In-house,Data Platform,Olivier Vogel,run,critical,3,2026-03-02,compliant,cloud,1260271
+APP-0081,Portfolio Monitor,In-house,Reporting,Petra Egger,run,critical,5,2025-07-26,compliant,hybrid,511348
+APP-0082,Dispatch Hub,In-house,Risk,Olivier Marti,run,critical,4,2026-02-28,non_compliant,cloud,1075811
+APP-0083,Oracle E-Business Suite (Group),Oracle,ERP / Finance,Olivier Marti,run,high,5,2026-05-26,non_compliant,hybrid,238943
+APP-0084,Field Dashboard,In-house,Energy Trading,Carmen Kaufmann,run,low,2,2025-12-29,compliant,cloud,19739
+APP-0085,Invoice Hub,In-house,Compliance,Carmen Kaufmann,run,medium,4,2025-10-16,compliant,cloud,96990
+APP-0086,Risk Workbench,In-house,Data Platform,Marc Kaufmann,run,high,2,2025-11-06,compliant,on_prem,455031
+APP-0087,Microsoft Defender,Microsoft,Security / EDR,Tobias Suter,run,critical,4,2025-12-29,compliant,on_prem,995174
+APP-0088,Salesforce Sales Cloud (Group),Salesforce,CRM,Thomas Egger,run,high,2,2026-03-30,non_compliant,cloud,196184
+APP-0089,Billing Scheduler,In-house,Grid Operations,Martina Egger,run,low,3,2025-09-04,compliant,cloud,14145
+APP-0090,Balancing Repository,In-house,Customer,Nadia Lang,retire,high,3,2025-08-14,non_compliant,cloud,378231
+APP-0091,Cornerstone OnDemand (Group),Cornerstone,HR / Learning,Luca Schneider,run,medium,2,2026-04-04,compliant,cloud,84874
+APP-0092,Outage Manager,In-house,Energy Trading,Olivier Marti,run,high,3,2025-10-21,compliant,cloud,108082
+APP-0093,Supply Cockpit,In-house,Grid Operations,Olivier Marti,run,high,4,2025-09-23,compliant,on_prem,374815
+APP-0094,Tariff Platform,In-house,Grid Operations,Chiara Roth,run,high,2,2025-10-25,compliant,cloud,425239
+APP-0095,Balancing Hub,In-house,Reporting,Olivier Marti,run,low,3,2025-10-08,non_compliant,cloud,6828
+APP-0096,Outage Workbench,In-house,Integration,Stefan Maurer,run,high,5,2025-05-22,compliant,hybrid,461490
+APP-0097,Settlement Register,In-house,Compliance,Lukas Widmer,run,medium,5,2025-08-15,compliant,hybrid,43363
+APP-0098,Capacity Gateway,In-house,Energy Trading,Luca Schneider,run,low,3,2025-07-14,non_compliant,cloud,576692
+APP-0099,HubSpot (Legacy),HubSpot,Marketing / CRM,Tobias Suter,run,critical,5,2026-05-11,compliant,cloud,2657532
+APP-0100,Power BI,Microsoft,Analytics / BI,David Bauer,run,low,4,2025-06-16,compliant,cloud,42183
+APP-0101,Emissions Portal,In-house,Integration,David Bauer,run,medium,3,2026-02-20,compliant,on_prem,77364
+APP-0102,Tariff Tracker,In-house,Grid Operations,Tobias Suter,run,high,3,2026-05-12,compliant,cloud,171702
+APP-0103,Portfolio Hub,In-house,Data Platform,Olivier Bernard,run,high,5,2025-08-15,compliant,cloud,755505
+APP-0104,Risk Service,In-house,Integration,Marc Weber,run,low,4,2025-10-22,compliant,cloud,15021
+APP-0105,Balancing Dashboard,In-house,Customer,Giulia Meier,run,critical,3,2025-12-20,compliant,cloud,583881
+APP-0106,Risk Portal,In-house,Risk,Olivier Marti,run,medium,2,2025-11-04,compliant,cloud,48394
+APP-0107,Market Platform,In-house,Energy Trading,Simon Keller,retire,high,3,2026-03-05,compliant,cloud,159404
+APP-0108,Network Engine,In-house,Customer,Corinne Suter,run,critical,2,2025-11-03,compliant,on_prem,709172
+APP-0109,Zoom,Zoom,Collaboration,Petra Martin,run,high,2,2025-10-06,compliant,on_prem,472037
+APP-0110,Network Manager,In-house,Customer,Carmen Lang,run,medium,3,2025-10-29,compliant,cloud,41859
+APP-0111,Customer Service,In-house,Data Platform,Corinne Baumann,run,high,4,2026-05-04,compliant,cloud,303471
+APP-0112,Compliance Hub,In-house,Integration,Luca Schneider,run,high,3,2026-02-09,compliant,cloud,390753
+APP-0113,Network Dashboard,In-house,Energy Trading,Anna Egger,run,low,5,2025-09-25,compliant,cloud,43181
+APP-0114,Billing Workbench,In-house,Risk,Marc Conti,run,medium,3,2026-02-19,compliant,cloud,75824
+APP-0115,Hedging Portal,In-house,Customer,David Bauer,run,critical,2,2026-03-24,compliant,cloud,1021227
+APP-0116,Portfolio Cockpit,In-house,Integration,Olivier Marti,run,low,2,2026-05-31,compliant,hybrid,10488
+APP-0117,Settlement Gateway,In-house,Finance,Olivier Marti,run,high,2,2025-10-20,compliant,cloud,342187
+APP-0118,Capacity Dashboard,In-house,Finance,Camille Marti,build,medium,5,2026-05-22,compliant,cloud,14382643
+APP-0119,Contract Manager,In-house,Compliance,Chiara Conti,run,low,2,2025-11-25,non_compliant,cloud,22617
+APP-0120,Supply Repository,In-house,Risk,Tobias Suter,run,medium,3,2026-02-22,compliant,cloud,44160
+APP-0121,Customer Tracker,In-house,Grid Operations,Petra Hofer,run,high,4,2025-07-06,compliant,cloud,250757
+APP-0122,Dispatch Service,In-house,Customer,Magda Baumann,run,low,2,2025-10-25,compliant,on_prem,17521
+APP-0123,Contract Hub,In-house,Reporting,Marc Frei,run,high,3,2025-11-02,compliant,cloud,258616
+APP-0124,Qlik Sense (Legacy),Qlik,Analytics / BI,Chiara Roth,run,medium,2,2025-06-08,compliant,hybrid,91896
+APP-0125,GE Digital APM (Group),GE Vernova,Asset Performance,Matteo Frei,run,critical,3,2026-04-08,compliant,cloud,757925
+APP-0126,Tariff Repository,In-house,Energy Trading,Pierre Bauer,run,high,3,2026-01-02,compliant,on_prem,484204
+APP-0127,Tariff Dashboard,In-house,Customer,Anna Fischer,run,critical,5,2025-08-19,non_compliant,on_prem,452890
+APP-0128,AutoCAD,Autodesk,Engineering / CAD,Thomas Conti,run,medium,5,2026-06-03,compliant,cloud,153559
+APP-0129,MuleSoft (Legacy),Salesforce,Integration,Luca Bianchi,run,high,3,2025-08-17,compliant,hybrid,1292924
+APP-0130,Billing Platform,In-house,Reporting,Nadia Egger,run,critical,3,2025-07-13,non_compliant,cloud,1436876
+APP-0131,Forecast Portal,In-house,Grid Operations,Pascal Arnold,build,high,3,2025-10-27,compliant,cloud,202025
+APP-0132,Veeam Backup (EMEA),Veeam,Infrastructure / Backup,Olivier Bernard,run,high,5,2025-10-10,compliant,hybrid,460654
+APP-0133,Outage Tracker,In-house,Reporting,Giulia Huber,run,medium,3,2025-05-19,compliant,on_prem,80479
+APP-0134,Citrix Virtual Apps (Legacy),Citrix,Infrastructure / EUC,Piotr Fischer,run,high,3,2025-11-09,compliant,on_prem,81
+APP-0135,TIBCO (CH),TIBCO,Integration,David Berger,run,critical,5,2024-05-22,non_compliant,on_prem,1408453
+APP-0136,Grid Analyzer,In-house,Customer,Olivier Marti,run,medium,4,2025-08-15,compliant,on_prem,55940
+APP-0137,Dispatch Cockpit,In-house,Compliance,Thomas Egger,run,medium,3,2025-07-02,compliant,hybrid,150212
+APP-0138,OSIsoft PI System (Group),AVEVA,Industrial / Historian,Chiara Roth,run,low,3,2026-05-05,compliant,hybrid,28091
+APP-0139,Grid Cockpit,In-house,Data Platform,Marco Conti,run,high,2,2025-12-18,compliant,hybrid,352834
+APP-0140,Tableau,Salesforce,Analytics / BI,Piotr Fischer,run,medium,4,2025-08-18,compliant,hybrid,36050
+APP-0141,Trading Portal,In-house,Customer,Vera Arnold,run,critical,5,2024-05-22,compliant,cloud,1152974
+APP-0142,Qualys,Qualys,Security / VM,Tobias Suter,run,high,3,2026-05-13,compliant,cloud,166141
+APP-0143,Energy Hub,In-house,Data Platform,Pascal Arnold,run,high,2,2025-10-24,compliant,on_prem,472683
+APP-0144,Hedging Cockpit,In-house,Compliance,Piotr Kaufmann,run,medium,4,2026-01-14,non_compliant,cloud,119965
+APP-0145,Capacity Optimizer,In-house,Customer,Piotr Moser,run,medium,4,2026-03-26,non_compliant,cloud,98509
+APP-0146,Balancing Service,In-house,Asset Management,Nadia Lang,run,high,2,2025-08-13,non_compliant,cloud,594791
+APP-0147,SailPoint IdentityIQ (Legacy),SailPoint,Security / IAM,Claudia Koch,run,medium,4,2025-08-20,compliant,cloud,83527
+APP-0148,Invoice Portal,In-house,Integration,Olivier Marti,run,low,5,2025-11-01,compliant,cloud,30534
+APP-0149,Meter Hub,In-house,Integration,Marc Kaufmann,run,medium,2,2026-03-21,compliant,cloud,76081
+APP-0150,Portfolio Service,In-house,Finance,Chiara Roth,run,medium,4,2025-12-31,compliant,cloud,85591
+APP-0151,Tableau (Group),Salesforce,Analytics / BI,Marc Frei,run,low,4,2024-05-22,compliant,cloud,18973
+APP-0152,Azure DevOps (Legacy),Microsoft,DevOps,Claudia Vogel,run,medium,2,2026-04-15,compliant,cloud,36305
+APP-0153,Boomi,Boomi,Integration,Nina Bauer,run,high,3,2025-11-19,compliant,hybrid,223504
+APP-0154,Market Monitor,In-house,Risk,Andreas Bauer,run,high,5,2025-07-19,compliant,on_prem,420518
+APP-0155,Field Tracker,In-house,Compliance,Magda Baumann,run,high,4,2026-06-01,non_compliant,cloud,382848
+APP-0156,Capacity Manager,In-house,Grid Operations,Anna Egger,run,high,3,2025-12-31,non_compliant,on_prem,984852
+APP-0157,Compliance Dashboard,In-house,Data Platform,Sara Roth,run,critical,3,2025-10-18,non_compliant,cloud,1423681
+APP-0158,Network Console,In-house,Risk,Camille Kowalski,run,medium,5,2025-09-01,compliant,on_prem,125994
+APP-0159,Supply Platform,In-house,Reporting,Marc Weber,run,critical,2,2026-01-31,compliant,on_prem,1095456
+APP-0160,Network Repository,In-house,Finance,Olivier Marti,run,medium,4,2025-09-27,compliant,on_prem,65123
+APP-0161,Network Gateway,In-house,Data Platform,Giulia Wagner,run,low,3,2026-02-28,compliant,hybrid,14134
+APP-0162,Meter Cockpit,In-house,Risk,Olivier Marti,run,critical,5,2025-12-20,non_compliant,cloud,189767
+APP-0163,Alteryx,Alteryx,Analytics,Marc Weber,run,high,3,2025-12-20,compliant,cloud,473760
+APP-0164,Dispatch Tracker,In-house,Integration,Pierre Bauer,run,high,4,2025-07-14,compliant,on_prem,111187
+APP-0165,Okta (Group),Okta,Security / IAM,Camille Kowalski,run,critical,4,2026-02-22,compliant,cloud,765481
+APP-0166,Grid Portal,In-house,Finance,Andreas Suter,run,low,4,2026-05-11,non_compliant,cloud,6978
+APP-0167,Openlink Endur (Legacy),ION,Energy Trading,David Bauer,run,high,2,2026-02-18,compliant,cloud,220533
+APP-0168,Emissions Repository,In-house,Compliance,Marc Weber,run,medium,3,2026-03-31,compliant,on_prem,1166809
+APP-0169,Openlink Endur,ION,Energy Trading,Martina Egger,run,critical,4,2025-09-30,compliant,cloud,948745
+APP-0170,Grid Dashboard,In-house,Asset Management,David Berger,run,medium,3,2025-11-30,compliant,cloud,42693
+APP-0171,Hedging Scheduler,In-house,Asset Management,Marc Frei,run,medium,3,2025-10-06,compliant,cloud,50043
+APP-0172,Risk Register,In-house,Integration,Magda Fischer,run,medium,2,2025-05-21,non_compliant,cloud,163816
+APP-0173,Market Gateway,In-house,Asset Management,Matteo Fischer,run,high,3,2026-01-22,compliant,cloud,216559
+APP-0174,Risk Engine,In-house,Data Platform,Marco Vogel,run,medium,5,2026-02-03,compliant,cloud,47899
+APP-0175,Invoice Repository,In-house,Risk,Olivier Marti,run,medium,4,2025-07-06,non_compliant,cloud,121576
+APP-0176,Field Repository,In-house,Compliance,Felix Ferrari,run,high,2,2025-06-26,compliant,cloud,556317
+APP-0177,Dispatch Optimizer,In-house,Finance,Carmen Brunner,retire,high,4,2025-11-08,compliant,hybrid,982778
+APP-0178,Field Workbench,In-house,Reporting,Corinne Baumann,run,low,2,2026-01-14,non_compliant,on_prem,11366
+APP-0179,SolarWinds,SolarWinds,Infrastructure / Monitoring,Nadia Egger,run,medium,5,2026-01-22,compliant,on_prem,162401
+APP-0180,CrowdStrike Falcon (Legacy),CrowdStrike,Security / EDR,Giulia Meier,retire,low,3,2026-01-27,compliant,on_prem,23253
+APP-0181,Portfolio Scheduler,In-house,Risk,Magda Ferrari,run,medium,3,2026-01-18,compliant,cloud,85006
+APP-0182,Dynatrace (Group),Dynatrace,Observability,Camille Kowalski,run,critical,5,2025-05-28,compliant,on_prem,1741868
+APP-0183,Balancing Workbench,In-house,Integration,Claudia Koch,run,high,4,2026-01-21,compliant,cloud,440879
+APP-0184,Compliance Engine,In-house,Grid Operations,Isabelle Frei,run,medium,3,2025-11-15,non_compliant,cloud,31356
+APP-0185,OSIsoft PI System (Legacy),AVEVA,Industrial / Historian,Stefan Bianchi,retire,high,4,2025-12-09,compliant,cloud,303129
+APP-0186,Energy Monitor,In-house,Risk,Carmen Lang,retire,medium,3,2024-05-22,compliant,cloud,65035
+APP-0187,Risk Monitor,In-house,Data Platform,Andreas Sutter,retire,high,2,2026-03-04,non_compliant,cloud,369928
+APP-0188,CyberArk,CyberArk,Security / PAM,Olivier Marti,run,low,4,2025-05-26,compliant,hybrid,14436
+APP-0189,Snowflake (Group),Snowflake,Data Platform,Marco Vogel,retire,high,2,2026-01-07,non_compliant,cloud,49050
+APP-0190,OSIsoft PI System,AVEVA,Industrial / Historian,Olivier Marti,run,critical,2,2026-04-26,compliant,on_prem,888953
+APP-0191,Jira (Group),Atlassian,DevOps / PPM,Corinne Kaufmann,run,medium,2,2026-03-10,compliant,hybrid,49488
+APP-0192,Forecast Tracker,In-house,Grid Operations,Chiara Roth,run,low,3,2025-08-07,compliant,cloud,23130
+APP-0193,Trading Analyzer,In-house,Risk,Laura Wagner,run,high,3,2026-01-03,compliant,cloud,454398
+APP-0194,Outage Console,In-house,Data Platform,Daniel Kowalski,run,critical,4,2025-11-25,compliant,cloud,635401
+APP-0195,Supply Engine,In-house,Compliance,Petra Egger,run,medium,2,2025-09-04,compliant,cloud,346
+APP-0196,Outage Scheduler,In-house,Reporting,Olivier Marti,plan,medium,5,2025-06-08,compliant,cloud,114572
+APP-0197,Trading Workbench,In-house,Customer,Matteo Frei,run,critical,3,2026-04-26,compliant,cloud,3237918
+APP-0198,Balancing Analyzer,In-house,Grid Operations,Matteo Fischer,build,low,2,2025-09-25,unknown,hybrid,13082
+APP-0199,Asset Cockpit,In-house,Integration,Petra Egger,run,low,5,2026-04-20,compliant,cloud,28334
+APP-0200,Hedging Optimizer,In-house,Data Platform,Nadia Egger,run,medium,2,2026-04-05,compliant,hybrid,53027
+APP-0201,Customer Manager,In-house,Risk,Anna Conti,run,medium,3,2025-10-03,compliant,on_prem,117043
+APP-0202,Hedging Dashboard,In-house,Finance,Francesca Lang,run,medium,3,2026-05-23,compliant,hybrid,82500
+APP-0203,Dispatch Monitor,In-house,Finance,Olivier Marti,run,medium,4,2025-07-05,non_compliant,hybrid,56232
+APP-0204,Invoice Optimizer,In-house,Reporting,Olivier Marti,run,critical,2,2026-04-05,compliant,hybrid,912120
+APP-0205,Hedging Service,In-house,Integration,Martina Egger,run,medium,4,2025-12-20,compliant,cloud,198924
+APP-0206,Billing Optimizer,In-house,Finance,Nadia Lang,run,medium,2,2025-08-03,compliant,cloud,61405
+APP-0207,Tariff Portal,In-house,Reporting,Tobias Suter,run,medium,2,2025-05-29,non_compliant,hybrid,67850
+APP-0208,Tariff Engine,In-house,Data Platform,Olivier Marti,run,critical,4,2025-08-07,compliant,on_prem,1444352
+APP-0209,Commvault (Group),Commvault,Infrastructure / Backup,Martina Egger,run,high,5,2025-07-14,compliant,hybrid,376587
+APP-0210,Energy Analyzer,In-house,Grid Operations,Lukas Widmer,run,medium,5,2025-09-26,compliant,cloud,97529
+APP-0211,Citrix Virtual Apps,Citrix,Infrastructure / EUC,Luca Bianchi,run,medium,4,2025-10-23,compliant,cloud,70566
+APP-0212,Capacity Console,In-house,Reporting,Sophie Bauer,run,low,3,2026-05-27,compliant,cloud,72572
+APP-0213,Terraform (Group),HashiCorp,Infrastructure as Code,Olivier Marti,run,medium,2,2025-11-04,non_compliant,cloud,72583
+APP-0214,SailPoint IdentityIQ,SailPoint,Security / IAM,Olivier Marti,run,high,4,2025-11-12,compliant,on_prem,786887
+APP-0215,Forecast Hub,In-house,Customer,Marco Vogel,run,medium,5,2026-05-04,compliant,on_prem,97832
+APP-0216,Meter Workbench,In-house,Compliance,Corinne Kaufmann,run,medium,3,2025-09-27,compliant,cloud,189617
+APP-0217,Settlement Repository,In-house,Customer,Andreas Keller,run,low,2,2026-04-17,non_compliant,on_prem,10289
+APP-0218,Customer Hub,In-house,Risk,Tobias Suter,run,medium,2,2026-04-19,compliant,on_prem,143421
+APP-0219,Portfolio Workbench,In-house,Integration,Reto Kowalski,run,critical,2,2025-10-30,compliant,cloud,740677
+APP-0220,Invoice Manager,In-house,Risk,Daniel Kowalski,run,medium,4,2026-05-22,compliant,cloud,136905
+APP-0221,Capacity Portal,In-house,Data Platform,Sara Roth,run,high,3,2025-08-07,compliant,cloud,265404
+APP-0222,Grid Workbench,In-house,Reporting,Martina Egger,run,low,2,2026-02-05,compliant,cloud,20907
+APP-0223,Commvault (DACH),Commvault,Infrastructure / Backup,Luca Bianchi,run,critical,3,2026-01-30,non_compliant,cloud,789251
+APP-0224,Contract Repository,In-house,Risk,Pascal Arnold,build,high,2,2026-02-28,compliant,cloud,359993
+APP-0225,Forecast Repository,In-house,Compliance,Pascal Arnold,run,low,5,2026-03-16,compliant,cloud,18038
+APP-0226,Energy Platform,In-house,Integration,Giulia Meier,run,critical,4,2026-01-22,compliant,cloud,2149659
+APP-0227,Coupa,Coupa,Procurement,Olivier Marti,run,medium,4,2026-04-11,non_compliant,hybrid,95997
+APP-0228,Forecast Workbench,In-house,Data Platform,Olivier Marti,run,low,5,2025-12-08,compliant,on_prem,23862
+APP-0229,Hedging Register,In-house,Data Platform,Marc Frei,run,critical,5,2026-03-20,compliant,cloud,489157
+APP-0230,Energy Tracker,In-house,Integration,Carmen Lang,run,low,5,2026-03-20,compliant,cloud,22251
+APP-0231,Invoice Dashboard,In-house,Integration,Olivier Marti,run,low,4,2025-11-29,compliant,hybrid,10115
+APP-0232,Apache Kafka (Group),Confluent,Integration / Streaming,Simon Sutter,run,critical,5,2026-02-07,compliant,hybrid,1080175
+APP-0233,Contract Cockpit,In-house,Integration,Olivier Bernard,run,low,4,2025-10-17,non_compliant,hybrid,14373
+APP-0234,Emissions Platform,In-house,Reporting,Thomas Conti,run,critical,5,2025-09-22,compliant,hybrid,620443
+APP-0235,Network Platform,In-house,Reporting,Carmen Brunner,plan,low,2,2025-09-03,compliant,hybrid,27179
+APP-0236,Contract Gateway,In-house,Integration,Martina Egger,run,low,2,2025-05-27,compliant,cloud,28523
+APP-0237,Splunk (Legacy),Cisco,Security / SIEM,Martina Egger,retire,medium,3,2026-04-28,compliant,on_prem,73875
+APP-0238,Trading Tracker,In-house,Customer,Magda Fischer,run,high,3,2025-08-13,non_compliant,cloud,313312
+APP-0239,Outage Monitor,In-house,Compliance,Nadia Meier,run,high,4,2025-08-31,non_compliant,cloud,340284
+APP-0240,Energy Manager,In-house,Customer,Camille Bianchi,run,high,3,2025-08-15,compliant,cloud,476391
+APP-0241,MuleSoft (DACH),Salesforce,Integration,Elena Fischer,run,high,4,2025-11-13,compliant,on_prem,554159
+APP-0242,Meter Service,In-house,Finance,Nadia Lang,run,medium,4,2025-11-27,compliant,cloud,296
+APP-0243,Coupa (Group),Coupa,Procurement,Laura Hofer,run,low,2,2026-05-20,non_compliant,cloud,33360
+APP-0244,Capacity Platform,In-house,Data Platform,Olivier Marti,run,critical,2,2026-05-29,compliant,cloud,1394554
+APP-0245,Meter Monitor,In-house,Asset Management,Corinne Baumann,run,high,2,2026-01-31,compliant,cloud,105067
+APP-0246,Compliance Service,In-house,Asset Management,Michael Lang,run,low,2,2025-07-05,compliant,cloud,6836
+APP-0247,Compliance Repository,In-house,Finance,Tobias Suter,run,medium,4,2026-05-18,compliant,hybrid,76747
+APP-0248,Trading Platform,In-house,Reporting,Olivier Marti,build,low,2,2026-02-26,compliant,cloud,213
+APP-0249,Capacity Service,In-house,Data Platform,Camille Kowalski,build,medium,4,2025-09-13,compliant,cloud,26433
+APP-0250,Forecast Platform,In-house,Customer,David Bauer,run,critical,3,2026-03-26,compliant,hybrid,536620
+APP-0251,Outage Service,In-house,Risk,Corinne Roth,run,medium,4,2026-01-16,compliant,on_prem,129337
+APP-0252,Contract Portal,In-house,Risk,Olivier Marti,run,critical,5,2025-11-19,compliant,on_prem,567611
+APP-0253,Billing Monitor,In-house,Integration,,run,critical,4,2026-04-02,non_compliant,cloud,11067988
+APP-0254,Balancing Optimizer,In-house,Reporting,Isabelle Frei,retire,high,4,2025-09-08,non_compliant,cloud,13778061
+APP-0255,Trading Optimizer,In-house,Data Platform,Piotr Fischer,run,low,2,2026-03-02,non_compliant,cloud,47046
+APP-0256,Forecast Analyzer,In-house,Customer,Sara Roth,run,high,2,2025-08-29,compliant,on_prem,277309
+APP-0257,Hedging Gateway,In-house,Grid Operations,Luca Bianchi,plan,critical,5,2025-06-24,non_compliant,cloud,1320373
+APP-0258,Cornerstone OnDemand,Cornerstone,HR / Learning,Camille Kowalski,run,high,3,2025-09-21,compliant,hybrid,546504
+APP-0259,Portfolio Console,In-house,Asset Management,Nadia Lang,run,medium,5,2025-12-04,compliant,cloud,86076
+APP-0260,Capacity Cockpit,In-house,Risk,Carmen Brunner,run,medium,2,2026-02-04,compliant,cloud,98535
+APP-0261,Portfolio Manager,In-house,Data Platform,Marc Schneider,run,medium,4,2026-05-22,compliant,on_prem,69855
+APP-0262,Trading Monitor,In-house,Finance,Magda Meier,run,high,3,2026-02-15,compliant,on_prem,281448
+APP-0263,Energy Register,In-house,Integration,David Bauer,retire,high,5,2025-10-08,non_compliant,on_prem,58376
+APP-0264,Portfolio Repository,In-house,Compliance,Claudia Frei,run,medium,4,2025-08-20,non_compliant,cloud,75521
+APP-0265,Emissions Manager,In-house,Risk,Daniel Kowalski,run,medium,2,2025-07-09,compliant,cloud,47285
+APP-0266,Network Monitor,In-house,Energy Trading,Simon Keller,run,high,4,2025-10-07,non_compliant,hybrid,203501
+APP-0267,Portfolio Portal,In-house,Data Platform,Laura Hofer,plan,high,3,2025-12-31,non_compliant,cloud,252875
+APP-0268,Field Hub,In-house,Risk,Olivier Wagner,run,medium,4,2025-11-23,compliant,cloud,89433
+APP-0269,Trading Service,In-house,Finance,David Bauer,run,medium,4,2025-09-30,compliant,cloud,43206
+APP-0270,Settlement Scheduler,In-house,Energy Trading,Piotr Kaufmann,build,low,2,2025-11-07,compliant,hybrid,11347
+APP-0271,Settlement Hub,In-house,Integration,Olivier Marti,run,high,2,2025-07-29,compliant,hybrid,283802
+APP-0272,SAP BW/4HANA (Group),SAP,Data Warehouse,Piotr Kaufmann,run,high,5,2026-05-29,non_compliant,cloud,292180
+APP-0273,Emissions Hub,In-house,Integration,Piotr Fischer,run,high,2,2025-06-24,compliant,cloud,479742
+APP-0274,SAP BW/4HANA,SAP,Data Warehouse,Nadia Keller,run,medium,3,2026-03-14,compliant,cloud,131050
+APP-0275,Energy Cockpit,In-house,Data Platform,David Bauer,run,critical,3,2026-02-07,compliant,cloud,861807
+APP-0276,CrowdStrike Falcon (Group),CrowdStrike,Security / EDR,Olivier Marti,run,high,4,2025-11-30,compliant,on_prem,684210
+APP-0277,Customer Cockpit,In-house,Data Platform,Nadia Lang,run,medium,5,2025-09-04,compliant,cloud,52170
+APP-0278,Compliance Monitor,In-house,Compliance,Olivier Kaufmann,run,medium,3,2026-02-20,compliant,on_prem,84356
+APP-0279,Supply Service,In-house,Risk,David Bauer,retire,critical,5,2025-08-15,compliant,cloud,1075676
+APP-0280,Contract Service,In-house,Compliance,David Berger,run,medium,4,2026-01-11,compliant,cloud,67333
+APP-0281,Emissions Engine,In-house,Data Platform,David Bauer,run,high,2,2026-01-15,compliant,cloud,122731
+APP-0282,Market Dashboard,In-house,Finance,Nadia Lang,run,low,2,2025-12-02,compliant,cloud,22887
+APP-0283,Emissions Console,In-house,Energy Trading,Anna Egger,run,low,5,2025-10-29,non_compliant,on_prem,13877
+APP-0284,Customer Optimizer,In-house,Risk,Olivier Marti,retire,high,3,2025-10-31,compliant,cloud,242980
+APP-0285,Settlement Portal,In-house,Data Platform,Claudia Vogel,run,medium,4,2026-05-18,compliant,hybrid,119179
+APP-0286,Customer Dashboard,In-house,Finance,Stefan Maurer,run,high,4,2025-07-12,non_compliant,cloud,313540
+APP-0287,Customer Console,In-house,Customer,Luca Schneider,run,critical,4,2025-12-14,non_compliant,hybrid,512507
+APP-0288,Meter Tracker,In-house,Grid Operations,Anna Conti,run,medium,5,2026-01-19,compliant,on_prem,56829
+APP-0289,Compliance Portal,In-house,Compliance,Camille Kowalski,run,medium,5,2026-02-13,compliant,cloud,131356
+APP-0290,Tariff Console,In-house,Grid Operations,Carmen Lang,run,critical,4,2024-05-22,compliant,cloud,2108331
+APP-0291,Customer Register,In-house,Integration,Chiara Conti,run,high,4,2025-08-16,compliant,cloud,245995
+APP-0292,Asset Gateway,In-house,Data Platform,Felix Brunner,run,medium,3,2025-09-03,compliant,cloud,107646
+APP-0293,Portfolio Platform,In-house,Finance,Nina Bauer,run,low,3,2026-03-18,non_compliant,cloud,21070
+APP-0294,Supply Analyzer,In-house,Risk,David Bauer,run,low,3,2026-03-03,compliant,cloud,31578
+APP-0295,Asset Portal,In-house,Energy Trading,Magda Fischer,run,medium,2,2026-04-30,compliant,hybrid,93337
+APP-0296,Trading Cockpit,In-house,Energy Trading,Julia Conti,run,high,5,2026-06-05,compliant,cloud,500732
+APP-0297,Outage Gateway,In-house,Data Platform,David Keller,run,high,3,2025-05-26,non_compliant,hybrid,508338
+APP-0298,Contract Monitor,In-house,Customer,David Bauer,run,medium,5,2025-08-31,compliant,cloud,168849
+APP-0299,Portfolio Gateway,In-house,Finance,Martina Egger,build,critical,4,2026-03-12,compliant,hybrid,989929
+APP-0300,Microsoft 365 (Legacy),Microsoft,Collaboration,Camille Bianchi,run,low,4,2025-07-30,compliant,on_prem,33397
+APP-0301,Billing Engine,In-house,Compliance,Chiara Schneider,run,low,5,2024-05-22,compliant,cloud,10744
+APP-0302,Field Scheduler,In-house,Integration,Nina Bauer,run,low,2,2025-06-06,compliant,on_prem,410034
+APP-0303,Meter Portal,In-house,Risk,Lea Graf,run,medium,5,2025-08-12,compliant,hybrid,217625
+APP-0304,Energy Service,In-house,Risk,Thomas Egger,run,medium,2,2025-09-09,compliant,on_prem,81881
+APP-0305,Customer Analyzer,In-house,Grid Operations,Fabian Rossi,run,medium,2,2025-07-01,compliant,cloud,106412
+APP-0306,Energy Console,In-house,Compliance,,run,high,4,2025-06-18,non_compliant,on_prem,124670
+APP-0307,Risk Manager,In-house,Data Platform,David Keller,run,medium,4,2025-10-19,compliant,hybrid,97639
+APP-0308,Field Platform,In-house,Grid Operations,Tobias Suter,run,medium,5,2025-06-18,compliant,cloud,58907
+APP-0309,Network Scheduler,In-house,Integration,Giulia Meier,run,high,3,2025-08-25,compliant,cloud,484614
+APP-0310,Dispatch Workbench,In-house,Data Platform,Lea Baumann,run,high,4,2026-02-04,compliant,cloud,241941
+APP-0311,DocuSign (Group),DocuSign,Content / e-Signature,Magda Ferrari,run,medium,2,2025-06-21,compliant,cloud,75037
+APP-0312,Market Engine,In-house,Grid Operations,David Berger,run,medium,3,2026-05-05,non_compliant,cloud,106715
+APP-0313,Qualys (Group),Qualys,Security / VM,Anna Fischer,build,low,3,2026-01-28,compliant,cloud,16786
+APP-0314,Portfolio Register,In-house,Integration,Carmen Brunner,build,medium,4,2025-06-09,compliant,cloud,109289
+APP-0315,Emissions Scheduler,In-house,Energy Trading,Olivier Marti,run,high,2,2025-11-08,compliant,cloud,426971
+APP-0316,Hedging Monitor,In-house,Asset Management,David Keller,run,critical,5,2024-05-22,compliant,cloud,2150875
+APP-0317,Emissions Tracker,In-house,Reporting,Piotr Bauer,run,medium,4,2026-01-29,non_compliant,cloud,48242
+APP-0318,Trading Console,In-house,Reporting,Pierre Bauer,run,medium,4,2025-08-05,non_compliant,cloud,66434
+APP-0319,Supply Scheduler,In-house,Compliance,Olivier Marti,run,critical,4,2026-04-20,compliant,on_prem,892621
+APP-0320,Outage Platform,In-house,Customer,Daniel Kowalski,build,low,3,2024-05-22,non_compliant,cloud,16534
+APP-0321,Portfolio Optimizer,In-house,Energy Trading,Magda Ferrari,run,high,4,2025-10-22,compliant,hybrid,221501
+APP-0322,Hedging Repository,In-house,Energy Trading,Piotr Fischer,run,medium,4,2025-10-23,non_compliant,hybrid,77566
+APP-0323,Settlement Engine,In-house,Finance,Anna Egger,run,low,5,2026-03-28,compliant,cloud,37963
+APP-0324,Network Portal,In-house,Data Platform,Chiara Conti,run,critical,2,2026-04-29,compliant,cloud,1181631
+APP-0325,Emissions Gateway,In-house,Grid Operations,Pascal Arnold,build,low,4,2026-03-27,non_compliant,on_prem,13817
+APP-0326,Risk Hub,In-house,Asset Management,Olivier Marti,run,low,3,2025-07-08,compliant,on_prem,9442
+APP-0327,Outage Optimizer,In-house,Reporting,Olivier Marti,run,medium,2,2026-05-02,compliant,hybrid,29340
+APP-0328,Apache Kafka,Confluent,Integration / Streaming,Daniel Weber,run,high,4,2025-12-26,compliant,on_prem,263141
+APP-0329,Invoice Workbench,In-house,Reporting,Olivier Zimmermann,plan,critical,3,2026-03-22,compliant,cloud,2615789
+APP-0330,Settlement Platform,In-house,Energy Trading,Magda Meier,run,high,2,2025-09-10,compliant,cloud,196098
+APP-0331,Asset Engine,In-house,Grid Operations,Olivier Kaufmann,run,medium,2,2025-08-18,compliant,hybrid,72738
+APP-0332,Settlement Optimizer,In-house,Risk,Lea Graf,run,critical,4,2026-05-23,non_compliant,hybrid,918376
+APP-0333,Billing Analyzer,In-house,Grid Operations,Tobias Moser,run,medium,5,2025-05-31,compliant,hybrid,72812
+APP-0334,Trading Register,In-house,Data Platform,Martina Egger,run,medium,5,2025-09-28,non_compliant,cloud,94223
+APP-0335,Emissions Monitor,In-house,Energy Trading,Corinne Kaufmann,run,high,4,2026-04-03,compliant,on_prem,231624
+APP-0336,Asset Tracker,In-house,Grid Operations,Sara Moser,run,critical,2,2025-06-12,compliant,on_prem,665682
+APP-0337,Settlement Service,In-house,Compliance,Carmen Brunner,run,low,5,2025-08-14,compliant,hybrid,13694
+APP-0338,BlackLine,BlackLine,Finance,Olivier Marti,run,critical,4,2025-12-22,compliant,on_prem,725222
+APP-0339,Ansible,Red Hat,Automation,Lukas Widmer,run,critical,2,2025-12-22,compliant,on_prem,958448
+APP-0340,Oracle E-Business Suite,Oracle,ERP / Finance,Chiara Roth,run,critical,2,2025-08-04,compliant,cloud,934868
+APP-0341,Risk Scheduler,In-house,Asset Management,Fabian Marti,run,low,5,2026-01-02,compliant,on_prem,50038
+APP-0342,Coupa (Legacy),Coupa,Procurement,Olivier Marti,retire,low,4,2024-05-22,compliant,cloud,24324
+APP-0343,Risk Gateway,In-house,Reporting,Fabian Marti,run,low,2,2025-11-28,compliant,cloud,30948
+APP-0344,Forecast Scheduler,In-house,Grid Operations,Stefan Koch,build,high,2,2026-03-02,compliant,cloud,285692
+APP-0345,Dispatch Gateway,In-house,Risk,Marc Weber,run,medium,4,2025-11-22,non_compliant,cloud,102089
+APP-0346,Field Analyzer,In-house,Risk,Piotr Moser,run,medium,4,2025-12-01,non_compliant,hybrid,92818
+APP-0347,Forecast Manager,In-house,Customer,Camille Kowalski,run,low,5,2025-08-21,compliant,cloud,449
+APP-0348,Network Tracker,In-house,Data Platform,Pierre Martin,run,medium,5,2025-10-12,compliant,on_prem,461191
+APP-0349,Qlik Sense (Group),Qlik,Analytics / BI,Francesca Berger,run,medium,5,2025-11-26,compliant,cloud,128557
+APP-0350,Dispatch Repository,In-house,Integration,Olivier Marti,run,low,3,2024-05-22,compliant,cloud,33413
+APP-0351,Market Optimizer,In-house,Finance,Magda Fischer,run,low,2,2026-02-07,non_compliant,cloud,31174
+APP-0352,Settlement Analyzer,In-house,Reporting,Petra Martin,run,medium,2,2025-08-24,compliant,on_prem,91561
+APP-0353,Forecast Service,In-house,Finance,Anna Egger,run,high,5,2026-03-08,non_compliant,cloud,353607
+APP-0354,Asset Register,In-house,Integration,Chiara Roth,run,low,4,2025-09-29,unknown,cloud,24726
+APP-0355,Customer Workbench,In-house,Integration,Simon Keller,run,high,2,2025-06-12,compliant,cloud,173631
+APP-0356,Balancing Cockpit,In-house,Risk,Vera Keller,run,high,5,2026-03-25,compliant,cloud,116748
+APP-0357,Microsoft Dynamics 365 (Legacy),Microsoft,CRM / ERP,Daniel Kowalski,run,medium,2,2026-01-17,compliant,cloud,129121
+APP-0358,Asset Hub,In-house,Reporting,Claudia Koch,build,high,2,2026-04-26,compliant,on_prem,636887
+APP-0359,Zoom (Legacy),Zoom,Collaboration,Claudia Vogel,run,medium,5,2025-06-27,non_compliant,cloud,49049
+APP-0360,Settlement Cockpit,In-house,Grid Operations,Luca Bianchi,retire,critical,5,2025-10-24,compliant,cloud,23288
+APP-0361,Meter Repository,In-house,Compliance,Pascal Martin,run,low,3,2026-01-27,compliant,hybrid,15203
+APP-0362,Risk Tracker,In-house,Asset Management,Andreas Keller,run,medium,2,2025-11-21,compliant,cloud,44175
+APP-0363,Hedging Analyzer,In-house,Asset Management,Camille Kowalski,run,critical,2,2025-08-20,non_compliant,cloud,1170943
+APP-0364,Capacity Engine,In-house,Customer,Julia Conti,run,high,2,2026-03-23,compliant,cloud,418909
+APP-0365,Jenkins (Legacy),CloudBees,DevOps,Daniel Schneider,run,medium,2,2025-08-08,compliant,on_prem,118102
+APP-0366,Network Cockpit,In-house,Integration,Stefan Bianchi,run,critical,2,2026-05-19,compliant,cloud,261657
+APP-0367,Supply Portal,In-house,Finance,,run,medium,2,2025-07-27,compliant,on_prem,127156
+APP-0368,Risk Platform,In-house,Asset Management,Laura Hofer,run,high,2,2026-05-12,non_compliant,on_prem,466033
+APP-0369,Billing Tracker,In-house,Integration,Olivier Marti,run,high,2,2025-08-28,compliant,hybrid,8491169
+APP-0370,Contract Platform,In-house,Integration,Nina Bauer,run,medium,3,2026-03-04,compliant,hybrid,201790
+APP-0371,Risk Repository,In-house,Compliance,Nadia Egger,run,medium,3,2026-05-28,compliant,cloud,81130
+APP-0372,Portfolio Dashboard,In-house,Grid Operations,Olivier Marti,run,medium,3,2025-10-28,non_compliant,cloud,234648
+APP-0373,Qualys (Legacy),Qualys,Security / VM,Olivier Marti,run,low,4,2025-11-24,compliant,cloud,18264
+APP-0374,Invoice Register,In-house,Reporting,Daniel Schneider,run,critical,4,2026-04-28,compliant,cloud,803095
+APP-0375,Portfolio Engine,In-house,Customer,Roland Dubois,run,medium,3,2025-07-14,non_compliant,on_prem,970720
+APP-0376,Market Repository,In-house,Energy Trading,Nadia Meier,run,high,4,2025-06-25,compliant,cloud,266594
+APP-0377,Asset Console,In-house,Energy Trading,Camille Kowalski,run,medium,5,2025-12-19,compliant,cloud,108313
+APP-0378,Customer Gateway,In-house,Energy Trading,Michael Lang,run,medium,2,2026-05-03,compliant,hybrid,124159
+APP-0379,Microsoft 365 (Group),Microsoft,Collaboration,Simon Keller,retire,medium,4,2025-10-15,non_compliant,cloud,38270
+APP-0380,Asset Manager,In-house,Reporting,Thomas Egger,run,high,4,2026-02-26,compliant,on_prem,330402
+APP-0381,Veeam Backup (Legacy),Veeam,Infrastructure / Backup,Camille Kowalski,run,medium,5,2026-02-04,non_compliant,cloud,63687
+APP-0382,Hedging Manager,In-house,Compliance,Olivier Wagner,build,high,2,2025-07-17,compliant,hybrid,466117
+APP-0383,Risk Cockpit,In-house,Finance,Chiara Roth,run,medium,3,2025-09-06,compliant,cloud,224398
+APP-0384,Hedging Console,In-house,Reporting,Olivier Marti,run,high,5,2025-08-25,compliant,on_prem,18044124
+APP-0385,Billing Repository,In-house,Risk,Carmen Brunner,run,low,2,2026-01-26,non_compliant,on_prem,21439
+APP-0386,Compliance Platform,In-house,Compliance,Chiara Roth,retire,medium,4,2026-02-08,compliant,on_prem,58400
+APP-0387,Supply Hub,In-house,Energy Trading,Claudia Koch,run,medium,5,2026-04-26,compliant,cloud,82554
+APP-0388,Energy Engine,In-house,Energy Trading,Olivier Marti,plan,medium,3,2025-06-02,compliant,cloud,111541
+APP-0389,Grid Manager,In-house,Integration,Petra Martin,run,medium,4,2025-08-22,compliant,cloud,219766
+APP-0390,Billing Portal,In-house,Finance,Olivier Marti,run,critical,3,2025-05-29,compliant,cloud,664204
+APP-0391,webMethods,Software AG,Integration,Petra Egger,plan,high,4,2026-03-29,compliant,cloud,156520
+APP-0392,Invoice Engine,In-house,Grid Operations,Petra Hofer,build,high,5,2025-09-19,compliant,hybrid,361556
+APP-0393,Network Hub,In-house,Integration,David Bauer,run,low,5,2026-05-09,compliant,cloud,43687
+APP-0394,Hedging Engine,In-house,Finance,Nadia Lang,run,low,2,2026-05-12,compliant,hybrid,11902
+APP-0395,Capacity Repository,In-house,Data Platform,Daniel Kowalski,run,low,4,2025-07-08,compliant,on_prem,20352
+APP-0396,Contract Dashboard,In-house,Risk,Andreas Keller,run,high,4,2026-04-25,compliant,on_prem,361391
+APP-0397,Field Service,In-house,Compliance,Felix Brunner,run,high,4,2025-10-06,compliant,cloud,277251
+APP-0398,Contract Console,In-house,Finance,Marc Conti,run,critical,5,2025-06-29,non_compliant,cloud,1211327
+APP-0399,GitLab (Legacy),GitLab,DevOps,Chiara Conti,run,high,2,2025-11-10,compliant,hybrid,274961
+APP-0400,Billing Register,In-house,Risk,Marc Frei,retire,high,5,2025-06-06,compliant,cloud,1167979
+APP-0401,Customer Platform,In-house,Grid Operations,Tobias Moser,run,critical,5,2026-03-28,compliant,cloud,348937
+APP-0402,Jira (Legacy),Atlassian,DevOps / PPM,Stefan Koch,run,critical,2,2025-08-04,compliant,cloud,1361289
+APP-0403,Invoice Platform,In-house,Reporting,Thomas Egger,build,medium,4,2025-07-30,compliant,cloud,184472
+APP-0404,Compliance Analyzer,In-house,Integration,Petra Egger,run,high,4,2026-04-25,compliant,cloud,438862
+APP-0405,Energy Portal,In-house,Data Platform,Magda Meier,run,high,4,2025-12-20,compliant,hybrid,29699
+APP-0406,Forecast Register,In-house,Energy Trading,David Bauer,run,high,3,2025-08-30,non_compliant,on_prem,223792
+APP-0407,Supply Optimizer,In-house,Asset Management,Claudia Frei,run,low,3,2026-02-25,compliant,cloud,51194
+APP-0408,Contract Optimizer,In-house,Energy Trading,Daniel Schneider,run,low,2,2025-09-23,compliant,on_prem,41997
+APP-0409,Network Service,In-house,Finance,David Bauer,run,high,4,2026-05-03,compliant,hybrid,272242
+APP-0410,Forecast Gateway,In-house,Finance,Simon Keller,run,high,4,2025-08-02,compliant,hybrid,464362
+APP-0411,Grid Register,In-house,Energy Trading,Camille Kowalski,run,low,2,2025-05-21,compliant,cloud,19053
+APP-0412,Allegro CTRM,ION,Energy Trading,Marc Kaufmann,run,high,3,2026-03-01,compliant,cloud,285773
+APP-0413,MuleSoft (Group),Salesforce,Integration,Tobias Suter,run,critical,4,2026-03-02,compliant,on_prem,413470
+APP-0414,Compliance Console,In-house,Reporting,Olivier Vogel,run,high,2,2026-03-26,compliant,hybrid,206160
+APP-0415,Tariff Service,In-house,Grid Operations,Simon Moser,run,high,5,2025-10-22,compliant,cloud,236020
+APP-0416,Tariff Workbench,In-house,Integration,Tobias Hofer,build,high,2,2025-10-13,compliant,cloud,399447
+APP-0417,Compliance Manager,In-house,Reporting,Martina Egger,build,high,3,2026-05-15,compliant,on_prem,280981
+APP-0418,GitLab,GitLab,DevOps,Corinne Egger,retire,high,4,2025-08-02,compliant,hybrid,196210
+APP-0419,Field Monitor,In-house,Risk,Elena Fischer,run,low,3,2025-10-27,compliant,cloud,14859
+APP-0420,Tariff Gateway,In-house,Compliance,Beatrice Egger,run,high,2,2026-01-12,compliant,hybrid,340096
+APP-0421,Hedging Platform,In-house,Customer,Tobias Dubois,run,critical,4,2025-10-27,non_compliant,hybrid,274396
+APP-0422,Trading Hub,In-house,Grid Operations,Marc Bianchi,run,critical,2,2025-05-25,compliant,cloud,486501
+APP-0423,Supply Gateway,In-house,Data Platform,David Bauer,retire,high,5,2025-12-21,non_compliant,cloud,700219
+APP-0424,Cisco Webex (Legacy),Cisco,Collaboration,David Bauer,run,low,5,2025-05-20,compliant,on_prem,12039
+APP-0425,Market Tracker,In-house,Customer,Chiara Roth,run,high,4,2025-12-28,compliant,on_prem,698204
+APP-0426,Tariff Scheduler,In-house,Finance,Michael Marti,run,medium,5,2026-03-11,compliant,cloud,57304
+APP-0427,Dispatch Register,In-house,Reporting,Olivier Marti,plan,high,5,2025-07-19,compliant,hybrid,227641
+APP-0428,Hedging Tracker,In-house,Data Platform,Fabian Rossi,run,medium,4,2026-04-10,compliant,cloud,73301
+APP-0429,Asset Monitor,In-house,Data Platform,Carmen Kaufmann,build,low,4,2025-08-19,non_compliant,on_prem,24567
+APP-0430,Customer Engine,In-house,Energy Trading,David Bauer,run,high,5,2026-01-05,compliant,on_prem,272417
+APP-0431,Grid Service,In-house,Customer,David Bauer,run,medium,5,2025-11-03,compliant,hybrid,11724
+APP-0432,Meter Dashboard,In-house,Grid Operations,Carmen Lang,plan,medium,5,2025-09-08,non_compliant,cloud,67029
+APP-0433,Trading Repository,In-house,Customer,Marc Conti,run,low,2,2025-12-05,compliant,on_prem,18774
+APP-0434,Microsoft Defender (Legacy),Microsoft,Security / EDR,Olivier Marti,run,low,2,2026-01-12,compliant,cloud,27399
+APP-0435,Asset Dashboard,In-house,Energy Trading,Tobias Suter,run,critical,3,2025-07-02,compliant,on_prem,1100173
+APP-0436,Field Cockpit,In-house,Risk,Olivier Marti,run,medium,4,2025-06-14,non_compliant,cloud,153307
+APP-0437,Jenkins,CloudBees,DevOps,Olivier Marti,run,low,4,2025-10-16,compliant,on_prem,23698
+APP-0438,Meter Console,In-house,Grid Operations,Andreas Keller,run,critical,3,2026-02-18,compliant,cloud,1006762
+APP-0439,Balancing Scheduler,In-house,Data Platform,David Bauer,run,high,5,2025-06-24,compliant,cloud,136712
+APP-0440,Compliance Tracker,In-house,Compliance,Fabian Marti,build,high,5,2025-08-31,compliant,on_prem,163445
+APP-0441,Microsoft Dynamics 365,Microsoft,CRM / ERP,Thomas Egger,run,medium,2,2025-11-12,compliant,cloud,117373
+APP-0442,Asset Scheduler,In-house,Data Platform,Tobias Suter,run,low,3,2025-11-05,non_compliant,hybrid,40550
+APP-0443,Grid Repository,In-house,Data Platform,Claudia Vogel,run,medium,2,2025-11-01,compliant,cloud,94188
+APP-0444,Box (Prod),Box,Content / ECM,Olivier Marti,run,high,4,2025-10-01,compliant,on_prem,572878
+APP-0445,Customer Scheduler,In-house,Energy Trading,Lea Baumann,run,low,4,2026-04-02,compliant,cloud,26392
+APP-0446,Supply Dashboard,In-house,Energy Trading,Nadia Lang,run,critical,5,2025-05-24,compliant,cloud,752845
+APP-0447,Azure DevOps,Microsoft,DevOps,Olivier Marti,run,medium,2,2026-03-22,non_compliant,hybrid,302382
+APP-0448,Settlement Monitor,In-house,Grid Operations,Lea Graf,run,medium,3,2026-02-02,compliant,cloud,137390
+APP-0449,Billing Gateway,In-house,Data Platform,Olivier Marti,run,high,3,2025-10-15,compliant,hybrid,202400
+APP-0450,Portfolio Tracker,In-house,Reporting,Nadia Meier,run,high,3,2025-09-21,compliant,cloud,230213
+APP-0451,Outage Hub,In-house,Customer,,run,medium,5,2025-10-26,compliant,cloud,58309
+APP-0452,Balancing Portal,In-house,Energy Trading,Olivier Kaufmann,run,critical,2,2026-04-04,compliant,cloud,989647
+APP-0453,Microsoft Defender (Group),Microsoft,Security / EDR,Corinne Egger,run,medium,5,2026-02-15,non_compliant,on_prem,134253
+APP-0454,Meter Scheduler,In-house,Reporting,Julia Conti,run,medium,5,2025-11-15,non_compliant,on_prem,62264
+APP-0455,Meter Engine,In-house,Risk,Anna Egger,run,medium,5,2025-10-27,non_compliant,on_prem,1437197
+APP-0456,Meter Register,In-house,Customer,David Keller,run,critical,5,2026-02-16,compliant,cloud,515132
+APP-0457,Grid Hub,In-house,Data Platform,Magda Baumann,run,critical,4,2025-11-02,compliant,cloud,255136
+APP-0458,Dispatch Console,In-house,Data Platform,David Bauer,run,medium,4,2026-05-13,compliant,on_prem,127689
+APP-0459,ServiceNow,ServiceNow,ITSM,Nina Bauer,run,low,4,2026-03-01,compliant,hybrid,70157
+APP-0460,Compliance Cockpit,In-house,Compliance,Martina Egger,run,low,3,2025-06-01,compliant,cloud,35354
+APP-0461,Forecast Console,In-house,Integration,Tobias Suter,plan,critical,2,2025-09-24,non_compliant,cloud,905362
+APP-0462,Market Hub,In-house,Risk,Tobias Suter,run,high,3,2025-06-15,compliant,hybrid,219198
+APP-0463,Portfolio Analyzer,In-house,Grid Operations,Olivier Berger,run,medium,5,2025-11-20,compliant,cloud,66383
+APP-0464,Settlement Dashboard,In-house,Energy Trading,Julia Conti,run,medium,5,2025-06-01,compliant,cloud,109298
+APP-0465,Energy Dashboard,In-house,Compliance,Olivier Marti,run,medium,5,2025-11-23,compliant,cloud,60592
+APP-0466,SailPoint IdentityIQ (Group),SailPoint,Security / IAM,Luca Schneider,run,medium,5,2026-04-27,compliant,cloud,155755
+APP-0467,Dispatch Analyzer,In-house,Risk,Olivier Marti,run,medium,5,2025-10-11,compliant,on_prem,100627
+APP-0468,Nutanix (Legacy),Nutanix,Infrastructure,Camille Kowalski,run,low,2,2025-11-29,compliant,cloud,19982
+APP-0469,Asset Platform,In-house,Risk,Anna Conti,run,high,4,2026-05-05,non_compliant,hybrid,348929
+APP-0470,SAP Concur (Group),SAP,Finance / Expenses,Nadia Lang,plan,medium,2,2026-04-24,non_compliant,cloud,73097
+APP-0471,Outage Portal,In-house,Finance,David Bauer,run,medium,2,2026-05-20,non_compliant,on_prem,44319
+APP-0472,Tariff Cockpit,In-house,Compliance,Olivier Marti,run,medium,2,2025-11-30,compliant,hybrid,33785
+APP-0473,Invoice Scheduler,In-house,Finance,Patrick Nowak,run,low,5,2025-10-14,compliant,cloud,7762
+APP-0474,Supply Console,In-house,Finance,Nadia Lang,run,high,5,2025-07-31,compliant,on_prem,270822
+APP-0475,Trading Manager,In-house,Asset Management,Nadia Meier,retire,low,4,2026-03-01,compliant,cloud,8499
+APP-0476,Meter Optimizer,In-house,Customer,,plan,critical,5,2025-09-05,compliant,cloud,606773
+APP-0477,Capacity Workbench,In-house,Reporting,Simon Keller,run,high,3,2025-11-06,compliant,on_prem,238388
+APP-0478,Confluence,Atlassian,Collaboration,Martina Egger,build,medium,4,2025-11-17,compliant,on_prem,122005
+APP-0479,Balancing Tracker,In-house,Finance,Lea Baumann,run,medium,3,2026-01-12,compliant,cloud,79966
+APP-0480,Customer Repository,In-house,Asset Management,Olivier Berger,run,medium,4,2025-09-12,compliant,cloud,74554
+APP-0481,GE Digital APM,GE Vernova,Asset Performance,Tobias Suter,run,medium,5,2025-12-02,compliant,on_prem,81867
+APP-0482,Balancing Console,In-house,Customer,Camille Kowalski,run,low,5,2025-07-23,unknown,on_prem,637198
+APP-0483,Field Gateway,In-house,Finance,Claudia Vogel,run,low,5,2025-08-21,compliant,cloud,19283661
+APP-0484,Market Console,In-house,Reporting,Petra Martin,run,critical,4,2025-09-11,non_compliant,cloud,580779
+APP-0485,Contract Workbench,In-house,Integration,Simon Keller,run,medium,2,2025-11-28,compliant,cloud,80738
+APP-0486,Field Manager,In-house,Customer,Olivier Bernard,run,low,4,2025-12-10,compliant,cloud,49551
+APP-0487,Invoice Console,In-house,Compliance,Roland Dubois,run,critical,3,2025-11-06,compliant,hybrid,891250
+APP-0488,Balancing Platform,In-house,Risk,Tobias Suter,run,high,5,2025-12-06,compliant,cloud,245603
+APP-0489,Market Analyzer,In-house,Data Platform,Daniel Weber,run,critical,3,2025-12-03,compliant,cloud,504546
+APP-0490,Contract Scheduler,In-house,Integration,Marc Bianchi,run,high,4,2025-09-28,non_compliant,cloud,258258
+APP-0491,Dispatch Scheduler,In-house,Asset Management,Simon Keller,run,critical,3,2026-03-14,compliant,cloud,913679
+APP-0492,Outage Analyzer,In-house,Customer,Corinne Roth,run,medium,3,2026-03-16,compliant,on_prem,121208
+APP-0493,Network Workbench,In-house,Grid Operations,Magda Baumann,retire,high,5,2026-02-04,compliant,hybrid,264115
+APP-1043,1Password Business,AgileBits,Security / IAM,Carmen Brunner,run,high,4,2024-05-22,compliant,cloud,98000
+APP-1037,Adobe Acrobat Pro,Adobe,Collaboration,Camille Kowalski,run,medium,5,2025-09-28,compliant,cloud,120000
+APP-1035,Adobe After Effects,Adobe,Design / Creative,Piotr Kaufmann,run,low,2,2025-08-02,compliant,cloud,33000
+APP-1038,Adobe Creative Cloud,Adobe,Design / Creative,Fabian Frei,run,low,2,2025-08-28,compliant,cloud,210000
+APP-1032,Adobe Illustrator,Adobe,Design / Creative,Stefan Maurer,run,low,5,2025-10-07,non_compliant,cloud,61000
+APP-1033,Adobe InDesign,Adobe,Design / Creative,Olivier Marti,run,low,5,2026-02-20,compliant,cloud,38000
+APP-1036,Adobe Lightroom,Adobe,Design / Creative,Claudia Frei,run,low,5,2025-07-08,non_compliant,cloud,18000
+APP-1031,Adobe Photoshop,Adobe,Design / Creative,Martina Egger,run,low,2,2025-07-28,compliant,cloud,72000
+APP-1034,Adobe Premiere Pro,Adobe,Design / Creative,Stefan Bianchi,run,low,5,2025-09-24,compliant,cloud,41000
+APP-1010,Ardoq,Ardoq,Enterprise Architecture,Anna Egger,run,medium,3,2026-04-23,non_compliant,cloud,120000
+APP-1014,Atlassian Confluence,Atlassian,Collaboration,Petra Hofer,run,high,3,2025-07-02,compliant,cloud,160000
+APP-1013,Atlassian Jira,Atlassian,DevOps,Camille Kowalski,run,high,2,2025-06-12,non_compliant,cloud,240000
+APP-1064,Carbon Reporting Hub (in-house),In-house,Reporting,Olivier Marti,run,high,4,2025-11-27,compliant,cloud,160000
+APP-1015,Cloudflare,Cloudflare,Infrastructure,David Berger,run,critical,3,2026-03-04,non_compliant,cloud,180000
+APP-1045,CrowdStrike Falcon,CrowdStrike,Security / EDR,Olivier Kaufmann,run,critical,4,2026-05-15,compliant,cloud,510000
+APP-1040,DaVinci Resolve,Blackmagic Design,Design / Creative,Luca Bianchi,run,low,4,2026-03-17,compliant,on_prem,16000
+APP-1052,Databricks,Databricks,Data Platform,Tobias Suter,run,high,4,2026-02-01,compliant,cloud,560000
+APP-1048,Datadog,Datadog,Observability,David Bauer,run,high,4,2025-12-14,compliant,cloud,360000
+APP-1027,Discord,Discord,Collaboration,Marc Schneider,run,low,5,2026-01-24,compliant,cloud,12000
+APP-1058,Figma,Figma,Design / Creative,David Bauer,run,medium,3,2026-02-11,compliant,cloud,74000
+APP-1039,GIMP,GIMP,Design / Creative,Olivier Marti,run,low,5,2025-05-30,compliant,on_prem,0
+APP-1024,GitHub Enterprise,Microsoft,DevOps,Tobias Suter,run,high,4,2025-12-11,compliant,cloud,230000
+APP-1030,HubSpot,HubSpot,Customer,Felix Schneider,run,medium,5,2026-04-06,compliant,cloud,96000
+APP-1060,ION Openlink Endur,ION,Energy Trading,Daniel Kowalski,run,critical,5,2025-12-07,compliant,hybrid,1280000
+APP-1016,Microsoft 365 (Outlook),Microsoft,Collaboration,Fabian Frei,run,critical,3,2025-10-16,compliant,cloud,1450000
+APP-1021,Microsoft Azure DevOps,Microsoft,DevOps,Piotr Fischer,run,high,5,2025-10-28,non_compliant,cloud,210000
+APP-1017,Microsoft Excel,Microsoft,Analytics / BI,Olivier Vogel,run,critical,4,2026-05-09,compliant,cloud,0
+APP-1020,Microsoft Power BI,Microsoft,Analytics / BI,David Berger,run,high,3,2025-11-13,compliant,cloud,290000
+APP-1019,Microsoft SharePoint,Microsoft,Collaboration,Olivier Marti,run,high,2,2025-07-17,compliant,cloud,320000
+APP-1018,Microsoft Teams,Microsoft,Collaboration,David Bauer,run,critical,5,2025-11-13,compliant,cloud,0
+APP-1057,Miro,Miro,Collaboration,David Bauer,run,low,2,2025-07-05,compliant,cloud,52000
+APP-1042,NordPass Business,Nord Security,Security / IAM,David Keller,run,medium,4,2025-07-17,compliant,cloud,46000
+APP-1041,NordVPN Teams,Nord Security,Security / IAM,David Bauer,run,medium,3,2025-05-29,compliant,cloud,58000
+APP-1059,Notion,Notion,Collaboration,Olivier Zimmermann,run,low,3,2025-07-31,non_compliant,cloud,28000
+APP-1044,Okta,Okta,Security / IAM,Anna Conti,run,critical,4,2026-04-18,compliant,cloud,420000
+APP-1012,OneTrust,OneTrust,Compliance,David Bauer,run,high,2,2025-10-31,compliant,cloud,210000
+APP-1062,Power Grid SCADA (in-house),In-house,Grid Operations,Nadia Lang,run,critical,5,2026-05-18,non_compliant,on_prem,540000
+APP-1054,Qualtrics,Qualtrics,HR,Pascal Suter,run,medium,3,2025-05-25,compliant,cloud,84000
+APP-1005,SAP Ariba,SAP,Procurement,Nina Bauer,run,high,3,2025-11-12,compliant,cloud,295000
+APP-1004,SAP Concur,SAP,Finance,Piotr Kaufmann,run,medium,5,2025-10-14,compliant,cloud,180000
+APP-1003,SAP HCM (on-prem),SAP,HR,Petra Martin,run,high,4,2026-02-07,non_compliant,on_prem,410000
+APP-1009,SAP LeanIX,SAP,Enterprise Architecture,David Keller,run,high,3,2026-04-25,compliant,cloud,140000
+APP-1001,SAP S/4HANA,SAP,ERP / Finance,Thomas Egger,run,critical,5,2026-01-13,compliant,hybrid,3850000
+APP-1002,SAP SuccessFactors (HCM),SAP,HR,Petra Kowalski,run,high,5,2025-05-30,non_compliant,cloud,640000
+APP-1029,Salesforce Sales Cloud,Salesforce,Customer,Carmen Brunner,run,critical,3,2026-01-17,compliant,cloud,680000
+APP-1061,Schneider EcoStruxure,Schneider Electric,Grid Operations,Carmen Kaufmann,run,critical,3,2026-01-21,compliant,on_prem,920000
+APP-1008,ServiceNow GRC,ServiceNow,Compliance,Sophie Bauer,run,high,3,2026-05-10,compliant,cloud,260000
+APP-1007,ServiceNow ITSM,ServiceNow,Security / IAM,Olivier Kaufmann,run,critical,2,2026-03-13,compliant,cloud,910000
+APP-1011,Serviceware Financial,Serviceware,Finance,Tobias Suter,run,medium,5,2025-12-04,compliant,cloud,95000
+APP-1025,Slack,Salesforce,Collaboration,Anna Conti,run,high,4,2026-04-04,compliant,cloud,190000
+APP-1047,Splunk,Cisco,Observability,Stefan Maurer,run,high,4,2026-04-03,compliant,hybrid,470000
+APP-1063,Trading Desk Cockpit (in-house),In-house,Energy Trading,Olivier Marti,run,critical,5,2026-05-15,non_compliant,hybrid,420000
+APP-1050,VMware Workstation,Broadcom,Infrastructure,Chiara Roth,run,low,5,2025-05-28,compliant,on_prem,24000
+APP-1049,VMware vSphere,Broadcom,Infrastructure,David Bauer,run,critical,2,2025-11-21,compliant,on_prem,640000
+APP-1023,Visual Studio Code,Microsoft,DevOps,David Bauer,run,medium,5,2025-07-15,compliant,on_prem,0
+APP-1022,Visual Studio Professional,Microsoft,DevOps,Francesca Berger,run,medium,5,2025-10-15,compliant,on_prem,180000
+APP-1028,WhatsApp Business,Meta,Customer,Magda Meier,run,low,3,2026-06-03,compliant,cloud,18000
+APP-1006,Workday,Workday,HR,Nadia Meier,run,high,5,2026-05-22,non_compliant,cloud,720000
+APP-1046,Zscaler,Zscaler,Security / IAM,Sara Moser,run,critical,4,2025-10-11,compliant,cloud,380000

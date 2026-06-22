@@ -1,0 +1,22 @@
+# (Python 3.11+; developed on 3.12). Install: pip install -r poc/requirements.txt
+
+# UI and config
+streamlit==1.58.0
+python-dotenv==1.2.2
+
+# LLM access via provider-agnostic wrappers for Anthropic and OpenAI
+anthropic==0.109.2
+openai==2.42.0
+
+# RAG: vectors + local embeddings + PDF text extraction
+chromadb==1.5.9
+sentence-transformers==5.6.0
+pypdf==6.13.3
+
+# Anomaly detection
+scikit-learn==1.9.0
+pandas==3.0.3
+numpy==2.4.6
+
+# Tests
+pytest==9.1.0
