@@ -40,7 +40,8 @@ The app needs at least one model before you can chat:
 
 1. Settings → Models & API keys → register a model (e.g. provider `anthropic`, model
    `claude-sonnet-4-6`) and paste your API key for it.
-2. Settings → Agents → assign that model to the Coaching agent, the Domain agent, and the
+   -> For a proper setup use claude-opus-4-8 for the self-refletion and claude-sonnet-4-6 for both agents.
+3. Settings → Agents → assign that model to the Coaching agent, the Domain agent, and the
    reflection model.
 
 Besides directly within the app you can instead also supply the keys as environment variables (`ANTHROPIC_API_KEY`, `OPENAI_API_KEY`). Keys entered in the UI are stored in the data directory and never committed.
