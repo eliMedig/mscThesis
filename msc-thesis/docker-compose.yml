@@ -1,0 +1,31 @@
+services:
+  msc-thesis:
+    build:
+      context: .
+      # Build steps (apt/pip/model download) borrow the HOST's network, where DNS
+      # works — the default build network on this runner can't resolve external
+      # hosts (deb.debian.org/PyPI). This applies ONLY to the build; the
+      # container's runtime network below is unchanged. Fully reversible.
+      network: host
+    image: msc-thesis:latest
+    container_name: msc-thesis
+    restart: unless-stopped
+    environment:
+      - DATA_DIR=/data
+      - PORT=8501
+      # Optional — keys can also be entered/managed at runtime in Admin → Models.
+      - ANTHROPIC_API_KEY=${ANTHROPIC_API_KEY:-}
+      - OPENAI_API_KEY=${OPENAI_API_KEY:-}
+    volumes:
+      # ONE bind mount = the single DATA_DIR (db, vectorstore, patches, portfolio).
+      - /home/eli/apps/msc-thesis/data:/data
+    networks:
+      - private
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.msc-thesis.rule=Host(`msc-thesis.home`)"
+      - "traefik.http.services.msc-thesis.loadbalancer.server.port=8501"
+
+networks:
+  private:
+    external: true

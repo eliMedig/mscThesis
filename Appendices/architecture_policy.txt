@@ -1,0 +1,318 @@
+ARCHITECTURE POLICY
+Enterprise architecture governance policy and technical standards for the
+application portfolio
+
+------------------------------------------------------------------------
+SCOPE OF THIS DOCUMENT
+------------------------------------------------------------------------
+This document defines the RULES that govern applications and the technical
+standards their design must meet: ownership and accountability, business
+criticality and resilience, lifecycle/investment alignment, review cadence,
+governance bodies, integration standards, authentication and authorisation,
+API security, documentation, and the additional governance for AI and
+public-facing applications.
+
+It does NOT define the allowed field values or the lifecycle/maturity model
+(see portfolio_standards.txt), the compliance status, data-quality rules, or
+data-classification handling baselines and regulatory frameworks (see
+compliance_rules.txt), or the intake workflow (see new_application_process.txt).
+
+The key words MUST, SHOULD, and MAY are used in their RFC 2119 sense.
+
+------------------------------------------------------------------------
+1. PURPOSE
+------------------------------------------------------------------------
+Govern the application portfolio so that investment, risk, and technical debt
+stay aligned with the target architecture, and so that applications are owned,
+secure, integrable, and operable. The policy applies to all applications in the
+portfolio and to all changes routed through the intake process.
+
+------------------------------------------------------------------------
+2. ARCHITECTURE PRINCIPLES
+------------------------------------------------------------------------
+- Reuse before buy before build. Before approving a new application, reuse of an
+  existing capability is considered first, then commercial (COTS/SaaS) options,
+  then bespoke build. The sourcing taxonomy is in portfolio_standards.txt; the
+  duplication check is in new_application_process.txt.
+- Align to the target architecture. New and changed applications SHOULD move the
+  portfolio toward the reference technology stack and integration model, not
+  away from it.
+- Manage technical debt deliberately. Low-maturity applications (maturity 1-2,
+  per portfolio_standards.txt) in Production MUST have a modernisation or
+  retirement plan; debt is made visible, not hidden.
+- Secure and private by design. Security and data-protection controls are
+  designed in from intake, proportionate to criticality and data classification,
+  not added afterward.
+- Human accountability for automated decisions. Where an application automates
+  or materially influences a decision (including AI/ML), a named human remains
+  accountable for the outcome.
+- Decisions are documented. Significant architecture decisions are recorded
+  (Section 13) so they can be reviewed and revisited.
+
+------------------------------------------------------------------------
+3. OWNERSHIP AND ACCOUNTABILITY
+------------------------------------------------------------------------
+- Every application MUST have a named accountable owner (a person or role) -
+  the business_owner. An application_manager MAY also be recorded for
+  operational responsibility.
+- Applications without an owner are non-conformant and MUST be remediated within
+  one review cycle. A missing owner is also a data-quality anomaly
+  (compliance_rules.txt).
+- The owner is accountable for the application's data classification,
+  compliance status, lifecycle decisions, and the accuracy of its portfolio
+  record.
+
+------------------------------------------------------------------------
+4. BUSINESS CRITICALITY AND RESILIENCE
+------------------------------------------------------------------------
+- Each application is rated Low / Medium / High / Critical (definitions in
+  portfolio_standards.txt).
+- Critical applications MUST have documented recovery objectives (a recovery
+  time objective, RTO, and a recovery point objective, RPO) and MUST undergo an
+  annual resilience review (e.g. backup/restore validation, failover or
+  continuity testing).
+- High applications SHOULD have documented recovery objectives and a periodic
+  resilience review.
+- Recovery objectives MUST be consistent with the application's role: a Critical
+  application supporting trading or grid operations carries the tightest
+  objectives and the strongest continuity expectations.
+
+------------------------------------------------------------------------
+5. LIFECYCLE AND INVESTMENT ALIGNMENT
+------------------------------------------------------------------------
+(Lifecycle states are defined in portfolio_standards.txt: Plan, Build,
+Production, Sunset, Retired.)
+- Applications in Sunset or Retired MUST NOT receive new feature investment;
+  only run, decommissioning, or data-migration work is permitted.
+- A Critical application in Sunset or Retired is a governance contradiction and
+  MUST be escalated: either the criticality rating or the lifecycle state is
+  wrong. (This contradiction is surfaced as a data-quality anomaly in
+  compliance_rules.txt.)
+- Investment SHOULD follow portfolio segmentation (the TIME model in
+  portfolio_standards.txt): Invest on high-value/high-fitness applications,
+  Migrate (modernise) high-value/low-fitness ones, Tolerate low-value/high-
+  fitness ones, and Eliminate low-value/low-fitness ones.
+
+------------------------------------------------------------------------
+6. REVIEW CADENCE
+------------------------------------------------------------------------
+- Every application MUST be reviewed at least every 12 months; last_reviewed_date
+  is updated at each review.
+- An application not reviewed within 18 months is treated as stale and is flagged
+  for governance attention (a data-quality anomaly in compliance_rules.txt).
+- Higher-risk applications are reviewed more frequently: public-facing or AI/ML
+  applications, and any application processing Confidential or Restricted data,
+  are reviewed at least every 6 months (Section 11).
+
+------------------------------------------------------------------------
+7. GOVERNANCE BODIES AND DECISION RIGHTS
+------------------------------------------------------------------------
+- Domain Architect: reviews and approves Demands within their domain
+  (new_application_process.txt), maintains domain standards, and assesses change
+  and environmental impact.
+- Architecture Review Board (ARB): decides cross-domain matters, standard
+  exceptions/waivers (Section 14), and elevated-risk Demands (Critical
+  criticality, public-facing, AI/ML, Confidential/Restricted data, or
+  Non-compliant Critical applications).
+- Decisions of the Domain Architect and ARB are recorded against the affected
+  application(s) and as architecture decision records where they set or change a
+  standard (Section 13).
+
+------------------------------------------------------------------------
+8. INTEGRATION STANDARDS
+------------------------------------------------------------------------
+8.1 Integration via the central integration layer
+- Integrations SHOULD be realised through the central integration layer
+  (integration platform / iPaaS / managed APIs), not as ad-hoc point-to-point
+  links. The integration layer provides mediation, observability, and a managed
+  contract between systems.
+- Direct point-to-point integration, and especially direct database-to-database
+  coupling between applications, is discouraged and requires explicit
+  justification and architect approval (it creates hidden coupling and raises
+  change risk).
+
+8.2 Approved integration patterns (choose the lightest that fits)
+- Synchronous request/response (API): for real-time queries and commands where
+  the caller needs an immediate answer. Realised as HTTPS REST APIs (or an
+  established standard such as GraphQL/gRPC where justified).
+- Asynchronous events/messaging: for decoupled, event-driven flows and for
+  propagating state changes. Preferred where systems should not be tightly
+  coupled in time.
+- Batch / file transfer: for high-volume or scheduled bulk data movement, over a
+  secure channel (e.g. SFTP). Used where real-time or event flow is unnecessary.
+Established enterprise integration patterns (Hohpe & Woolf) and event-driven
+design inform these choices.
+
+8.3 Direction, system of record, and contracts
+- For every integration, the system of record for the data and the direction of
+  flow MUST be defined (which system owns the data, which consumes it).
+- Interfaces MUST have an explicit, versioned contract (e.g. an OpenAPI
+  specification for REST, an event schema for messaging). Breaking changes
+  require versioning and a managed consumer migration; producers do not break
+  consumers silently.
+- Integrations are recorded against the application (integration_count in
+  portfolio_standards.txt) and in the interface catalogue (Section 13).
+
+------------------------------------------------------------------------
+9. AUTHENTICATION AND AUTHORISATION
+------------------------------------------------------------------------
+9.1 Identity and single sign-on (human users)
+- Applications MUST authenticate human users through the enterprise identity
+  provider using the approved SSO pattern: SAML 2.0 or OpenID Connect (OIDC).
+  Local, application-specific user stores and passwords are avoided.
+- Multi-factor authentication (MFA) MUST be enforced for administrative access,
+  for remote access, and for any access to applications processing Confidential
+  or Restricted data.
+- Authorisation MUST follow least privilege using role-based access control
+  (RBAC), with attribute-based access control (ABAC) where finer-grained,
+  context-aware decisions are needed. Access to Confidential/Restricted data is
+  recertified periodically.
+
+9.2 API and service-to-service authentication/authorisation
+- Service and API authorisation MUST use OAuth 2.0 (with OpenID Connect for
+  identity) issuing short-lived, scoped access tokens. Token scopes are
+  least-privilege and validated on every request (including token expiry and
+  audience).
+- Service-to-service calls SHOULD use mutual TLS (mTLS) and/or signed tokens for
+  workload identity, consistent with a zero-trust posture (no implicit trust
+  based on network location).
+- Static API keys MAY be used only for low-risk, non-sensitive machine access;
+  where used they MUST be unique per consumer, transmitted over TLS, rotatable,
+  revocable, and never embedded in client-side code or URLs. They are not a
+  substitute for OAuth where sensitive data or actions are involved.
+- Authorisation is enforced server-side on every object and every function
+  (see API security, Section 10) - never assumed from the UI or the caller's
+  identity alone.
+
+9.3 Credentials and secrets
+- Secrets (keys, tokens, certificates, connection strings) MUST be stored in a
+  managed secrets store and MUST NOT be hard-coded in source, configuration, or
+  client code. Credentials and certificates are rotated, and access to secrets
+  is logged.
+
+Identity assurance and authenticator strength follow recognised guidance
+(NIST SP 800-63); the overall model follows zero-trust principles
+(NIST SP 800-207).
+
+------------------------------------------------------------------------
+10. API SECURITY
+------------------------------------------------------------------------
+APIs (especially internet-exposed ones) MUST be designed against the OWASP API
+Security Top 10 (2023). In particular:
+- Enforce object-level and function-level authorisation on every request
+  (guarding against BOLA - API1, and BFLA - API5).
+- Use strong, correctly implemented authentication; validate token expiry and
+  audience (guarding against Broken Authentication - API2).
+- Return and accept only the properties each consumer is entitled to; avoid
+  mass-assignment and over-exposure (Broken Object Property Level Authorization
+  - API3).
+- Apply rate limiting, quotas, and payload/size limits at the API gateway
+  (Unrestricted Resource Consumption - API4).
+- Protect sensitive business flows from automated abuse (API6).
+- Validate and constrain outbound requests and never blindly fetch
+  user-supplied URLs (SSRF - API7).
+- Harden configuration and disable unused features/verbose errors (Security
+  Misconfiguration - API8).
+- Maintain an inventory of APIs, versions, and environments; retire and
+  document deprecated endpoints (Improper Inventory Management - API9).
+- Validate and constrain data consumed from third-party/upstream APIs (Unsafe
+  Consumption of APIs - API10).
+Externally exposed APIs SHOULD be fronted by an API gateway providing
+authentication, rate limiting, logging, and schema validation. Sensitive data
+MUST NOT be placed in URLs/query strings.
+
+------------------------------------------------------------------------
+11. AI/ML AND PUBLIC-FACING APPLICATIONS (ADDITIONAL GOVERNANCE)
+------------------------------------------------------------------------
+Applications that use AI/ML, or are public-facing (internet-exposed), require an
+additional governance review at intake and on an ongoing basis:
+- A data-protection assessment (and a formal data-protection impact assessment
+  where high-risk processing or profiling is involved; see compliance_rules.txt
+  for GDPR/FADP).
+- A recorded data classification for the data the application processes and, for
+  AI/ML, for training and inference data.
+- A named accountable human owner for decisions the AI influences or makes
+  (Section 2; the human-in-the-loop principle).
+- For AI/ML: documentation of the model's purpose and limitations, the data
+  sources used, and how outputs are reviewed; monitoring for drift and for
+  inappropriate or biased outputs.
+- Public-facing or AI-integrated applications that handle Confidential data MUST
+  be Compliant before go-live (before entering Production) and are reviewed at
+  least every 6 months (Section 6; compliance_rules.txt).
+
+------------------------------------------------------------------------
+12. CLOUD AND HOSTING ALIGNMENT
+------------------------------------------------------------------------
+- Cloud-hosted applications (Public Cloud (AWS) / Public Cloud (Azure) / Private
+  Cloud / SaaS, per portfolio_standards.txt) MUST deploy into an approved landing
+  zone / tenancy with baseline security controls (identity integration, logging,
+  network segmentation, encryption).
+- Encryption in transit is mandatory for all applications; encryption at rest is
+  mandatory for Confidential and Restricted data (handling baselines in
+  compliance_rules.txt). Key management uses the approved key-management service.
+- Data residency and cross-border transfer constraints (compliance_rules.txt)
+  MUST be satisfied by the chosen hosting model and region.
+
+------------------------------------------------------------------------
+13. DOCUMENTATION REQUIREMENTS
+------------------------------------------------------------------------
+Every application MUST maintain current documentation proportionate to its
+criticality:
+- Architecture decision records (ADRs): significant decisions (sourcing,
+  integration pattern, hosting, authentication model, standard exceptions) are
+  recorded as short, dated ADRs capturing context, decision, and consequences.
+- A solution/context overview: a high-level architecture description (the C4
+  model and/or arc42 are recommended structures) showing the application, its
+  users, and its system context.
+- Data-flow documentation: what data the application holds and exchanges, its
+  classification, and with which systems/parties it flows (supports compliance
+  and integration review).
+- Interface/integration catalogue: each integration's pattern, direction,
+  contract/version, and system of record (Section 8).
+- Operational documentation: runbooks for operation and recovery, consistent
+  with the resilience obligations in Section 4 (especially for High/Critical).
+Documentation MUST be kept current; a Production application with materially
+outdated or missing required documentation is flagged at review.
+
+------------------------------------------------------------------------
+14. EXCEPTIONS AND WAIVERS
+------------------------------------------------------------------------
+- Any deviation from this policy or an architecture standard requires a recorded
+  waiver, approved by the ARB, with a stated rationale, a risk owner, compensating
+  controls, and an expiry date.
+- Waivers are time-boxed and reviewed at expiry; an expired waiver returns the
+  application to non-conformant status.
+- A standing register of active waivers is maintained and reviewed by the ARB.
+
+------------------------------------------------------------------------
+SOURCES / FURTHER READING
+------------------------------------------------------------------------
+- OWASP API Security Top 10 (2023):
+  https://owasp.org/API-Security/editions/2023/en/0x00-header/
+- OAuth 2.0 (RFC 6749) and OAuth 2.0 Security Best Current Practice:
+  https://datatracker.ietf.org/doc/html/rfc6749
+- OpenID Connect Core 1.0:
+  https://openid.net/specs/openid-connect-core-1_0.html
+- SAML 2.0 (OASIS):
+  https://docs.oasis-open.org/security/saml/v2.0/
+- NIST SP 800-207, Zero Trust Architecture:
+  https://csrc.nist.gov/pubs/sp/800/207/final
+- NIST SP 800-63, Digital Identity Guidelines:
+  https://pages.nist.gov/800-63-3/
+- Enterprise Integration Patterns (Hohpe & Woolf):
+  https://www.enterpriseintegrationpatterns.com/
+- Architecture decision records (ADR):
+  https://adr.github.io/
+- C4 model for software architecture:
+  https://c4model.com/
+- arc42 documentation template:
+  https://arc42.org/
+- The Open Group, TOGAF Standard:
+  https://www.opengroup.org/togaf
+
+------------------------------------------------------------------------
+RELATED DOCUMENTS
+------------------------------------------------------------------------
+- portfolio_standards.txt
+- compliance_rules.txt
+- new_application_process.txt

@@ -1,0 +1,16 @@
+Portfolio Compliance Rules (sample)
+
+Compliance status: compliant, non_compliant, unknown.
+
+Rules
+- Every application MUST have a known compliance status. 'unknown' is treated as a
+  data-quality defect and must be resolved.
+- 'non_compliant' applications require a remediation plan with a target date.
+- Critical applications that are 'non_compliant' are escalated to the architecture
+  review board.
+
+Data quality expectations
+- Mandatory fields: app_id, app_name, owner, lifecycle_state, business_criticality,
+  compliance_status, last_reviewed_date.
+- Missing or 'unknown' values in mandatory fields are data-quality anomalies and
+  are surfaced separately from statistical outliers.

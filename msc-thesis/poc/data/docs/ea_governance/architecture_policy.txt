@@ -1,0 +1,42 @@
+Enterprise Architecture Governance Policy (sample)
+
+Purpose: govern the application portfolio so that investment, risk, and technical
+debt stay aligned with the target architecture.
+
+Ownership
+- Every application MUST have a named accountable owner (a person or role).
+- Applications without an owner are non-conformant and must be remediated within
+  one review cycle.
+
+Business criticality
+- Each application is rated low / medium / high / critical.
+- Critical applications require a documented recovery objective and an annual
+  resilience review.
+
+Investment and lifecycle alignment
+- Applications in the 'retire' lifecycle state must not receive new feature
+  investment; only decommissioning work is permitted.
+- A 'retire' application rated 'critical' is a governance contradiction and must
+  be escalated: either the criticality rating or the lifecycle state is wrong.
+
+Review cadence
+- Every application is reviewed at least every 12 months.
+- An application not reviewed within 18 months is treated as stale and is flagged
+  for governance attention.
+
+Onboarding and intake gate
+- A new application MUST pass the architecture intake gate before it is approved
+  for build or procurement. Intake requires: a named accountable owner, a business
+  capability mapping, a data classification (public / internal / confidential),
+  a target lifecycle state, and a stated hosting model.
+- No application may enter the 'build' or 'run' lifecycle state without a recorded
+  intake approval; onboarding without intake approval is non-conformant.
+- The intake review confirms the application does not duplicate an existing
+  capability already covered by the portfolio.
+
+AI and public-facing applications
+- Applications that use AI/ML or are public-facing (internet-exposed) require an
+  additional governance review at intake: a data-protection assessment, a record of
+  the data classification processed, and an accountable human owner for AI decisions.
+- Public-facing or AI-integrated applications handling confidential data must be
+  compliant before go-live and are reviewed at least every 6 months.
