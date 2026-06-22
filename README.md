@@ -23,7 +23,7 @@ streamlit run poc/app.py
 
 Open http://localhost:8501. First launch downloads the local embedding model (~90 MB).
 
-## Run with Docker
+## Run with Docker (RECOMMENDED)
 
 ```bash
 git clone git@github.com:eliMedig/mscThesis.git
