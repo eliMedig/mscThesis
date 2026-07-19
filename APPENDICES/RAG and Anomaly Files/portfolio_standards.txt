@@ -1,0 +1,216 @@
+PORTFOLIO STANDARDS
+The application portfolio data model: lifecycle, maturity, controlled
+vocabularies, capability mapping, and rationalisation
+
+------------------------------------------------------------------------
+SCOPE OF THIS DOCUMENT
+------------------------------------------------------------------------
+This document defines the STRUCTURE of the application portfolio: the
+lifecycle states, the technical-maturity scale, the controlled vocabularies
+(allowed values) for each portfolio attribute, the business-capability model,
+and how the portfolio is segmented for rationalisation.
+
+It defines WHAT the dimensions and allowed values are. It does NOT define the
+governance rules or technical standards that act on them (see
+architecture_policy.txt), the compliance/data-quality rules and regulatory
+obligations (see compliance_rules.txt), or the intake workflow (see
+new_application_process.txt).
+
+The key words MUST, SHOULD, and MAY are used in their RFC 2119 sense. The field
+names and allowed values below match the portfolio dataset exactly so that
+reporting, queries, and automated checks remain consistent.
+
+------------------------------------------------------------------------
+1. APPLICATION IDENTITY AND CORE ATTRIBUTES
+------------------------------------------------------------------------
+Each application is a single logical system tracked as one portfolio record.
+
+- app_id: stable unique identifier, format APP-NNNN (e.g. APP-0042). Assigned
+  at intake and never reused, even after retirement.
+- app_name: the recognised business name of the application.
+- vendor: the supplying organisation, or "In-house" for self-developed systems.
+- category: the functional category (e.g. ERP / Finance, CRM, Energy Trading,
+  Grid Operations, Data Platform, Collaboration). Categories group applications
+  functionally and feed duplication analysis.
+- business_unit: the owning organisational unit.
+- region: the primary country/region of operation.
+- business_owner / application_manager: see architecture_policy.txt for the
+  accountability rules; both are tracked as portfolio attributes.
+- go_live_date / end_of_life_date: planned operational start and the
+  vendor/internal end-of-support or planned-decommission date.
+- last_reviewed_date: date of the most recent governance review.
+- number_of_users / user_population_band: usage scale (band values:
+  1-10, 11-100, 101-1000, 1000+).
+- annual_cost_chf: annual run cost in CHF.
+- integration_count: number of integrations the application participates in;
+  used as a coupling/complexity signal (Section 9).
+
+------------------------------------------------------------------------
+2. LIFECYCLE STATES
+------------------------------------------------------------------------
+The portfolio uses five lifecycle states. Allowed values for lifecycle_status:
+Plan, Build, Production, Sunset, Retired.
+
+- Plan       Proposed or in business-case/design stage. No production footprint.
+             Entered immediately after intake approval (new_application_process.txt).
+- Build      Under active development, configuration, or implementation. Not yet
+             serving production users.
+- Production In live operational use and supported. (Equivalent to a "run"
+             state in generic lifecycle models.)
+- Sunset     Still in operation but scheduled for decommissioning. No new
+             feature investment is permitted; only run/decommission work.
+- Retired    Decommissioned. No production footprint, users, or active
+             integrations should remain.
+
+2.1 Transition rules
+- The normal direction is forward: Plan -> Build -> Production -> Sunset ->
+  Retired.
+- Re-entering Build from Production (a major rework) MUST have a documented
+  change rationale.
+- Retired is terminal. Re-activating a Retired application MUST be re-justified
+  through the intake process as a new Demand.
+- An application MAY move directly from Production to Retired (e.g. an emergency
+  decommission) but this SHOULD be the exception and recorded as such.
+
+2.2 Expected field state by lifecycle (consistency expectations)
+These expectations are what data-quality checks (compliance_rules.txt) rely on:
+- Production applications SHOULD have a business_owner, a business_criticality,
+  a data_classification, and a last_reviewed_date within the review window.
+- An application in Production with an end_of_life_date in the past is
+  inconsistent: it should be Sunset or Retired. This is a known anomaly.
+- A Retired application SHOULD have no active users, no annual run cost, and no
+  live integrations; residual values indicate it is not truly decommissioned.
+
+------------------------------------------------------------------------
+3. TECHNICAL MATURITY (1..5)
+------------------------------------------------------------------------
+Technical maturity rates how current and strategically aligned the underlying
+technology stack is. (It is distinct from business value and from criticality.)
+
+- 1  Legacy / unsupported. End-of-life technology, no vendor support, high risk.
+- 2  Dated. Supported but behind current versions; growing technical debt.
+- 3  Adequate. Maintained and supported, broadly fit for purpose.
+- 4  Current. Modern, well-supported, aligned to the reference technology stack.
+- 5  Strategic. Current and explicitly aligned to the target architecture.
+
+Expectations:
+- Applications at maturity 1-2 in the Production state SHOULD have a recorded
+  modernisation or retirement plan.
+- Maturity is a primary input to the rationalisation/segmentation decision
+  (Section 8) alongside business value and criticality.
+
+------------------------------------------------------------------------
+4. BUSINESS CRITICALITY SCALE
+------------------------------------------------------------------------
+business_criticality rates the business impact if the application is degraded
+or unavailable. Allowed values: Low, Medium, High, Critical.
+
+- Low       Minor inconvenience; easily worked around. Limited user group.
+- Medium    Noticeable operational impact; tolerable for a short period.
+- High      Significant impact on a core business process or many users.
+- Critical  Severe impact: safety, regulatory, financial, or operational
+            continuity is threatened (e.g. trading, grid operations).
+
+This section defines the meaning of each level. The resilience, recovery, and
+review obligations that follow from a level (e.g. recovery objectives for
+Critical) are defined in architecture_policy.txt.
+
+------------------------------------------------------------------------
+5. SOURCING AND TYPE TAXONOMY
+------------------------------------------------------------------------
+type (delivery/build model). Allowed values:
+- COTS          Commercial off-the-shelf software, run by the organisation.
+- SaaS          Vendor-hosted software consumed as a service.
+- Open Source   Open-source software, self-run (support may be community/commercial).
+- Self-developed Built in-house or by a contracted partner for the organisation.
+
+sourcing (coarse procurement grouping). Allowed values:
+- COTS / SaaS   Externally sourced (bought or subscribed).
+- In-house      Built internally.
+
+Where both fields are present, type is the more granular and authoritative
+classification; sourcing is a coarse roll-up. The "reuse before buy before
+build" principle that governs sourcing decisions is stated in
+architecture_policy.txt.
+
+------------------------------------------------------------------------
+6. HOSTING MODELS
+------------------------------------------------------------------------
+hosting describes where the application runs. Allowed values:
+- On-Premise            In the organisation's own data centre.
+- Private Cloud         Dedicated/single-tenant cloud.
+- Public Cloud (AWS)    Public cloud on Amazon Web Services.
+- Public Cloud (Azure)  Public cloud on Microsoft Azure.
+- SaaS                  Vendor-operated, multi-tenant service.
+
+Hosting interacts with data classification and residency obligations
+(compliance_rules.txt) and with the cloud landing-zone and security standards
+(architecture_policy.txt).
+
+------------------------------------------------------------------------
+7. DATA CLASSIFICATION (VALUES)
+------------------------------------------------------------------------
+data_classification records the most sensitive data the application processes.
+Allowed values, from least to most sensitive:
+- Public        Information intended for public release.
+- Internal      Default for internal business information; limited harm if leaked.
+- Confidential  Sensitive business or personal data; meaningful harm if exposed.
+- Restricted    Highly sensitive data (e.g. regulated, safety-relevant, secret);
+                serious harm if exposed.
+
+This document defines only the allowed values. The handling, encryption, access,
+and logging obligations that each level imposes - and the regulatory drivers
+behind them - are defined in compliance_rules.txt.
+
+------------------------------------------------------------------------
+8. BUSINESS CAPABILITY MAPPING AND RATIONALISATION
+------------------------------------------------------------------------
+8.1 Capability mapping
+- Every application SHOULD map to at least one business capability. The
+  capability model is the basis for identifying duplication (multiple
+  applications covering the same capability) and gaps.
+- At intake, a Demand is checked for capability duplication
+  (new_application_process.txt) before a new application is approved.
+
+8.2 Portfolio segmentation (TIME)
+Applications are periodically segmented to guide investment decisions, using the
+TIME model (Tolerate, Invest, Migrate, Eliminate), driven by business value and
+technical maturity:
+- Tolerate  High technical fitness, low business value: keep, minimise spend.
+- Invest    High value and high fitness: actively enhance.
+- Migrate   High value, low technical fitness: modernise or re-platform.
+- Eliminate Low value, low fitness: retire (move toward Sunset/Retired).
+
+Segmentation outcomes SHOULD be consistent with lifecycle and maturity: an
+Eliminate decision implies a path to Sunset/Retired; a Migrate decision implies
+a modernisation plan for a low-maturity application.
+
+------------------------------------------------------------------------
+9. COST, REDUNDANCY, AND INTEGRATION COMPLEXITY
+------------------------------------------------------------------------
+- annual_cost_chf supports cost transparency and is read together with business
+  value and criticality; high cost on a low-value/low-maturity application is a
+  rationalisation candidate.
+- Redundancy: applications sharing a category and business capability are
+  reviewed for consolidation.
+- integration_count is a coupling/complexity signal. A high integration count
+  raises the impact of change and of failure, and is a factor in criticality
+  and in change-risk assessment. The integration patterns themselves are
+  standardised in architecture_policy.txt.
+
+------------------------------------------------------------------------
+SOURCES / FURTHER READING
+------------------------------------------------------------------------
+- The Open Group, TOGAF Standard (10th Edition) - architecture content and the
+  notion of building blocks and capability-based planning:
+  https://www.opengroup.org/togaf
+- Business capability modelling and application portfolio rationalisation
+  (TIME model) are widely documented in enterprise-architecture practice
+  (e.g. Gartner application TIME framework).
+
+------------------------------------------------------------------------
+RELATED DOCUMENTS
+------------------------------------------------------------------------
+- architecture_policy.txt
+- compliance_rules.txt
+- new_application_process.txt

@@ -1,0 +1,101 @@
+app_id,app_name,vendor,category,owner,lifecycle_state,business_criticality,technical_maturity,last_reviewed_date,compliance_status,hosting,annual_cost_chf
+APP-0001,TIBCO (Group),In-house,Risk,B. Schmidt,plan,low,2,2025-08-08,compliant,cloud,29988
+APP-0002,Customer Engine,In-house,Compliance,E. Larsson,build,high,3,2025-06-14,compliant,cloud,49281
+APP-0003,Dispatch Gateway,In-house,Reporting,D. Haan,plan,high,4,2026-05-15,non_compliant,hybrid,57083
+APP-0004,Portfolio Monitor,In-house,Compliance,E. Larsson,build,low,3,2026-01-09,non_compliant,on_prem,47775
+APP-0005,Openlink Endur (Legacy),In-house,Customer,B. Schmidt,run,high,2,2025-07-30,non_compliant,hybrid,17159
+APP-0006,Grid Manager,In-house,Compliance,F. Costa,build,high,2,2026-02-09,compliant,on_prem,101147
+APP-0007,Settlement Engine,In-house,Collaboration,D. Haan,run,high,3,2026-01-22,compliant,on_prem,33038
+APP-0008,Balancing Scheduler,In-house,Compliance,B. Schmidt,retire,low,5,2026-04-21,compliant,on_prem,92850
+APP-0009,Trading Repository,In-house,Data Platform,D. Haan,run,medium,4,2025-08-27,compliant,on_prem,73834
+APP-0010,SAP BW/4HANA,Qlik,Customer,C. Rossi,run,medium,4,2025-09-23,non_compliant,on_prem,60406
+APP-0011,Microsoft Excel,In-house,Data Platform,C. Rossi,run,medium,2,2025-08-04,compliant,cloud,59088
+APP-0012,Emissions Scheduler,In-house,Compliance,B. Schmidt,run,critical,2,2025-10-01,compliant,on_prem,19299
+APP-0013,Grid Dashboard,SAP,Security / IAM,G. Petrov,run,critical,3,2025-06-06,non_compliant,cloud,43622
+APP-0014,Power Grid SCADA (in-house),In-house,Analytics / BI,B. Schmidt,build,medium,3,2025-08-09,compliant,on_prem,29133
+APP-0015,Customer Dashboard,Adobe,Risk,E. Larsson,plan,critical,5,2026-02-02,compliant,cloud,88517
+APP-0016,Asset Scheduler,In-house,Security / EDR,D. Haan,run,high,2,2026-05-06,compliant,cloud,194465
+APP-0017,Trading Workbench,In-house,Customer,D. Haan,plan,low,5,2026-01-30,compliant,on_prem,39254
+APP-0018,Outage Register,Workday,Integration,G. Petrov,run,low,5,2025-10-03,compliant,on_prem,12900
+APP-0019,Portfolio Platform,Microsoft,Design / Creative,B. Schmidt,build,low,2,2025-08-14,non_compliant,hybrid,71134
+APP-0020,Market Analyzer,Microsoft,Observability,B. Schmidt,plan,medium,3,2026-05-02,compliant,hybrid,10983
+APP-0021,Field Optimizer,In-house,Energy Trading,F. Costa,run,medium,4,2026-02-22,compliant,hybrid,80201
+APP-0022,Field Platform,In-house,Data Platform,G. Petrov,retire,low,2,2026-04-30,compliant,hybrid,40061
+APP-0023,Forecast Cockpit,In-house,Collaboration,C. Rossi,plan,high,4,2025-07-28,non_compliant,hybrid,65492
+APP-0024,Market Platform,AVEVA,Integration,A. Okafor,run,high,3,2026-01-18,compliant,cloud,87737
+APP-0025,Settlement Hub,Microsoft,Design / Creative,C. Rossi,run,high,2,2025-07-17,compliant,cloud,49162
+APP-0026,Grid Portal,Microsoft,Grid Operations,E. Larsson,plan,low,3,2025-08-31,non_compliant,on_prem,136617
+APP-0027,Forecast Portal,Qlik,Asset Management,C. Rossi,run,high,2,2025-12-05,compliant,on_prem,105099
+APP-0028,Compliance Manager,In-house,Procurement,G. Petrov,plan,high,3,2025-11-07,compliant,on_prem,98133
+APP-0029,Trading Optimizer,SAP,Integration,G. Petrov,run,medium,2,2025-10-09,compliant,on_prem,25278
+APP-0030,Hedging Register,In-house,Grid Operations,D. Haan,build,high,4,2025-12-09,non_compliant,hybrid,61710
+APP-0031,Oracle E-Business Suite,In-house,Compliance,C. Rossi,build,critical,4,2026-05-18,non_compliant,on_prem,69697
+APP-0032,Azure DevOps,Miro,Compliance,D. Haan,run,low,2,2025-06-09,non_compliant,cloud,68945
+APP-0033,Hedging Dashboard,Qualys,Data Platform,A. Okafor,retire,high,4,2025-07-02,compliant,on_prem,82725
+APP-0034,Field Monitor,In-house,Integration,F. Costa,build,low,5,2025-07-01,compliant,cloud,70975
+APP-0035,Field Portal,In-house,Risk,B. Schmidt,run,medium,4,2025-10-11,compliant,cloud,55508
+APP-0036,Risk Engine,Microsoft,Integration,E. Larsson,run,medium,2,2026-02-06,compliant,hybrid,21833
+APP-0037,Outage Repository,In-house,Compliance,E. Larsson,run,low,5,2025-07-19,compliant,hybrid,21251
+APP-0038,Forecast Platform,Microsoft,Customer,G. Petrov,run,high,5,2026-02-14,compliant,on_prem,167609
+APP-0039,Forecast Analyzer,GE Vernova,Infrastructure,B. Schmidt,run,high,4,2025-10-23,compliant,hybrid,26647
+APP-0040,Alteryx,In-house,Integration,C. Rossi,run,high,4,2025-09-13,compliant,cloud,71671
+APP-0041,Portfolio Platform,Salesforce,Risk,C. Rossi,build,medium,3,2026-03-21,compliant,on_prem,51942
+APP-0042,Market Tracker,GitLab,Automation,E. Larsson,run,low,5,2025-11-19,compliant,hybrid,150756
+APP-0043,Meter Repository,In-house,Risk,G. Petrov,run,high,3,2025-09-30,compliant,on_prem,38010
+APP-0044,Tariff Service,In-house,Finance,B. Schmidt,retire,medium,5,2025-08-07,compliant,hybrid,71908
+APP-0045,Invoice Scheduler,In-house,Finance,C. Rossi,build,low,4,2025-12-16,compliant,cloud,36715
+APP-0046,Invoice Cockpit,Zoom,Integration,F. Costa,plan,critical,2,2026-05-22,compliant,on_prem,39755
+APP-0047,Contract Repository,In-house,Integration,G. Petrov,build,medium,2,2026-03-15,compliant,cloud,32863
+APP-0048,Supply Optimizer,In-house,CRM,E. Larsson,run,medium,2,2025-06-15,non_compliant,cloud,147610
+APP-0049,Qlik Sense,In-house,Infrastructure,D. Haan,run,low,4,2026-05-31,compliant,cloud,86762
+APP-0050,Outage Portal,In-house,Energy Trading,B. Schmidt,run,critical,4,2025-07-26,non_compliant,hybrid,101546
+APP-0051,Energy Cockpit,In-house,Risk,G. Petrov,retire,medium,5,2026-02-02,non_compliant,cloud,74360
+APP-0052,Cloudflare,In-house,Data Platform,D. Haan,build,high,4,2026-01-14,compliant,hybrid,79708
+APP-0053,Outage Scheduler,Salesforce,Reporting,F. Costa,build,medium,3,2025-06-18,compliant,cloud,80414
+APP-0054,Outage Workbench,In-house,Procurement,D. Haan,run,medium,4,2025-10-07,non_compliant,hybrid,63284
+APP-0055,Ansible,In-house,Compliance,C. Rossi,build,low,3,2025-12-27,compliant,on_prem,76275
+APP-0056,Customer Optimizer,Salesforce,Grid Operations,A. Okafor,run,medium,4,2026-03-07,compliant,cloud,71791
+APP-0057,Ardoq,In-house,Asset Management,E. Larsson,build,medium,4,2026-03-04,compliant,on_prem,58683
+APP-0058,Capacity Manager,Boomi,Grid Operations,A. Okafor,retire,low,5,2025-07-31,compliant,hybrid,88123
+APP-0059,Market Hub,In-house,Grid Operations,G. Petrov,run,medium,2,2025-07-29,compliant,hybrid,71374
+APP-0060,Compliance Service,In-house,Compliance,B. Schmidt,plan,medium,5,2026-01-08,compliant,on_prem,23314
+APP-0061,Energy Dashboard,In-house,Customer,C. Rossi,run,medium,3,2025-11-01,compliant,on_prem,68198
+APP-0062,Balancing Service,Dynatrace,Asset Management,B. Schmidt,run,medium,4,2025-10-25,non_compliant,on_prem,57165
+APP-0063,Supply Service,Figma,Reporting,D. Haan,plan,low,5,2025-12-23,compliant,hybrid,45126
+APP-0064,Forecast Engine,CrowdStrike,Energy Trading,G. Petrov,run,medium,5,2026-01-15,non_compliant,on_prem,148264
+APP-0065,Tariff Platform,In-house,CRM / ERP,D. Haan,build,high,3,2025-12-20,non_compliant,cloud,79227
+APP-0066,Asset Service,SailPoint,HR / Learning,C. Rossi,build,low,5,2025-09-16,non_compliant,on_prem,85373
+APP-0067,Trading Analyzer,Qualtrics,Compliance,E. Larsson,run,medium,2,2026-02-22,compliant,cloud,120627
+APP-0068,Adobe Creative Cloud,GE Vernova,Asset Management,F. Costa,run,low,3,2025-12-29,compliant,hybrid,25704
+APP-0069,Settlement Gateway,In-house,Grid Operations,F. Costa,run,medium,4,2025-09-19,compliant,hybrid,14602
+APP-0070,Forecast Platform,Nutanix,Integration,D. Haan,build,medium,3,2026-05-02,non_compliant,cloud,27545
+APP-0071,Emissions Analyzer,In-house,Compliance,G. Petrov,run,critical,5,2026-03-22,compliant,cloud,63617
+APP-0072,Supply Hub,In-house,Energy Trading,G. Petrov,build,high,5,2026-02-07,compliant,cloud,183527
+APP-0073,Capacity Manager,CrowdStrike,Finance,B. Schmidt,run,medium,2,2025-10-24,compliant,on_prem,62892
+APP-0074,Tariff Gateway,In-house,Compliance,D. Haan,run,low,5,2025-07-09,compliant,on_prem,108725
+APP-0075,Adobe Lightroom,In-house,Data Platform,B. Schmidt,run,critical,3,2026-04-21,compliant,cloud,75608
+APP-0076,Risk Manager,In-house,Data Platform,C. Rossi,run,medium,4,2025-10-29,compliant,on_prem,38260
+APP-0077,OSIsoft PI System (Legacy),In-house,Security / EDR,A. Okafor,run,medium,3,2025-09-25,compliant,hybrid,30281
+APP-0078,Trading Monitor,In-house,Reporting,C. Rossi,run,low,5,2025-12-12,compliant,hybrid,85875
+APP-0079,Hedging Engine,Adobe,Customer,B. Schmidt,build,medium,4,2025-06-13,compliant,cloud,53737
+APP-0080,Market Register,Blackmagic Design,Risk,G. Petrov,run,medium,4,2026-02-14,non_compliant,hybrid,39119
+APP-0081,Trading Portal,Microsoft,Asset Management,C. Rossi,run,low,4,2026-03-31,compliant,on_prem,111998
+APP-0082,Billing Optimizer,In-house,Customer,E. Larsson,run,low,3,2026-01-26,compliant,cloud,118483
+APP-0083,Capacity Dashboard,In-house,CRM,B. Schmidt,run,low,5,2025-08-25,non_compliant,cloud,29835
+APP-0084,Tariff Dashboard,SailPoint,Energy Trading,F. Costa,run,low,5,2025-07-15,compliant,cloud,35377
+APP-0085,Asset Tracker,Coupa,Reporting,F. Costa,run,critical,4,2025-07-09,compliant,cloud,35725
+APP-0086,Workday,In-house,Finance,,run,high,5,2026-02-21,compliant,hybrid,60000
+APP-0087,Supply Platform,In-house,Grid Operations,,run,medium,4,2026-02-21,compliant,on_prem,60000
+APP-0088,Asset Manager,Commvault,Risk,D. Haan,retire,high,2,2026-02-21,unknown,hybrid,60000
+APP-0089,Asset Console,In-house,Grid Operations,D. Haan,build,critical,5,2026-02-21,unknown,on_prem,60000
+APP-0090,Customer Hub,In-house,Finance,G. Petrov,build,critical,3,2024-05-22,compliant,on_prem,60000
+APP-0091,Terraform (Group),In-house,Compliance,C. Rossi,run,high,2,2024-05-22,compliant,cloud,60000
+APP-0092,Meter Hub,Citrix,Grid Operations,G. Petrov,retire,critical,3,2026-02-21,compliant,on_prem,60000
+APP-0093,Tariff Optimizer,TIBCO,ERP / Finance,C. Rossi,retire,critical,3,2026-02-21,compliant,hybrid,60000
+APP-0094,Grid Platform,SolarWinds,Data Warehouse,A. Okafor,plan,low,5,2026-04-22,compliant,cloud,9000000
+APP-0095,Meter Dashboard,Schneider Electric,Finance,F. Costa,retire,low,2,2026-04-22,compliant,on_prem,8000000
+APP-0096,Balancing Platform,In-house,Compliance,E. Larsson,plan,critical,5,2026-04-22,compliant,on_prem,7000000
+APP-0097,Compliance Hub,In-house,Customer,B. Schmidt,retire,high,5,2026-04-22,compliant,hybrid,6000000
+APP-0098,Market Manager,SAP,Integration,D. Haan,plan,high,2,2026-04-22,compliant,hybrid,7500000
+APP-0099,Capacity Register,In-house,Asset Management,G. Petrov,build,low,5,2026-04-22,compliant,hybrid,1200000
+APP-0100,Jenkins,In-house,Enterprise Architecture,F. Costa,run,medium,4,2026-04-22,compliant,cloud,1000000
