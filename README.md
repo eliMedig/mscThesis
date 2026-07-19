@@ -16,12 +16,12 @@ the concepts. This repo is the running software artefact while it also preserves
 git clone <repo-url> msc-thesis
 cd msc-thesis
 python -m venv poc/.venv
-# activate: Windows -> poc\.venv\Scripts\Activate.ps1   macOS/Linux -> source poc/.venv/bin/activate
+# activate: Windows -> poc\.venv\Scripts\Activate.ps1
 pip install -r poc/requirements.txt
 streamlit run poc/app.py
 ```
 
-Open http://localhost:8501. First launch downloads the local embedding model (~90 MB).
+Open http://localhost:8501. Note that the first launch downloads the local embedding model which is ~90 MB large.
 
 ## Run with Docker (RECOMMENDED)
 
@@ -31,15 +31,15 @@ cd mscThesis-main
 docker compose up
 ```
 
-Open http://localhost:8501. Data persists in the `msc-thesis-data` volume.
+Open http://localhost:8501. Data persists in the `msc-thesis-data` volume of Docker.
 
 ## Configuration
 
 The app needs at least one model before you can chat:
 
 1. Settings → Models & API keys → register a model (e.g. provider `anthropic`, model
-   `claude-sonnet-4-6`) and paste your API key for it.
-   -> For a proper setup (same results as in MSc thesis) use claude-opus-4-8 for the self-refletion and claude-sonnet-4-6 for both agents.
+   `claude-sonnet-5`) and paste your API key for it.
+   -> For a proper setup (same results as in MSc thesis) use claude-opus-4-8 for the self-refletion and claude-sonnet-4-6 for both agents. Note that for the Demos claude-sonnet-5 was used instead of claude-sonnet-4-6 for the agents.
 3. Settings → Agents → assign that model to the Coaching agent, the Domain agent, and the
    reflection model.
 
@@ -51,10 +51,4 @@ Besides directly within the app you can instead also supply the keys as environm
 
 2. To include anomaly detection results you have to manually run the detection on first startup in the data sources tab (Open the Anomaly Detection Section -> Click "Run detection"). Running the anomaly detection process creates a task for each detected anomaly. The task-creation functionality showcases how the system would generate notifications. All tasks can be reviewed and approved in the tasks menu (ensure human-in-the-loop priciples). Notifications are currently not integrated with any external system and thus an approval as part of this PoC does only change the status but not perform any actual action.
 
-4. The self-reflection process is automatically triggered every 8 turns by default (this can be adjusted in the Settings menu -> Interaction triggers -> Trigger B -> update the number), as well as whenever a session is ended. All externalisations are available in the Tacit Externalisation menu, where they can be approved or rejected. Approved externalisations are used to update the agent and will influence its future behavior implementing the self-reflection driven tacit externalisation aspects of the framework.
-
-## Reference
-
-- Layout: `poc/app.py` is the entry point; `poc/teaf/` is the framework, `poc/ui/` the Streamlit pages.
-- Version and changelog: `poc/config.py` and `change_log.md`.
-- Tests: `cd poc && python -m pytest`.
+4. The self-reflection process is automatically triggered every 8 turns by default (this can be adjusted in the Settings menu -> Interaction triggers -> Trigger B -> update the number -> save it), as well as whenever a session is ended. All externalisations are available in the Tacit Externalisation menu, where they can be approved or rejected. Approved externalisations are used to update the agent and will influence its future behavior implementing the self-reflection driven tacit externalisation aspects of the framework.
