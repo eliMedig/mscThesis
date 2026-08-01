@@ -1,0 +1,287 @@
+ORGANISATIONAL CONTACTS AND RESPONSIBILITIES
+Team responsibilities, escalation contacts, and topic-to-team mapping for
+application portfolio governance
+
+------------------------------------------------------------------------
+SCOPE OF THIS DOCUMENT
+------------------------------------------------------------------------
+This document maps governance topics to the teams responsible for them.
+When a practitioner needs more information, has a question outside the
+scope of a coaching session, or needs to escalate a decision, this
+document identifies the right contact.
+
+It does NOT redefine the governance rules (see architecture_policy.txt),
+the portfolio data model (see portfolio_standards.txt), compliance and
+regulatory obligations (see compliance_rules.txt), or the intake workflow
+(see new_application_process.txt). It maps those topics to accountable teams.
+
+------------------------------------------------------------------------
+1. GOVERNANCE AND ARCHITECTURE
+------------------------------------------------------------------------
+Team: Enterprise Architecture (EA) Team
+
+Responsible for:
+- The overall architecture governance framework and this policy set.
+- The Architecture Review Board (ARB): scheduling, facilitation, decisions.
+- Architecture standards, principles, and deviation/waiver approvals.
+- Architecture decision records (ADRs) and the architecture knowledge base.
+- Portfolio segmentation (TIME model) and rationalisation recommendations.
+- Capability model and duplication analysis.
+- Intake triage decisions: confirming whether a Request is a Demand or a
+  Standard Request.
+- Review of new Demands: impact assessment, environmental implications,
+  approval or escalation to ARB.
+
+Contact for:
+- "Who approves a new application demand?"
+- "How do I get an architecture review?"
+- "Can we get a waiver for this standard?"
+- "Who decides if we already have a capability that covers this?"
+- "What is the target architecture for this domain?"
+
+Domain Architects sit within the EA Team and are aligned to business domains
+(e.g. Trading & Sales, Grid Operations, Finance, HR/Corporate). For domain-
+specific questions, the relevant Domain Architect is the first point of contact.
+
+------------------------------------------------------------------------
+2. INTEGRATION AND MIDDLEWARE
+------------------------------------------------------------------------
+Team: Integration Team (also referred to as the Middleware or iPaaS Team)
+
+Responsible for:
+- The central integration layer (integration platform / iPaaS).
+- The catalogue of approved integration patterns: synchronous API,
+  asynchronous event/messaging, batch/file transfer.
+- Onboarding new integrations to the integration platform.
+- Integration design review and pattern selection.
+- The interface/integration catalogue and versioning.
+- API gateway operation, routing, rate limiting, and schema validation.
+- Integration monitoring, alerting, and incident response for middleware.
+
+Contact for:
+- "Which integration pattern should we use for this connection?"
+- "Can this integration go through the integration layer?"
+- "Who manages the API gateway?"
+- "How do I register a new integration or API?"
+- "Which system is the system of record for this data flow?"
+- "Who do I contact about a broken integration?"
+
+Note: the decision on whether an integration qualifies as a Standard Request
+(existing approved pattern on the integration layer) or a Demand (new pattern
+or complex topology) is made jointly by the Integration Team and the Domain
+Architect. When in doubt, the Domain Architect decides.
+
+------------------------------------------------------------------------
+3. IDENTITY AND ACCESS MANAGEMENT (IAM)
+------------------------------------------------------------------------
+Team: IAM Team (Identity and Access Management)
+
+Responsible for:
+- The enterprise identity provider (IdP) and directory services.
+- Single sign-on (SSO) onboarding: SAML 2.0 and OpenID Connect (OIDC)
+  integration for applications.
+- Multi-factor authentication (MFA) enforcement and policy.
+- OAuth 2.0 / token issuance and scope management for API and service
+  authentication.
+- Role-based access control (RBAC) framework and role definitions.
+- Access recertification campaigns (periodic review of who has access to
+  what, especially for Confidential/Restricted applications).
+- Privileged access management (PAM) for administrative and elevated roles.
+- Secrets management platform (keys, tokens, certificates, connection strings).
+- User lifecycle: joiners, movers, leavers process for application access.
+
+Contact for:
+- "How do we onboard this application to SSO?"
+- "Which SSO protocol should we use - SAML or OIDC?"
+- "How do we set up OAuth 2.0 for our API?"
+- "Who manages MFA enforcement?"
+- "How do we handle service account credentials and secrets?"
+- "When is the next access recertification for this application?"
+- "Who do I contact about a suspected unauthorised access?"
+
+SSO onboarding using an approved pattern is a Standard Request handled by
+the IAM Team; a new authentication pattern or a new identity federation
+is a Demand requiring Domain Architect review.
+
+------------------------------------------------------------------------
+4. INFORMATION SECURITY
+------------------------------------------------------------------------
+Team: Information Security Team (InfoSec / CISO Office)
+
+Responsible for:
+- The information security policy and the ISO/IEC 27001 / NIST CSF control
+  baseline.
+- Security risk assessments and threat modelling for new applications and
+  Demands.
+- Data-protection impact assessments (DPIAs) for high-risk processing,
+  AI/ML, or profiling under GDPR/FADP.
+- Security review for public-facing and internet-exposed applications.
+- Vulnerability management, penetration testing coordination, and
+  security scanning in CI/CD pipelines.
+- Incident response: detection, containment, and recovery coordination.
+- OWASP API Security Top 10 compliance guidance and API security review.
+- Encryption standards: in-transit and at-rest requirements and key
+  management oversight.
+- Supply-chain and vendor security assessments.
+- Security awareness and training.
+
+Contact for:
+- "Does this application need a security review or threat model?"
+- "Who approves the security controls for a new public-facing application?"
+- "Do we need a DPIA for this use case?"
+- "Who handles a security incident or suspected breach?"
+- "What encryption standard applies here?"
+- "How do we get a penetration test arranged?"
+- "Who assesses the security posture of a new SaaS vendor?"
+
+------------------------------------------------------------------------
+5. DATA PROTECTION AND PRIVACY
+------------------------------------------------------------------------
+Team: Data Protection Office (DPO / Privacy Team)
+
+Responsible for:
+- GDPR and Swiss FADP compliance for personal data processing.
+- Records of processing activities (RoPA).
+- Data-subject rights handling (access, erasure, portability requests).
+- Breach notification to the Swiss FDPIC and EU supervisory authorities.
+- Data classification guidance for personal and sensitive data.
+- Privacy by design review for new applications processing personal data.
+- Third-party data-processing agreements and standard contractual clauses
+  for cross-border data transfers.
+- Coordination with the Information Security Team on DPIAs.
+
+Contact for:
+- "Does this application process personal data?"
+- "Do we need a data-processing agreement with this vendor?"
+- "Who handles a data breach notification?"
+- "What is the lawful basis for processing this data?"
+- "Can we transfer this data outside Switzerland / the EU?"
+- "Who reviews the privacy aspects of a new AI/ML application?"
+
+------------------------------------------------------------------------
+6. CLOUD AND INFRASTRUCTURE
+------------------------------------------------------------------------
+Team: Cloud and Infrastructure Team (also: Platform Engineering)
+
+Responsible for:
+- Cloud landing zones and approved tenancies (AWS, Azure, Private Cloud).
+- On-premise data centre infrastructure.
+- Cloud security baseline: network segmentation, logging, encryption
+  configuration, identity integration in cloud environments.
+- Infrastructure provisioning, capacity management, and cost visibility
+  (annual_cost_chf data for cloud-hosted applications).
+- Container and orchestration platform (e.g. Docker, Kubernetes).
+- Backup, restore, and disaster recovery infrastructure.
+- Data residency and region configuration for cloud workloads.
+
+Contact for:
+- "Which cloud landing zone should this application deploy into?"
+- "Who manages the AWS / Azure tenancy?"
+- "How do we set up backup and restore for a Critical application?"
+- "Who is responsible for cloud cost allocation?"
+- "What are the approved cloud regions for data residency?"
+- "Who do I contact about infrastructure capacity or provisioning?"
+
+------------------------------------------------------------------------
+7. CYBERSECURITY AND INCIDENT RESPONSE (CRITICAL INFRASTRUCTURE)
+------------------------------------------------------------------------
+Team: Cybersecurity Operations / SOC (Security Operations Centre)
+
+Responsible for:
+- Security monitoring, SIEM, and alert triage.
+- Cyber incident response and coordination (containment, eradication,
+  recovery).
+- Mandatory reporting to the Swiss NCSC within 24 hours for cyberattacks
+  on critical infrastructure (in force 1 April 2025, ISA amendment).
+- Coordination of parallel notifications: FINMA (where applicable) and
+  FDPIC (where personal data is breached).
+- Threat intelligence and vulnerability alerting.
+- ICT minimum standard compliance monitoring for energy/grid systems.
+
+Contact for:
+- "Who do I call when we detect a cyber incident?"
+- "Who files the NCSC report within 24 hours?"
+- "How do I report a suspected attack on a grid/energy system?"
+- "Who monitors compliance with the ICT minimum standard?"
+- "Who coordinates the response if we have to notify multiple authorities?"
+
+This team is the operational escalation point for any security incident
+on applications rated Critical or on applications supporting energy and
+grid operations. The EA Team and Information Security Team are informed
+for portfolio and policy implications.
+
+------------------------------------------------------------------------
+8. APPLICATION OWNERSHIP AND BUSINESS SIDE
+------------------------------------------------------------------------
+Role: Business Owner (per application)
+
+Each application has a named business_owner (recorded in the portfolio).
+The business owner is the primary accountability holder for:
+- Business value and priority of the application.
+- The accuracy of the application's portfolio data (data classification,
+  criticality rating, user population).
+- Approving lifecycle decisions (e.g. retirement, major changes).
+- Signing off on compliance remediation plans.
+- Acting as the human accountable owner for AI/ML decisions where the
+  application uses AI (architecture_policy.txt Section 11).
+
+Contact for:
+- "Who is accountable for this application?"
+- "Who decides if this application should be retired?"
+- "Who approves the data classification for this application?"
+- "Who is the human responsible for AI outputs from this system?"
+
+The business_owner is recorded per application in the portfolio. If it is
+missing, that is an ownership gap and a data-quality anomaly
+(compliance_rules.txt).
+
+------------------------------------------------------------------------
+9. TOPIC-TO-TEAM QUICK REFERENCE
+------------------------------------------------------------------------
+Topic                                   Primary Team
+----------------------------------------------------------------------
+New application / Demand review         Enterprise Architecture (EA)
+Architecture waiver / exception         EA Team / ARB
+Portfolio rationalisation (TIME)        EA Team
+Integration pattern selection           Integration Team + EA
+Integration platform / API gateway      Integration Team
+SSO onboarding (Standard Request)       IAM Team
+OAuth 2.0 / API authentication          IAM Team
+MFA policy and enforcement              IAM Team
+Secrets and credentials management      IAM Team
+Access recertification                  IAM Team
+Security review / threat model          Information Security
+DPIA / privacy review                   Data Protection Office (DPO)
+GDPR / FADP / personal data             DPO
+Data breach notification                DPO + Cybersecurity Ops
+Vendor security assessment              Information Security
+API security (OWASP)                    Information Security + Integration
+Encryption standards                    Information Security
+Cloud landing zone / tenancy            Cloud and Infrastructure
+Backup / DR for Critical apps           Cloud and Infrastructure
+NCSC 24-hour incident reporting         Cybersecurity Ops / SOC
+ICT minimum standard (energy/grid)      Cybersecurity Ops + EA
+Application ownership gap               EA Team (escalates to business)
+Compliance status / remediation         EA Team + business owner
+Compliance rules and data quality       EA Team
+
+------------------------------------------------------------------------
+ESCALATION PATH
+------------------------------------------------------------------------
+1. Domain Architect     - first contact for governance, intake, and
+                          architectural questions within a domain.
+2. EA Team / ARB        - cross-domain decisions, standard exceptions,
+                          elevated-risk Demands (Critical, public-facing,
+                          AI/ML, Confidential/Restricted data).
+3. Specialist Team      - IAM, Integration, InfoSec, DPO, Cloud & Infra,
+                          SOC as appropriate to the topic (see Section 9).
+4. Business Owner       - accountability, priority, and lifecycle decisions
+                          for a specific application.
+
+------------------------------------------------------------------------
+RELATED DOCUMENTS
+------------------------------------------------------------------------
+- architecture_policy.txt
+- portfolio_standards.txt
+- compliance_rules.txt
+- new_application_process.txt
